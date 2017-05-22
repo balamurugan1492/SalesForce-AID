@@ -1,0 +1,119 @@
+﻿<Window x:Class="Pointel.Interactions.TeamCommunicator.WinForms.Favorites"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        AllowsTransparency="True" WindowStyle="None" WindowStartupLocation="CenterScreen" ShowInTaskbar="False" Topmost="True"
+         Height="Auto" Width="320" BorderBrush="#656d90" BorderThickness="1" SizeToContent="Height" Icon="/Agent.Interaction.Desktop;component/Images/Pointel%20Softphone.png">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary
+                   Source="/Pointel.Interactions.TeamCommunicator;component/Resources/StylesResourceDictionary.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Name="lblTitle" FontSize="14" HorizontalAlignment="Stretch" FontFamily="Calibri" Background="#007edf" Foreground="white" MouseLeftButtonDown="Label_MouseLeftButtonDown"></Label>
+        <Border Grid.Row="1" Grid.RowSpan="2" BorderBrush="#656d90" BorderThickness="0.5" Margin="5" />
+        <Grid Name="mainGrid" Grid.Row="1" MinHeight="50"  Margin="10">
+
+        </Grid>
+    </Grid>
+
+    <!--<Grid Name="mainGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Name="rowFirstName" Height="0"></RowDefinition>
+            <RowDefinition Name="rowCategory" Height="0"></RowDefinition>
+            <RowDefinition Name="rowDisplayName" Height="0" ></RowDefinition>
+            <RowDefinition Name="rowDisplayCategory" Height="0"></RowDefinition>
+            <RowDefinition Name="rowEmailAddress" Height="0"></RowDefinition>
+            <RowDefinition Name="rowId" Height="0"></RowDefinition>
+            <RowDefinition Name="rowLastName" Height="0"></RowDefinition>
+            <RowDefinition Name="rowLevelDbid" Height="0"></RowDefinition>
+            <RowDefinition Name="rowLevelType" Height="0"></RowDefinition>
+            <RowDefinition Name="rowPhoneNumber" Height="0"></RowDefinition>
+            <RowDefinition Name="rowRecentDateTime" Height="0"></RowDefinition>
+            <RowDefinition Name="rowButtons" Height="35"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Name="gridcategory" Visibility="Hidden">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Name="lblCategory" Content="Category:"/>
+            <ComboBox Name="cmbCategory" Grid.Column="1"/>
+        </Grid>
+        <Grid Name="griddisplayname" Visibility="Hidden">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Name="lblDisplayName" Content="Display Name:"/>
+            <Label Name="lblDisplayValue" Content="" Grid.Column="1"/>
+        </Grid>
+        <Grid Name="griddisplaycategory" Visibility="Hidden">
+            <Label Name="lblDisplayCategory" Content="Display Category"/>
+        </Grid>
+        <Grid Name="gridemailaddress" Visibility="Hidden">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Name="lblEmailAddress" Content="Email Address"/>
+            <TextBox UndoLimit="10" Name="txtEmailAddress" MaxLength="150" Grid.Column="1"/>
+        </Grid>
+        <Grid Name="gridfirstname" Visibility="Hidden">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Name="lblFirstName" Content="First Name"/>
+            <TextBox UndoLimit="10" Name="txtFirstName" MaxLength="150" Grid.Column="1"/>
+            <Label Name="lblFirstNameValidation" Content="*" Grid.Column="2"/>
+        </Grid>
+        <Grid Name="gridid" Visibility="Hidden">
+            <Label Name="lblId" Content="Id"/>
+        </Grid>
+        <Grid Name="gridlastname" Visibility="Hidden">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Name="lblLastName" Content="Last Name"/>
+            <TextBox UndoLimit="10" Name="txtLastName" MaxLength="150" Grid.Column="1"/>
+            <Label Name="lblLastNameValidation" Content="*" Grid.Column="2"/>
+        </Grid>
+        <Grid Name="gridleveldbid" Visibility="Hidden">
+            <Label Name="lblLevelDbid" Content="LevelDbid"/>
+        </Grid>
+        <Grid Name="gridleveltype" Visibility="Hidden">
+            <Label Name="lblLevelType" Content="LevelType"/>
+        </Grid>
+        <Grid Name="gridphonenumber" Visibility="Hidden">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Name="lblPhoneNumber" Content="PhoneNumber"/>
+            <TextBox UndoLimit="10" Name="txtPhoneNumber" MaxLength="15" Grid.Column="1"/>
+        </Grid>
+        <Grid Name="gridrecentdatetime" Visibility="Hidden">
+            <Label Name="lblRecentDateTime" Content="Recent Date Time"/>
+        </Grid>
+        <Grid Name="gridbuttons" Visibility="Visible">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button Name="btnOK" Content="OK" Click="btnOk_Click"/>
+            <Button Name="btnCancel" Content="Cancel" Click="btnCancel_Click" Grid.Column="1"/>
+        </Grid>
+
+    </Grid>-->
+</Window>

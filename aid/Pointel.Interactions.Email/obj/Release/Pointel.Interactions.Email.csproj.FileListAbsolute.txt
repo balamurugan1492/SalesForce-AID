@@ -1,0 +1,204 @@
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\bin\Release\Pointel.Interactions.Email.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\bin\Release\Pointel.Interactions.Email.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\bin\Release\Genesyslab.Platform.ApplicationBlocks.Commons.Broker.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\bin\Release\Genesyslab.Platform.ApplicationBlocks.Commons.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\bin\Release\Genesyslab.Platform.ApplicationBlocks.ConfigurationObjectModel.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\bin\Release\Genesyslab.Platform.Commons.Collections.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\bin\Release\Genesyslab.Platform.Commons.Connection.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\bin\Release\Genesyslab.Platform.Commons.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\bin\Release\Genesyslab.Platform.Commons.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\bin\Release\Genesyslab.Platform.Configuration.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\bin\Release\Genesyslab.Platform.Contacts.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\bin\Release\Genesyslab.Platform.OpenMedia.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\bin\Release\log4net.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\bin\Release\Pointel.Configuration.Manager.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\bin\Release\Pointel.Interactions.Core.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\bin\Release\Pointel.Interactions.DispositionCodes.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\bin\Release\Pointel.Interactions.IPlugins.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\bin\Release\Pointel.Logger.Core.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\bin\Release\Pointel.TaskbarNotifier.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\bin\Release\Pointel.WindowResizer.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\bin\Release\Pointel.Windows.Views.Common.Editor.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\bin\Release\System.Windows.Controls.Input.Toolkit.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\bin\Release\WpfAnimatedGif.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\bin\Release\WPFToolkit.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\bin\Release\Pointel.Connection.Manager.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\bin\Release\Genesyslab.Platform.Voice.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\bin\Release\NHunspell.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\bin\Release\ICSharpCode.SharpZipLib.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\bin\Release\Genesyslab.Platform.WebMedia.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\bin\Release\Genesyslab.Platform.Management.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\bin\Release\Genesyslab.Platform.Routing.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\bin\Release\Genesyslab.Platform.ApplicationBlocks.WarmStandby.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\bin\Release\Genesyslab.Platform.WebMedia.Protocols.EspEmail.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\bin\Release\Genesyslab.Platform.Outbound.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\bin\Release\Genesyslab.Platform.Reporting.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\bin\Release\Genesyslab.Core.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\bin\Release\Genesyslab.Platform.Commons.Collections.Binding.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\bin\Release\Pointel.Configuration.Manager.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\bin\Release\Pointel.Interactions.Core.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\bin\Release\Pointel.Interactions.DispositionCodes.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\bin\Release\Pointel.Interactions.IPlugins.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\bin\Release\Pointel.WindowResizer.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\bin\Release\Pointel.Windows.Views.Common.Editor.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\bin\Release\Pointel.Connection.Manager.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\obj\Release\Forms\ContactDirectoryWindow.baml
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\obj\Release\Forms\EmailNotifier.baml
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\obj\Release\Forms\MessageBox.baml
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\obj\Release\UserControls\DataUserControl.baml
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\obj\Release\UserControls\InboundUserControl.baml
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\obj\Release\UserControls\OutboundUserControl.baml
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\obj\Release\Forms\ContactDirectoryWindow.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\obj\Release\Forms\EmailMainWindow.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\obj\Release\Forms\EmailNotifier.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\obj\Release\Forms\MessageBox.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\obj\Release\UserControls\DataUserControl.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\obj\Release\UserControls\DialPad.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\obj\Release\UserControls\InboundUserControl.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\obj\Release\UserControls\OutboundUserControl.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\obj\Release\GeneratedInternalTypeHelper.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\obj\Release\Pointel.Interactions.Email_MarkupCompile.cache
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\obj\Release\Pointel.Interactions.Email_MarkupCompile.lref
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\obj\Release\Forms\EmailMainWindow.baml
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\obj\Release\Resources\StylesResourceDictionary.baml
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\obj\Release\UserControls\DialPad.baml
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\obj\Release\Pointel.Interactions.Email.g.resources
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\obj\Release\Pointel.Interactions.Email.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\obj\Release\Pointel.Interactions.Email.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Email\obj\Release\Pointel.Interactions.Email.csprojResolveAssemblyReference.cache
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Pointel.Interactions.Email.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Pointel.Interactions.Email.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Genesyslab.Platform.ApplicationBlocks.Commons.Broker.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Genesyslab.Platform.ApplicationBlocks.Commons.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Genesyslab.Platform.ApplicationBlocks.ConfigurationObjectModel.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Genesyslab.Platform.Commons.Collections.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Genesyslab.Platform.Commons.Connection.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Genesyslab.Platform.Commons.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Genesyslab.Platform.Commons.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Genesyslab.Platform.Configuration.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Genesyslab.Platform.Contacts.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Genesyslab.Platform.OpenMedia.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\log4net.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Pointel.Configuration.Manager.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Pointel.Interactions.Core.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Pointel.Interactions.DispositionCodes.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Pointel.Interactions.IPlugins.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Pointel.Logger.Core.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Pointel.TaskbarNotifier.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Pointel.WindowResizer.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Pointel.Windows.Views.Common.Editor.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\System.Windows.Controls.Input.Toolkit.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\WpfAnimatedGif.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\WPFToolkit.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Pointel.Connection.Manager.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Genesyslab.Platform.Voice.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\NHunspell.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\ICSharpCode.SharpZipLib.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Genesyslab.Platform.WebMedia.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Genesyslab.Platform.Management.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Genesyslab.Platform.Routing.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Genesyslab.Platform.ApplicationBlocks.WarmStandby.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Genesyslab.Platform.WebMedia.Protocols.EspEmail.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Genesyslab.Platform.Outbound.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Genesyslab.Platform.Reporting.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Genesyslab.Core.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Genesyslab.Platform.Commons.Collections.Binding.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Pointel.Configuration.Manager.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Pointel.Interactions.Core.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Pointel.Interactions.DispositionCodes.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Pointel.Interactions.IPlugins.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Pointel.WindowResizer.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Pointel.Windows.Views.Common.Editor.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Pointel.Connection.Manager.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\obj\Release\Pointel.Interactions.Email.csprojResolveAssemblyReference.cache
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\obj\Release\Forms\ContactDirectoryWindow.baml
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\obj\Release\Forms\EmailNotifier.baml
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\obj\Release\Forms\MessageBox.baml
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\obj\Release\UserControls\DataUserControl.baml
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\obj\Release\UserControls\InboundUserControl.baml
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\obj\Release\UserControls\OutboundUserControl.baml
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\obj\Release\Forms\ContactDirectoryWindow.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\obj\Release\Forms\EmailMainWindow.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\obj\Release\Forms\EmailNotifier.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\obj\Release\Forms\MessageBox.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\obj\Release\UserControls\DataUserControl.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\obj\Release\UserControls\DialPad.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\obj\Release\UserControls\InboundUserControl.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\obj\Release\UserControls\OutboundUserControl.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\obj\Release\GeneratedInternalTypeHelper.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\obj\Release\Pointel.Interactions.Email_MarkupCompile.cache
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\obj\Release\Pointel.Interactions.Email_MarkupCompile.lref
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\obj\Release\Forms\EmailMainWindow.baml
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\obj\Release\Resources\StylesResourceDictionary.baml
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\obj\Release\UserControls\DialPad.baml
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\obj\Release\Pointel.Interactions.Email.g.resources
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\obj\Release\Pointel.Interactions.Email.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Email\obj\Release\Pointel.Interactions.Email.pdb
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Pointel.Interactions.Email.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Pointel.Interactions.Email.pdb
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Genesyslab.Platform.ApplicationBlocks.Commons.Broker.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Genesyslab.Platform.ApplicationBlocks.Commons.Protocols.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Genesyslab.Platform.ApplicationBlocks.ConfigurationObjectModel.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Genesyslab.Platform.Commons.Collections.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Genesyslab.Platform.Commons.Connection.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Genesyslab.Platform.Commons.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Genesyslab.Platform.Commons.Protocols.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Genesyslab.Platform.Configuration.Protocols.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Genesyslab.Platform.Contacts.Protocols.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Genesyslab.Platform.OpenMedia.Protocols.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\log4net.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Pointel.Configuration.Manager.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Pointel.Interactions.Core.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Pointel.Interactions.DispositionCodes.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Pointel.Interactions.IPlugins.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Pointel.Logger.Core.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Pointel.TaskbarNotifier.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Pointel.WindowResizer.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Pointel.Windows.Views.Common.Editor.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\System.Windows.Controls.Input.Toolkit.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\WpfAnimatedGif.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\WPFToolkit.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Pointel.Connection.Manager.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Genesyslab.Platform.Voice.Protocols.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\NHunspell.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\ICSharpCode.SharpZipLib.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Genesyslab.Platform.WebMedia.Protocols.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Genesyslab.Platform.Management.Protocols.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Genesyslab.Platform.Routing.Protocols.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Genesyslab.Platform.ApplicationBlocks.WarmStandby.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Genesyslab.Platform.WebMedia.Protocols.EspEmail.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Genesyslab.Platform.Outbound.Protocols.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Genesyslab.Platform.Reporting.Protocols.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Genesyslab.Core.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Genesyslab.Platform.Commons.Collections.Binding.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Pointel.Configuration.Manager.pdb
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Pointel.Interactions.Core.pdb
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Pointel.Interactions.DispositionCodes.pdb
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Pointel.Interactions.IPlugins.pdb
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Pointel.WindowResizer.pdb
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Pointel.Windows.Views.Common.Editor.pdb
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\bin\Release\Pointel.Connection.Manager.pdb
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\obj\Release\Pointel.Interactions.Email.csprojResolveAssemblyReference.cache
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\obj\Release\Forms\ContactDirectoryWindow.baml
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\obj\Release\Forms\EmailNotifier.baml
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\obj\Release\Forms\MessageBox.baml
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\obj\Release\UserControls\DataUserControl.baml
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\obj\Release\UserControls\InboundUserControl.baml
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\obj\Release\UserControls\OutboundUserControl.baml
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\obj\Release\Forms\ContactDirectoryWindow.g.cs
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\obj\Release\Forms\EmailMainWindow.g.cs
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\obj\Release\Forms\EmailNotifier.g.cs
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\obj\Release\Forms\MessageBox.g.cs
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\obj\Release\UserControls\DataUserControl.g.cs
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\obj\Release\UserControls\DialPad.g.cs
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\obj\Release\UserControls\InboundUserControl.g.cs
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\obj\Release\UserControls\OutboundUserControl.g.cs
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\obj\Release\GeneratedInternalTypeHelper.g.cs
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\obj\Release\Pointel.Interactions.Email_MarkupCompile.cache
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\obj\Release\Pointel.Interactions.Email_MarkupCompile.lref
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\obj\Release\Forms\EmailMainWindow.baml
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\obj\Release\Resources\StylesResourceDictionary.baml
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\obj\Release\UserControls\DialPad.baml
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\obj\Release\Pointel.Interactions.Email.g.resources
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\obj\Release\Pointel.Interactions.Email.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Email\obj\Release\Pointel.Interactions.Email.pdb

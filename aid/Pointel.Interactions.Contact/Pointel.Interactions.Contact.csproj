@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{73AE0AD7-22FE-411E-8182-079F415C044B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pointel.Interactions.Contact</RootNamespace>
+    <AssemblyName>Pointel.Interactions.Contact</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>true</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>true</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Genesyslab.Platform.ApplicationBlocks.Commons.Broker, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\Redist\Genesyslab.Platform.ApplicationBlocks.Commons.Broker.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.ApplicationBlocks.Commons.Protocols">
+      <HintPath>..\Redist\Genesyslab.Platform.ApplicationBlocks.Commons.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.ApplicationBlocks.ConfigurationObjectModel, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\Redist\Genesyslab.Platform.ApplicationBlocks.ConfigurationObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Commons, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\Redist\Genesyslab.Platform.Commons.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Commons.Collections, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\Redist\Genesyslab.Platform.Commons.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Commons.Protocols, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\Redist\Genesyslab.Platform.Commons.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Configuration.Protocols">
+      <HintPath>..\Redist\Genesyslab.Platform.Configuration.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Contacts.Protocols, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\Redist\Genesyslab.Platform.Contacts.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.OpenMedia.Protocols, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\Redist\Genesyslab.Platform.OpenMedia.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\Redist\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\Redist\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net, Version=2.9.2.2, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\Redist\Lucene.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Pointel.Logger.Core, Version=1.0.3.6, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Redist\Pointel.Logger.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Pointel.Validation">
+      <HintPath>..\Redist\Pointel.Validation.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Controls.Input.Toolkit">
+      <HintPath>..\Redist\System.Windows.Controls.Input.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Presentation" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsFormsIntegration" />
+    <Reference Include="WpfAnimatedGif">
+      <HintPath>..\Redist\WpfAnimatedGif.dll</HintPath>
+    </Reference>
+    <Reference Include="WPFToolkit, Version=3.5.40128.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\Redist\WPFToolkit.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationReader\ChatTranscriptParser.cs" />
+    <Compile Include="ApplicationReader\ComClass.cs" />
+    <Compile Include="ContactHandler.cs" />
+    <Compile Include="Controls\AdvanceSearch.xaml.cs">
+      <DependentUpon>AdvanceSearch.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ButtonWithDropDown.xaml.cs">
+      <DependentUpon>ButtonWithDropDown.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ContactHistory.xaml.cs">
+      <DependentUpon>ContactHistory.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SearchCriterias.xaml.cs">
+      <DependentUpon>SearchCriterias.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ContactDirectory.xaml.cs">
+      <DependentUpon>ContactDirectory.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ContactInformation.xaml.cs">
+      <DependentUpon>ContactInformation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ContactResponse.xaml.cs">
+      <DependentUpon>ContactResponse.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Converters\ContactConvertor.cs" />
+    <Compile Include="Converters\NameToVisibilityConverter .cs" />
+    <Compile Include="Converters\UriUnescapeDataStringConverter.cs" />
+    <Compile Include="CustomControls\BindableRichTextBox.cs" />
+    <Compile Include="Forms\ContactDirectoryWindow.xaml.cs">
+      <DependentUpon>ContactDirectoryWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PopUpWindow.xaml.cs">
+      <DependentUpon>PopUpWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\Attribute.cs" />
+    <Compile Include="Helpers\CaseData.cs" />
+    <Compile Include="Helpers\Criteria.cs" />
+    <Compile Include="Helpers\BaseDataTemplateSelector.cs" />
+    <Compile Include="Helpers\DataExportHelper.cs" />
+    <Compile Include="Helpers\Enum.cs" />
+    <Compile Include="Helpers\ExportData.cs" />
+    <Compile Include="Helpers\HistoryCriteria.cs" />
+    <Compile Include="Helpers\IContacts.cs" />
+    <Compile Include="Helpers\ISeachContactList.cs" />
+    <Compile Include="Helpers\MediaImageDataTemplateSelector.cs" />
+    <Compile Include="Helpers\PagingCollection.cs" />
+    <Compile Include="Helpers\Parser.cs" />
+    <Compile Include="Helpers\ReadKey.cs" />
+    <Compile Include="Helpers\ResponseHelper.cs" />
+    <Compile Include="Helpers\SearchContactList.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Settings\ContactData.cs" />
+    <Compile Include="Settings\ContactDataContext.cs" />
+    <Compile Include="Settings\ImageDataContext.cs" />
+    <Compile Include="Utility\EmailUtility.cs" />
+    <Compile Include="Utility\GenesysUtitlity.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Controls\AdvanceSearch.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\ButtonWithDropDown.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\ContactHistory.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\SearchCriterias.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\ContactDirectory.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\ContactInformation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\ContactResponse.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Forms\ContactDirectoryWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Forms\PopUpWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resource\StylesResourceDictionary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Pointel.Configuration.Manager\Pointel.Configuration.Manager.csproj">
+      <Project>{870DEB13-F88C-4B03-B78C-C3EADB70BFD9}</Project>
+      <Name>Pointel.Configuration.Manager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pointel.Interactions.Contact.Core\Pointel.Interactions.Contact.Core.csproj">
+      <Project>{A227220A-A8D9-49C3-B42D-43083CF32865}</Project>
+      <Name>Pointel.Interactions.Contact.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pointel.Interactions.Core\Pointel.Interactions.Core.csproj">
+      <Project>{E1BFBD94-D72D-494F-95A9-9D2B3A6F545C}</Project>
+      <Name>Pointel.Interactions.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pointel.Interactions.IPlugins\Pointel.Interactions.IPlugins.csproj">
+      <Project>{F9ABF1FD-4F58-4FE4-9808-8B3C276097A1}</Project>
+      <Name>Pointel.Interactions.IPlugins</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pointel.Windows.Views.Common.Editor\Pointel.Windows.Views.Common.Editor.csproj">
+      <Project>{8E807142-752E-4792-8440-1803981D5C4F}</Project>
+      <Name>Pointel.Windows.Views.Common.Editor</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

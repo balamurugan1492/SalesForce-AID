@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8E807142-752E-4792-8440-1803981D5C4F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pointel.Windows.Views.Common.Editor</RootNamespace>
+    <AssemblyName>Pointel.Windows.Views.Common.Editor</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>On</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <GenerateSerializationAssemblies>On</GenerateSerializationAssemblies>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\Redist\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\Redist\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="NHunspell">
+      <HintPath>..\Redist\NHunspell.dll</HintPath>
+    </Reference>
+    <Reference Include="Pointel.Logger.Core, Version=1.0.3.6, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Redist\Pointel.Logger.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ReachFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Printing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\ColorPicker.xaml.cs">
+      <DependentUpon>ColorPicker.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\HTMLEditor.xaml.cs">
+      <DependentUpon>HTMLEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\HyperLinkPicker.xaml.cs">
+      <DependentUpon>HyperLinkPicker.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ImagePicker.xaml.cs">
+      <DependentUpon>ImagePicker.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PrintPreviewWindow.xaml.cs">
+      <DependentUpon>PrintPreviewWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TablePicker.xaml.cs">
+      <DependentUpon>TablePicker.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\EditorExtension.cs" />
+    <Compile Include="Helper\CommonDocumentPaginator.cs" />
+    <Compile Include="Helper\EditorExtension.cs" />
+    <Compile Include="Helper\SpellChecker.cs" />
+    <Compile Include="Settings\EditorDataContext.cs" />
+    <Page Include="Controls\ColorPicker.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\HTMLEditor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Compile Include="Common\EditorType.cs" />
+    <Compile Include="Converter\ColorToSolidColorBrushConverter.cs" />
+    <Compile Include="CustomControls\ColorPicker.cs" />
+    <Compile Include="CustomControls\EditorBox.cs" />
+    <Compile Include="CustomControls\ImageColorPicker.cs" />
+    <Compile Include="CustomControls\PropertyChangeNotifier.cs" />
+    <Compile Include="CustomControls\RichTextBoxEx.cs" />
+    <Compile Include="CustomControls\RichTextBoxNoAutoResize.cs" />
+    <Compile Include="HTMLConverter\CssStylesheet.cs" />
+    <Compile Include="HTMLConverter\HtmlCssParser.cs" />
+    <Compile Include="HTMLConverter\HtmlFromXamlConverter.cs" />
+    <Compile Include="HTMLConverter\HtmlLexicalAnalyzer.cs" />
+    <Compile Include="HTMLConverter\HtmlParser.cs" />
+    <Compile Include="HTMLConverter\HtmlSchema.cs" />
+    <Compile Include="HTMLConverter\HtmlTokenType.cs" />
+    <Compile Include="HTMLConverter\HtmlToXamlConverter.cs" />
+    <Page Include="Controls\HyperLinkPicker.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\ImagePicker.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\PrintPreviewWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\TablePicker.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Backcolor.png" />
+    <Resource Include="Images\Bold.png" />
+    <Resource Include="Images\charactergrowfont.png" />
+    <Resource Include="Images\charactershrinkfont.png" />
+    <Resource Include="Images\editcopy.png" />
+    <Resource Include="Images\editcut.png" />
+    <Resource Include="Images\editpaste.png" />
+    <Resource Include="Images\editredo.png" />
+    <Resource Include="Images\editundo.png" />
+    <Resource Include="Images\fileopen.png" />
+    <Resource Include="Images\filesave.png" />
+    <Resource Include="Images\fontcolor.png" />
+    <Resource Include="Images\hyperlink.png" />
+    <Resource Include="Images\image.png" />
+    <Resource Include="Images\Italic.png" />
+    <Resource Include="Images\linecolor.png" />
+    <Resource Include="Images\listbullets.png" />
+    <Resource Include="Images\listnumbering.png" />
+    <Resource Include="Images\paragraphcenterjustify.png" />
+    <Resource Include="Images\paragraphdecreaseindentation.png" />
+    <Resource Include="Images\paragraphfulljustify.png" />
+    <Resource Include="Images\paragraphincreaseindentation.png" />
+    <Resource Include="Images\paragraphleftjustify.png" />
+    <Resource Include="Images\paragraphrightjustify.png" />
+    <Resource Include="Images\spellcheck.png" />
+    <Resource Include="Images\spelling.png" />
+    <Resource Include="Images\Strikethrough.png" />
+    <Resource Include="Images\Subscript.png" />
+    <Resource Include="Images\Superscript.png" />
+    <Resource Include="Images\table.png" />
+    <Resource Include="Images\Textcolor.png" />
+    <Resource Include="Images\Underline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\browser.png" />
+    <Resource Include="Images\Custom Close selected.png" />
+    <Resource Include="Images\Custom Close.png" />
+    <Resource Include="Images\Custom Minimize selected.png" />
+    <Resource Include="Images\Custom Minimize.png" />
+    <Resource Include="Images\Maximize1.Disable.png" />
+    <Resource Include="Images\Maximize1.png" />
+    <Resource Include="Images\Normal.Disable.png" />
+    <Resource Include="Images\Normal.png" />
+    <Resource Include="Images\printer.ico" />
+    <Resource Include="Images\ZoomIn.png" />
+    <Resource Include="Images\ZoomOut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\New\Center Alignment.png" />
+    <Resource Include="Images\New\Copy.png" />
+    <Resource Include="Images\New\Decrease Indent.png" />
+    <Resource Include="Images\New\Highlight Color.png" />
+    <Resource Include="Images\New\Increase Indent.png" />
+    <Resource Include="Images\New\Justify.png" />
+    <Resource Include="Images\New\Left Alignment.png" />
+    <Resource Include="Images\New\Paste.png" />
+    <Resource Include="Images\New\Right Alignment.png" />
+    <Resource Include="Images\New\Text Color.png" />
+    <Resource Include="Images\New\Underline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\New\Bulleting.png" />
+    <Resource Include="Images\New\Numbering.png" />
+    <Resource Include="Images\New\Subscript.png" />
+    <Resource Include="Images\New\SuperScript.png" />
+    <Resource Include="Images\New\Add URL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\New\Cut.png" />
+    <Resource Include="Images\New\Decrease Font.png" />
+    <Resource Include="Images\New\Increase Font.png" />
+    <Resource Include="Images\New\Redo.png" />
+    <Resource Include="Images\New\SpellCheck.png" />
+    <Resource Include="Images\New\Undo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Pointel.Configuration.Manager\Pointel.Configuration.Manager.csproj">
+      <Project>{870deb13-f88c-4b03-b78c-c3eadb70bfd9}</Project>
+      <Name>Pointel.Configuration.Manager</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

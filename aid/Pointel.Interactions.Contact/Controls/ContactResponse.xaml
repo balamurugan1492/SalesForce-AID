@@ -1,0 +1,324 @@
+﻿<UserControl x:Class="Pointel.Interactions.Contact.Controls.ContactResponse"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" FontFamily="Calibri" Loaded="UserControl_Loaded" Unloaded="UserControl_Unloaded">
+    <UserControl.Resources >
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary
+                   Source="/Pointel.Interactions.Contact;component/Resource/StylesResourceDictionary.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Name="ResponseExpand" Height="60"/>
+            <RowDefinition Height="75"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Border Grid.Row="0" Margin="2" Grid.Column="0" BorderBrush="#D6D7D6" BorderThickness="1" Background="Transparent">
+            <Grid ShowGridLines="False" Height="37" VerticalAlignment="Top">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="155" />
+                    <ColumnDefinition Width="5" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="25" />
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="4"  />
+                    <RowDefinition  Height="Auto"/>
+                    <RowDefinition  Height="1" />
+                    <RowDefinition Height="3*" />
+                </Grid.RowDefinitions>
+                <ComboBox   Name="cmbFrom" Grid.Row="1"  Style="{StaticResource ComboBox}"   VerticalAlignment="Center" SelectionChanged="cmbSearch_SelectionChanged"
+                            Width="150" SelectedIndex="0"  HorizontalAlignment="Center" Height="26" Margin="2,1,2,2" />
+                <Border  Name="brdSearchBar" Margin="0,2,0,2" Grid.Column="2" Grid.Row="1" Height="23" BorderBrush="#adaaad" BorderThickness="0.5">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <TextBox UndoLimit="10" Name="txtSearch" BorderBrush="Transparent" Background="White" Margin="0,1,0,-1" Tag="search"  TextChanged="txtSearch_TextChanged_1">
+                            <TextBox.ToolTip>
+                                <Border Background="White" BorderBrush="#ADAAAD" BorderThickness="0.5" Margin="-5">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"></RowDefinition>
+                                            <RowDefinition Height="*"></RowDefinition>
+                                        </Grid.RowDefinitions>
+                                        <TextBlock Name="searchResponseHeading" Text="search" Grid.Row="0" Padding="10,5,10,0" FontWeight="Bold" FontFamily="Calibri" ></TextBlock>
+                                        <TextBlock Name="searchContent" Text="Type text and press search button to search for the text" Grid.Row="1" Padding="10,2,10,10" TextWrapping="WrapWithOverflow" FontFamily="Calibri" Width="Auto" MaxWidth="200">
+
+                                        </TextBlock>
+                                    </Grid>
+                                </Border>
+
+                            </TextBox.ToolTip>
+                        </TextBox>
+                        <Button x:Name ="btnAdvanceSearchResponse"  Grid.Column="1" Margin="2" Style="{StaticResource NormalImageButton}" Cursor="Hand"  
+                                Background="White"   Width="20" HorizontalAlignment="Left"  Height="23" Click="btnAdvanceSearchResponse_Click" >
+                            <Button.ToolTip>
+                                <Border Background="White" BorderBrush="#ADAAAD" BorderThickness="0.5" Margin="-5">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"></RowDefinition>
+                                            <RowDefinition Height="*"></RowDefinition>
+                                        </Grid.RowDefinitions>
+                                        <TextBlock Name="AdvanceSearchHeading" Text="search" Grid.Row="0" Padding="10,5,10,0" FontWeight="Bold" FontFamily="Calibri" ></TextBlock>
+                                        <TextBlock Name="AdvanceSearchContent" Text="Type text and press search button to search for the text" Grid.Row="1" Padding="10,2,10,10" TextWrapping="WrapWithOverflow" FontFamily="Calibri" Width="Auto" MaxWidth="200">
+
+                                        </TextBlock>
+                                    </Grid>
+                                </Border>
+
+                            </Button.ToolTip>
+                            <Image Source="/Agent.Interaction.Desktop;component/Images/Contact/SearchButton-01.png" Margin="2" Grid.Column="1" />
+                        </Button>
+
+                    </Grid>
+                </Border>
+
+
+                <Button x:Name ="btnAdvanceSearch"  Style="{StaticResource NormalImageButton}" Cursor="Hand"  Grid.Column="3"  Grid.Row="1" Width="20" HorizontalAlignment="Left"  Height=" 23" Click="btnAdvanceSearch_Click" Margin="3,3,0,3">
+                    <Image x:Name="btnDownload"  Grid.Row="0" Grid.Column="4" Source="{Binding EmailIconImageSourceDown}"></Image>
+                    <Button.ToolTip>
+                        <Border Background="White" BorderBrush="#ADAAAD" BorderThickness="0.5" Margin="-5">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"></RowDefinition>
+                                    <RowDefinition Height="*"></RowDefinition>
+                                </Grid.RowDefinitions>
+                                <TextBlock Name="ShowAdvanceSearchHeading" Text="Advance search" Grid.Row="0" Padding="10,5,10,0" FontWeight="Bold" FontFamily="Calibri" ></TextBlock>
+                                <TextBlock Name="ShowAdvanceSearchContent" Text="Agent can view the advance search options" Grid.Row="1" Padding="10,2,10,10" TextWrapping="WrapWithOverflow" FontFamily="Calibri" Width="Auto" MaxWidth="200">
+
+                                </TextBlock>
+                            </Grid>
+                        </Border>
+
+                    </Button.ToolTip>
+                </Button>
+            </Grid>
+        </Border>
+        <Border Grid.Row="1" Margin="2"  BorderBrush="#D6D7D6" BorderThickness="1" Background="Transparent">
+            <!--<ScrollViewer Margin="2" VerticalScrollBarVisibility="Auto"  HorizontalScrollBarVisibility="Auto"  >
+                <ScrollViewer.Resources>
+                    <Style x:Key="{x:Type ScrollBar}" TargetType="{x:Type ScrollBar}">
+                        <Setter Property="SnapsToDevicePixels" Value="True"/>
+                        <Setter Property="OverridesDefaultStyle" Value="true"/>
+                        <Style.Triggers>
+                            <Trigger Property="Orientation" Value="Horizontal">
+                                <Setter Property="Width" Value="Auto"/>
+                                <Setter Property="Height" Value="18" />
+                                <Setter Property="Template" Value="{StaticResource HorizontalScrollBar}" />
+                            </Trigger>
+                            <Trigger Property="Orientation" Value="Vertical">
+                                <Setter Property="Width" Value="18"/>
+                                <Setter Property="Height" Value="Auto" />
+                                <Setter Property="Template" Value="{StaticResource VerticalScrollBar}" />
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </ScrollViewer.Resources>-->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions >
+                    <RowDefinition  Name="rowCheckSearch" Height ="25"/>
+                    <RowDefinition  Name="rowCheckSearch1" Height ="25"/>
+                </Grid.RowDefinitions>
+
+                <Label Name="lblSearch"  Grid.Row="0"  Grid.Column="0" VerticalAlignment="Center"  Content="Search for text in :" ></Label>
+                <CheckBox Name="chkResponseName" Foreground="Black" IsChecked="True"  Grid.Row="0" Grid.Column="2" Margin="5" VerticalAlignment="Top" 
+                          Content="Response Names" FontFamily="Calibri" FontSize="12" Checked="ResponseName_Checked" Unchecked="ResponseName_Checked"/>
+                <CheckBox Name="chkResponseBody" Foreground="Black" IsChecked="True"  Grid.Row="1" Grid.Column="2" Margin="5" VerticalAlignment="Center"
+                          Content="Response Body Text" FontFamily="Calibri" FontSize="12" Checked="ResponseBodyChecked" Unchecked="ResponseBodyChecked"/>
+            </Grid>
+            <!--</ScrollViewer>-->
+        </Border>
+        <Border Grid.Row="2" Margin="2" BorderBrush="#D6D7D6" BorderThickness="1" Background="Transparent">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Name="lblResponseName" Grid.Column="0" VerticalAlignment="Center"   Content="View :" Width="50" ></Label>
+                    <ComboBox Name="cmbResponse" Grid.Column="1" Style="{StaticResource ComboBox}"  VerticalAlignment="Center" Height="23"   SelectedIndex="0" Background="#EDEDED" SelectionChanged="cmbResponse_SelectionChanged" Margin="0,3,3,3">
+                        <ComboBoxItem  Content="All Responses" />
+                        <ComboBoxItem  Content="Favorite Responses" />
+                    </ComboBox>
+                </Grid>
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="265*" />
+                        <ColumnDefinition Width="190*" />
+                        <ColumnDefinition Width="20"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions/>
+                    <StackPanel Orientation="Horizontal">
+                    <Button x:Name ="btnAddResponseCompose" Style="{StaticResource NormalImageButton}" Cursor="Hand" Height="25" Click="btnAddResponseCompose_Click" IsEnabled="False"  HorizontalAlignment="Left">
+                        <Image x:Name ="btnFavouriteCompose" Margin="2" Source="/Agent.Interaction.Desktop;component/Images/Contact/InsertResponse-01.png"/>
+                        <Button.ToolTip>
+                            <Border Background="White" BorderBrush="#ADAAAD" BorderThickness="0.5" Margin="-5">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"></RowDefinition>
+                                        <RowDefinition Height="*"></RowDefinition>
+                                    </Grid.RowDefinitions>
+                                    <TextBlock Name="AddResponseHeading" Text="Add Response" Grid.Row="0" Padding="10,5,10,0" FontWeight="Bold" FontFamily="Calibri" ></TextBlock>
+                                    <TextBlock Name="AddResponseContent" Text="Add customized text to the current mail" Grid.Row="1" Padding="10,2,10,10" TextWrapping="WrapWithOverflow" FontFamily="Calibri" Width="Auto" MaxWidth="200">
+
+                                    </TextBlock>
+                                </Grid>
+                            </Border>
+
+                        </Button.ToolTip>
+                    </Button>
+                    <Button x:Name ="btnAddResponse" Style="{StaticResource NormalImageButton}" Cursor="Hand" Height="25" 
+                            Click="btnAddResponse_Click" HorizontalAlignment="Left">
+                        <Image x:Name ="btnFavourite" Margin="2" Source="/Agent.Interaction.Desktop;component/Images/Contact/AddFavoriteResponse-01.png">
+                        </Image >
+                        <Button.ToolTip>
+                            <Border Background="White" BorderBrush="#ADAAAD" BorderThickness="0.5" Margin="-5">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"></RowDefinition>
+                                        <RowDefinition Height="*"></RowDefinition>
+                                    </Grid.RowDefinitions>
+                                    <TextBlock Text="Add Favorite Response" Grid.Row="0" Padding="10,5,10,0" FontWeight="Bold"
+                                               FontFamily="Calibri" ></TextBlock>
+                                    <TextBlock Name="AddFavoriteResponseContent" Text="Add selected responses to the favorite list" Grid.Row="1" Padding="10,2,10,10" 
+                                               TextWrapping="WrapWithOverflow" FontFamily="Calibri" Width="Auto" MaxWidth="200">
+
+                                    </TextBlock>
+                                </Grid>
+                            </Border>
+
+                        </Button.ToolTip>
+                    </Button>
+
+                    <Button x:Name ="btnRemoveResponse" Style="{StaticResource NormalImageButton}" Cursor="Hand" Height="25" Width="0" Click="btnRemoveResponse_Click">
+                        <Image x:Name ="btnRemoveResponse1" Margin="2" Source="/Agent.Interaction.Desktop;component/Images/Contact/RemoveResponse-01.png"/>
+                        <Button.ToolTip>
+                            <Border Background="White" BorderBrush="#ADAAAD" BorderThickness="0.5" Margin="-5">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"></RowDefinition>
+                                        <RowDefinition Height="*"></RowDefinition>
+                                    </Grid.RowDefinitions>
+                                    <TextBlock Text="Remove standard response" Grid.Row="0" Padding="10,5,10,0" FontWeight="Bold" FontFamily="Calibri" ></TextBlock>
+                                    <TextBlock Text="Agent can remove favorite response" Grid.Row="1" Padding="10,2,10,10" TextWrapping="WrapWithOverflow" FontFamily="Calibri" Width="Auto" MaxWidth="200">
+
+                                    </TextBlock>
+                                </Grid>
+                            </Border>
+
+                        </Button.ToolTip>
+                    </Button>
+                    </StackPanel>
+                    <Button x:Name ="btnContactExpand" Style="{StaticResource NormalImageButton}" Cursor="Hand"  Grid.Column="5"  Height="20" Click="btnContactExpand_Click">
+                        <Image x:Name ="btnContact"  Grid.Row="0" Grid.Column="2" Height=" 20" Source="{Binding EMailIconImageSourceExpand}"></Image >
+                        <Button.ToolTip>
+                            <Border Background="White" BorderBrush="#ADAAAD" BorderThickness="0.5" Margin="-5">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"></RowDefinition>
+                                        <RowDefinition Height="*"></RowDefinition>
+                                    </Grid.RowDefinitions>
+                                    <TextBlock Name="ExpandHeading" Text="Expand" Grid.Row="0" Padding="10,5,10,0" FontWeight="Bold" FontFamily="Calibri" ></TextBlock>
+                                    <TextBlock Name="ExpandContent" Text="Show details panel" Grid.Row="1" Padding="10,2,10,10" TextWrapping="WrapWithOverflow" FontFamily="Calibri" Width="Auto" MaxWidth="200"/>
+                                </Grid>
+                            </Border>
+                        </Button.ToolTip>
+                    </Button>
+                </Grid>
+            </Grid>
+        </Border>
+        <Grid Grid.Row="3" Margin="2" Background="White">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20" />
+                <RowDefinition  Name="ExpandGrid" Height="*" /><!--+++-->
+                <RowDefinition  Name="ExpandGridAuto" Height="*" />
+            </Grid.RowDefinitions>
+            <Border Grid.Row="0" Grid.Column="0"  Width="Auto"  BorderBrush="#D6D7D6" BorderThickness="1" Background="Transparent">
+                <ListView  Name="ListView1" Grid.Row="0" Grid.Column="0" Background="White" Height="21" >
+                    <ListView.View>
+                        <GridView  AllowsColumnReorder="true" ColumnHeaderToolTip="Response">
+                            <GridViewColumn Header="Response"  Width=" 70" DisplayMemberBinding="{Binding Path=Name}" />
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </Border>
+            <Border  Grid.Row="1" Grid.Column="0" Width="Auto"  Margin="2" BorderBrush="#D6D7D6" BorderThickness="1" Background="White" >
+                <Grid Grid.Row="1" Grid.Column="0">
+                    <TextBlock Text=" No Data found." Name="txtAlertMessage" Visibility="Collapsed"/>
+                    <TreeView  Name="TreeView1" VerticalAlignment="Top" BorderThickness="0" TreeViewItem.Selected="OnItemSelected" 
+                               TreeViewItem.Unselected="TreeView1_Unselected"  >
+                    <TreeView.Resources>
+                        <!--<LinearGradientBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" EndPoint="0,1" StartPoint="0,0">
+                            <GradientStop Color="#FFD9F4FF" Offset="0"/>
+                            <GradientStop Color="#CEE7F7" Offset="1"/>
+                        </LinearGradientBrush>
+                        <LinearGradientBrush x:Key="{x:Static SystemColors.ControlBrushKey}" EndPoint="0,1" StartPoint="0,0">
+                            <GradientStop Color="#FFEEEDED" Offset="0"/>
+                            <GradientStop Color="#FFDDDDDD" Offset="1"/>
+                        </LinearGradientBrush>-->
+                        <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="#CEE7F7" />
+                        <SolidColorBrush x:Key="{x:Static SystemColors.ControlBrushKey}" Color="#FFDDDDDD" />
+                        
+                        <SolidColorBrush x:Key="{x:Static SystemColors.HighlightTextBrushKey}" Color="Black" />
+                        <SolidColorBrush x:Key="{x:Static SystemColors.ControlTextBrushKey}" Color="Black" />
+                    </TreeView.Resources>
+                    <TreeView.ItemContainerStyle>
+                        <Style TargetType="{x:Type TreeViewItem}">
+                            <Setter Property="BorderThickness" Value="1.5"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsSelected" Value="True">
+                                    <Setter Property="BorderBrush" Value="#adc6e5" />
+                                    <Setter Property="Width" Value="Auto" />
+                                </Trigger>
+                                <MultiTrigger>
+                                    <MultiTrigger.Conditions>
+                                        <Condition Property="IsSelected" Value="True"/>
+                                        <Condition Property="IsSelectionActive" Value="False"/>
+                                    </MultiTrigger.Conditions>
+                                    <Setter Property="BorderBrush" Value="LightGray"/>
+                                </MultiTrigger>
+                            </Style.Triggers>
+                            <Style.Resources>
+                                <Style TargetType="Border">
+                                    <Setter Property="CornerRadius" Value="2"/>
+                                </Style>
+                            </Style.Resources>
+                        </Style>
+                    </TreeView.ItemContainerStyle>
+                </TreeView>
+                </Grid>
+            </Border>
+            <Border Grid.Row="2" Grid.Column="0" Width="Auto"  Margin="2" Background="Transparent"  BorderBrush="#D6D7D6" BorderThickness="1">
+                <Grid Name="grd_ResponseContent">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*"  />
+                    </Grid.RowDefinitions>
+                    <TextBlock Name="txtSubject" Margin="2" Grid.Row="0" VerticalAlignment="Stretch" FontWeight="Bold" Height="Auto" Width="Auto" TextWrapping="WrapWithOverflow"/>
+                    <WrapPanel Name="wpAttachments" Grid.Row="1" Margin="2" Height="Auto" Width="Auto"/>
+                </Grid>
+            </Border>
+        </Grid>
+    </Grid>
+</UserControl>

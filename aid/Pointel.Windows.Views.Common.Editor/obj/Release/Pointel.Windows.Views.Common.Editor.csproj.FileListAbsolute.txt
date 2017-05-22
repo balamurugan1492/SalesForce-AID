@@ -1,0 +1,204 @@
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Windows.Views.Common.Editor\bin\Release\Pointel.Windows.Views.Common.Editor.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Windows.Views.Common.Editor\bin\Release\Pointel.Windows.Views.Common.Editor.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Windows.Views.Common.Editor\bin\Release\ICSharpCode.SharpZipLib.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Windows.Views.Common.Editor\bin\Release\log4net.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Windows.Views.Common.Editor\bin\Release\NHunspell.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Windows.Views.Common.Editor\bin\Release\Pointel.Configuration.Manager.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Windows.Views.Common.Editor\bin\Release\Pointel.Logger.Core.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.ApplicationBlocks.ConfigurationObjectModel.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.Commons.Collections.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.Configuration.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Windows.Views.Common.Editor\bin\Release\Pointel.Connection.Manager.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.Commons.Connection.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.ApplicationBlocks.Commons.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.Commons.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.Commons.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.ApplicationBlocks.Commons.Broker.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.WebMedia.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.OpenMedia.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Core.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.Management.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.Routing.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.ApplicationBlocks.WarmStandby.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.WebMedia.Protocols.EspEmail.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.Outbound.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.Reporting.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.Voice.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.Contacts.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.Commons.Collections.Binding.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Windows.Views.Common.Editor\bin\Release\Pointel.Configuration.Manager.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Windows.Views.Common.Editor\bin\Release\Pointel.Connection.Manager.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Windows.Views.Common.Editor\obj\Release\Pointel.Windows.Views.Common.Editor.csprojResolveAssemblyReference.cache
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Windows.Views.Common.Editor\obj\Release\Controls\HyperLinkPicker.baml
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Windows.Views.Common.Editor\obj\Release\Controls\ImagePicker.baml
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Windows.Views.Common.Editor\obj\Release\Controls\PrintPreviewWindow.baml
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Windows.Views.Common.Editor\obj\Release\Controls\TablePicker.baml
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Windows.Views.Common.Editor\obj\Release\Controls\ColorPicker.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Windows.Views.Common.Editor\obj\Release\Controls\HTMLEditor.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Windows.Views.Common.Editor\obj\Release\Controls\HyperLinkPicker.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Windows.Views.Common.Editor\obj\Release\Controls\ImagePicker.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Windows.Views.Common.Editor\obj\Release\Controls\PrintPreviewWindow.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Windows.Views.Common.Editor\obj\Release\Controls\TablePicker.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Windows.Views.Common.Editor\obj\Release\GeneratedInternalTypeHelper.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Windows.Views.Common.Editor\obj\Release\Pointel.Windows.Views.Common.Editor_MarkupCompile.cache
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Windows.Views.Common.Editor\obj\Release\Pointel.Windows.Views.Common.Editor_MarkupCompile.lref
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Windows.Views.Common.Editor\obj\Release\Controls\ColorPicker.baml
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Windows.Views.Common.Editor\obj\Release\Controls\HTMLEditor.baml
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Windows.Views.Common.Editor\obj\Release\Pointel.Windows.Views.Common.Editor.g.resources
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Windows.Views.Common.Editor\obj\Release\Pointel.Windows.Views.Common.Editor.Properties.Resources.resources
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Windows.Views.Common.Editor\obj\Release\Pointel.Windows.Views.Common.Editor.csproj.GenerateResource.Cache
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Windows.Views.Common.Editor\obj\Release\Pointel.Windows.Views.Common.Editor.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Windows.Views.Common.Editor\obj\Release\Pointel.Windows.Views.Common.Editor.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Windows.Views.Common.Editor\bin\Release\Pointel.Windows.Views.Common.Editor.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Windows.Views.Common.Editor\bin\Release\Pointel.Windows.Views.Common.Editor.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Windows.Views.Common.Editor\bin\Release\ICSharpCode.SharpZipLib.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Windows.Views.Common.Editor\bin\Release\log4net.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Windows.Views.Common.Editor\bin\Release\NHunspell.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Windows.Views.Common.Editor\bin\Release\Pointel.Configuration.Manager.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Windows.Views.Common.Editor\bin\Release\Pointel.Logger.Core.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.ApplicationBlocks.ConfigurationObjectModel.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.Commons.Collections.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.Configuration.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Windows.Views.Common.Editor\bin\Release\Pointel.Connection.Manager.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.Commons.Connection.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.ApplicationBlocks.Commons.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.Commons.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.Commons.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.ApplicationBlocks.Commons.Broker.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.WebMedia.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.OpenMedia.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Core.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.Management.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.Routing.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.ApplicationBlocks.WarmStandby.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.WebMedia.Protocols.EspEmail.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.Outbound.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.Reporting.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.Voice.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.Contacts.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.Commons.Collections.Binding.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Windows.Views.Common.Editor\bin\Release\Pointel.Configuration.Manager.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Windows.Views.Common.Editor\bin\Release\Pointel.Connection.Manager.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Windows.Views.Common.Editor\obj\Release\Controls\HyperLinkPicker.baml
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Windows.Views.Common.Editor\obj\Release\Controls\ImagePicker.baml
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Windows.Views.Common.Editor\obj\Release\Controls\PrintPreviewWindow.baml
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Windows.Views.Common.Editor\obj\Release\Controls\TablePicker.baml
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Windows.Views.Common.Editor\obj\Release\Controls\ColorPicker.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Windows.Views.Common.Editor\obj\Release\Controls\HTMLEditor.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Windows.Views.Common.Editor\obj\Release\Controls\HyperLinkPicker.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Windows.Views.Common.Editor\obj\Release\Controls\ImagePicker.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Windows.Views.Common.Editor\obj\Release\Controls\PrintPreviewWindow.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Windows.Views.Common.Editor\obj\Release\Controls\TablePicker.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Windows.Views.Common.Editor\obj\Release\GeneratedInternalTypeHelper.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Windows.Views.Common.Editor\obj\Release\Pointel.Windows.Views.Common.Editor_MarkupCompile.cache
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Windows.Views.Common.Editor\obj\Release\Pointel.Windows.Views.Common.Editor_MarkupCompile.lref
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Windows.Views.Common.Editor\obj\Release\Controls\ColorPicker.baml
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Windows.Views.Common.Editor\obj\Release\Controls\HTMLEditor.baml
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Windows.Views.Common.Editor\obj\Release\Pointel.Windows.Views.Common.Editor.g.resources
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Windows.Views.Common.Editor\obj\Release\Pointel.Windows.Views.Common.Editor.Properties.Resources.resources
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Windows.Views.Common.Editor\obj\Release\Pointel.Windows.Views.Common.Editor.csproj.GenerateResource.Cache
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Windows.Views.Common.Editor\obj\Release\Pointel.Windows.Views.Common.Editor.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Windows.Views.Common.Editor\obj\Release\Pointel.Windows.Views.Common.Editor.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Windows.Views.Common.Editor\obj\Release\Pointel.Windows.Views.Common.Editor.csprojResolveAssemblyReference.cache
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\bin\Release\Pointel.Windows.Views.Common.Editor.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\bin\Release\Pointel.Windows.Views.Common.Editor.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\bin\Release\ICSharpCode.SharpZipLib.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\bin\Release\log4net.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\bin\Release\NHunspell.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\bin\Release\Pointel.Configuration.Manager.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\bin\Release\Pointel.Logger.Core.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.ApplicationBlocks.ConfigurationObjectModel.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.Commons.Collections.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.Configuration.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\bin\Release\Pointel.Connection.Manager.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.Commons.Connection.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.ApplicationBlocks.Commons.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.Commons.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.Commons.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.ApplicationBlocks.Commons.Broker.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.WebMedia.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.OpenMedia.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Core.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.Management.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.Routing.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.ApplicationBlocks.WarmStandby.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.WebMedia.Protocols.EspEmail.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.Outbound.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.Reporting.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.Voice.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.Contacts.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.Commons.Collections.Binding.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\bin\Release\Pointel.Configuration.Manager.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\bin\Release\Pointel.Connection.Manager.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\obj\Release\Pointel.Windows.Views.Common.Editor.csprojResolveAssemblyReference.cache
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\obj\Release\Controls\HyperLinkPicker.baml
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\obj\Release\Controls\ImagePicker.baml
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\obj\Release\Controls\PrintPreviewWindow.baml
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\obj\Release\Controls\TablePicker.baml
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\obj\Release\Controls\ColorPicker.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\obj\Release\Controls\HTMLEditor.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\obj\Release\Controls\HyperLinkPicker.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\obj\Release\Controls\ImagePicker.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\obj\Release\Controls\PrintPreviewWindow.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\obj\Release\Controls\TablePicker.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\obj\Release\GeneratedInternalTypeHelper.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\obj\Release\Pointel.Windows.Views.Common.Editor_MarkupCompile.cache
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\obj\Release\Pointel.Windows.Views.Common.Editor_MarkupCompile.lref
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\obj\Release\Controls\ColorPicker.baml
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\obj\Release\Controls\HTMLEditor.baml
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\obj\Release\Pointel.Windows.Views.Common.Editor.g.resources
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\obj\Release\Pointel.Windows.Views.Common.Editor.Properties.Resources.resources
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\obj\Release\Pointel.Windows.Views.Common.Editor.csproj.GenerateResource.Cache
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\obj\Release\Pointel.Windows.Views.Common.Editor.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\obj\Release\Pointel.Windows.Views.Common.Editor.pdb
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\bin\Release\Pointel.Windows.Views.Common.Editor.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\bin\Release\Pointel.Windows.Views.Common.Editor.pdb
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\bin\Release\ICSharpCode.SharpZipLib.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\bin\Release\log4net.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\bin\Release\NHunspell.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\bin\Release\Pointel.Configuration.Manager.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\bin\Release\Pointel.Logger.Core.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.ApplicationBlocks.ConfigurationObjectModel.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.Commons.Collections.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.Configuration.Protocols.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\bin\Release\Pointel.Connection.Manager.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.Commons.Connection.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.ApplicationBlocks.Commons.Protocols.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.Commons.Protocols.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.Commons.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.ApplicationBlocks.Commons.Broker.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.WebMedia.Protocols.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.OpenMedia.Protocols.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Core.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.Management.Protocols.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.Routing.Protocols.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.ApplicationBlocks.WarmStandby.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.WebMedia.Protocols.EspEmail.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.Outbound.Protocols.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.Reporting.Protocols.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.Voice.Protocols.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.Contacts.Protocols.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\bin\Release\Genesyslab.Platform.Commons.Collections.Binding.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\bin\Release\Pointel.Configuration.Manager.pdb
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\bin\Release\Pointel.Connection.Manager.pdb
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\obj\Release\Pointel.Windows.Views.Common.Editor.csprojResolveAssemblyReference.cache
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\obj\Release\Controls\HyperLinkPicker.baml
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\obj\Release\Controls\ImagePicker.baml
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\obj\Release\Controls\PrintPreviewWindow.baml
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\obj\Release\Controls\TablePicker.baml
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\obj\Release\Controls\ColorPicker.g.cs
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\obj\Release\Controls\HTMLEditor.g.cs
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\obj\Release\Controls\HyperLinkPicker.g.cs
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\obj\Release\Controls\ImagePicker.g.cs
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\obj\Release\Controls\PrintPreviewWindow.g.cs
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\obj\Release\Controls\TablePicker.g.cs
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\obj\Release\GeneratedInternalTypeHelper.g.cs
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\obj\Release\Pointel.Windows.Views.Common.Editor_MarkupCompile.cache
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\obj\Release\Pointel.Windows.Views.Common.Editor_MarkupCompile.lref
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\obj\Release\Controls\ColorPicker.baml
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\obj\Release\Controls\HTMLEditor.baml
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\obj\Release\Pointel.Windows.Views.Common.Editor.g.resources
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\obj\Release\Pointel.Windows.Views.Common.Editor.Properties.Resources.resources
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\obj\Release\Pointel.Windows.Views.Common.Editor.csproj.GenerateResource.Cache
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\obj\Release\Pointel.Windows.Views.Common.Editor.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Windows.Views.Common.Editor\obj\Release\Pointel.Windows.Views.Common.Editor.pdb

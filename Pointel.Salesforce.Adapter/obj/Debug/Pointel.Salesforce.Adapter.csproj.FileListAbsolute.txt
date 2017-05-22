@@ -1,0 +1,12 @@
+E:\Projects\IWS\Source\Product\v3.0\Redist8.5.112.08\Pointel.Salesforce.Adapter.dll.config
+E:\Projects\IWS\Source\Product\v3.0\Redist8.5.112.08\Pointel.Salesforce.Adapter.dll
+E:\Projects\IWS\Source\Product\v3.0\Redist8.5.112.08\Pointel.Salesforce.Adapter.pdb
+E:\Projects\IWS\Source\Product\v3.0\Pointel.Salesforce.Adapter\Pointel.Salesforce.Adapter\obj\Debug\SFDCViews\SFDCPopupWindow.g.cs
+E:\Projects\IWS\Source\Product\v3.0\Pointel.Salesforce.Adapter\Pointel.Salesforce.Adapter\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\Projects\IWS\Source\Product\v3.0\Pointel.Salesforce.Adapter\Pointel.Salesforce.Adapter\obj\Debug\Pointel.Salesforce.Adapter_MarkupCompile.cache
+E:\Projects\IWS\Source\Product\v3.0\Pointel.Salesforce.Adapter\Pointel.Salesforce.Adapter\obj\Debug\Pointel.Salesforce.Adapter_MarkupCompile.lref
+E:\Projects\IWS\Source\Product\v3.0\Pointel.Salesforce.Adapter\Pointel.Salesforce.Adapter\obj\Debug\SFDCViews\SFDCPopupWindow.baml
+E:\Projects\IWS\Source\Product\v3.0\Pointel.Salesforce.Adapter\Pointel.Salesforce.Adapter\obj\Debug\Pointel.Salesforce.Adapter.g.resources
+E:\Projects\IWS\Source\Product\v3.0\Pointel.Salesforce.Adapter\Pointel.Salesforce.Adapter\obj\Debug\Pointel.Salesforce.Adapter.dll
+E:\Projects\IWS\Source\Product\v3.0\Pointel.Salesforce.Adapter\Pointel.Salesforce.Adapter\obj\Debug\Pointel.Salesforce.Adapter.pdb
+E:\Projects\IWS\Source\Product\v3.0\Pointel.Salesforce.Adapter\Pointel.Salesforce.Adapter\obj\Debug\Pointel.Salesforce.Adapter.csprojResolveAssemblyReference.cache

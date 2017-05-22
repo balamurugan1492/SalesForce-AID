@@ -1,0 +1,20 @@
+﻿StatTickerFive
+
+
+winexe
+C#
+.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\StatTickerFive\obj\Debug\
+StatTickerFive
+none
+false
+DEBUG;TRACE
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\StatTickerFive\App.xaml
+18-1250991012
+321200287761
+52781317917
+391492940519
+Resources\Common.xaml;Resources\StyleResource.xaml;UserControls\Views\MainGadgetControl.xaml;UserControls\Views\TabValue.xaml;UserControls\Views\TagGadgetControl.xaml;Views\AdminMainWindow.xaml;Views\AdminConfigWindow.xaml;Views\NewObjectConfigWindow.xaml;Views\NewStatisticsWindow.xaml;Views\ObjectConfigWindow.xaml;Views\CustomAlertNotifier.xaml;Views\CustomNotifier.xaml;Views\LoginWindow.xaml;Views\MainWindow.xaml;Views\MessageBox.xaml;Views\StatisticsConfigWindow.xaml;Views\StatisticsWindow.xaml;Views\SwitchWindow.xaml;
+
+True
+

@@ -1,0 +1,74 @@
+﻿<Notifier:TaskbarNotifier x:Class="Pointel.Interactions.Chat.WinForms.Notifier"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:Notifier="clr-namespace:Pointel.TaskbarNotifier;assembly=Pointel.TaskbarNotifier"
+        xmlns:my="http://schemas.microsoft.com/wpf/2008/toolkit"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  AllowsTransparency="True" WindowStyle="None" Background="Transparent"
+        Title="Notifier" Height="Auto" Width="400" SizeToContent="Height" Name="chatNotifier" Loaded="chatNotifier_Loaded" PreviewKeyDown="chatNotifier_PreviewKeyDown" >
+    <!--Activated="TaskbarNotifier_Activated" Deactivated="TaskbarNotifier_Deactivated"-->
+    <Notifier:TaskbarNotifier.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Pointel.Interactions.Chat;component/Resources/StylesResourceDictionary.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Notifier:TaskbarNotifier.Resources>
+    <Grid>
+        <Border BorderThickness="0.89" Margin="8" Background="White" Name="MainBorder" BorderBrush="#0070C5">
+            <Border.BitmapEffect>
+                <DropShadowBitmapEffect Opacity="0.5" Softness="0.5" ShadowDepth="0" Color="#003660" />
+            </Border.BitmapEffect>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions> 
+                <Grid Grid.Row="0"  Background="#007edf" Margin="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        <ColumnDefinition Width="*" Name="grdTitle"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Image Source="/Agent.Interaction.Desktop;component/Images/ChatNotify.png" Height="15" Width="15" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5,0,2,0" Grid.Column="0"></Image>
+                    <TextBlock Name="lblTitleStatus" FontSize="14" FontFamily="Calibri" Foreground="white" VerticalAlignment="Stretch" Text="{Binding TitleText}" TextTrimming="CharacterEllipsis" Grid.Column="1" Width="330"></TextBlock>
+                </Grid>
+                <Expander Name="CaseDataExpander" Grid.Row="1" Margin="2" Template="{StaticResource SimpleExpanderTemp}" IsExpanded="True" FlowDirection="RightToLeft" MaxHeight="125" Expanded="Expander_Expanded" Collapsed="Expander_Collapsed">
+                    <Expander.Header>
+                        <Label Content="Case Data" Width="355" FontFamily="Calibri" Foreground="#0878ef" HorizontalAlignment="Right" HorizontalContentAlignment="Right" />
+                    </Expander.Header>
+                    <Grid Name="expGrid" Height="Auto" Background="#1d4380" Margin="5,0,5,0">
+                        <my:DataGrid Name="DGChatCaseData"  ColumnWidth="*" RowHeaderWidth="0" ItemsSource="{Binding NotifyCaseData}" FlowDirection="LeftToRight" Background="WhiteSmoke" VerticalAlignment="Top" HorizontalAlignment="Stretch" HorizontalGridLinesBrush="#D6D7D6"
+                                         VerticalGridLinesBrush="#D6D7D6"  AutoGenerateColumns="False" CanUserAddRows="False" IsReadOnly="True" CanUserDeleteRows="False" ScrollViewer.VerticalScrollBarVisibility="Auto">
+                            <my:DataGrid.Columns>
+                                <my:DataGridTextColumn Header="Key" Binding="{Binding Key}" Width="85" IsReadOnly="True" />
+                                <my:DataGridTextColumn Header="Value" Binding="{Binding Value}" Width="*" IsReadOnly="True" />
+                            </my:DataGrid.Columns>
+                        </my:DataGrid>
+                    </Grid>
+                </Expander>
+                <Border Name="ChatNotifier" Grid.Row="1" Margin="2" MaxHeight="125">
+                    <Grid Name="grd_Details" Grid.Row="1" Background="White" Margin="1,10,1,1" Opacity="0.9">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="70"></ColumnDefinition>
+                            <ColumnDefinition MaxWidth="275"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Image VerticalAlignment="Center" Name="MessageIconImageSource" HorizontalAlignment="Center" Width="50" Height="50" ></Image>
+                        <Grid Grid.Column="1" Margin="5,0,0,0" VerticalAlignment="Center" Name="Details" Grid.Row="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="80"></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <TextBlock Name="Message" Text="Message" FontSize="12" FontFamily="Calibri" FontWeight="Bold" Grid.Row="0" Grid.Column="0" />
+                            <TextBlock Name="Message111" FontSize="12" FontFamily="Calibri" TextWrapping="Wrap" Grid.Row="0" Grid.Column="1" Text="{Binding NotifyMessage}" />
+                        </Grid>
+                    </Grid>
+                </Border>
+                <Button Name="btnRight" Margin="0,5,5,5" Grid.Row="2" HorizontalAlignment="Right" Width="70" Height="30" Click="Right_Click">
+                </Button>
+                <Button Name="btnLeft" Margin="0,5,80,5" Grid.Row="2" HorizontalAlignment="Right" Width="70" Height="30" Style="{StaticResource CallButton}" Click="Left_Click"></Button>
+            </Grid>
+        </Border>
+    </Grid>
+</Notifier:TaskbarNotifier>

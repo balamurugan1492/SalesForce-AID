@@ -1,0 +1,29 @@
+/****************************************************
+ * Class Name : SessionId
+ * Created date : Dec-30-2015
+ * Created by : Pointel
+ * Purpose : To get session id and timezone
+ ****************************************************/
+public class SessionId {
+    
+    public string GetSessionId()
+    {
+        return UserInfo.getSessionId();
+    }   
+    public string GetTimeZone()
+    {
+    	string timezone='';
+        Schema.DescribeFieldResult fieldResult = User.TimeZoneSidKey.getdescribe();
+        List<Schema.PicklistEntry> ple = fieldResult.getPicklistValues();
+        for(Schema.PicklistEntry p : ple)
+        {
+            if(p.getValue()==string.valueOf(Userinfo.getTimeZone()))
+            {
+                system.debug('Time zone : '+p.getlabel()+' based on id from user info: '+p.getValue());
+                timezone=p.getlabel();
+                break;
+            }
+        }
+        return timezone;
+    }
+}

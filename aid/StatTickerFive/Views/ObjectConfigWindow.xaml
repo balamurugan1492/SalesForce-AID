@@ -1,0 +1,243 @@
+﻿<Window x:Class="StatTickerFive.Views.ObjectConfigWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:e="http://schemas.microsoft.com/expression/2010/interactions"
+        xmlns:c="http://schemas.microsoft.com/wpf/2008/toolkit"
+        mc:Ignorable="d"
+        xmlns:local="clr-namespace:StatTickerFive.Helpers"
+        xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+        Title="ObjectConfigurations" Name="QueueConfig" Height="Auto" Width="Auto" SizeToContent="WidthAndHeight" Topmost="{Binding IsTopmost}" ResizeMode="NoResize" WindowStyle="None"  Background="{Binding BackgroundColor}" WindowStartupLocation="CenterScreen"
+        AllowsTransparency="True"  
+        Icon="/StatTickerFive;component/Images/StatTickerFive-32x32-01.png" ShowInTaskbar="False">
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="Activated">
+            <i:InvokeCommandAction Command="{Binding ActivatedCommand}"></i:InvokeCommandAction>
+        </i:EventTrigger>
+        <i:EventTrigger EventName="Deactivated">
+            <i:InvokeCommandAction Command="{Binding DeactivateCommand}"></i:InvokeCommandAction>
+        </i:EventTrigger>
+        <i:EventTrigger EventName="MouseLeftButtonDown">
+            <i:InvokeCommandAction Command="{Binding DragCmd}" CommandParameter="{Binding ElementName=QueueConfig,Path=Title}"></i:InvokeCommandAction>
+        </i:EventTrigger>
+        <i:EventTrigger EventName="Loaded">
+            <i:InvokeCommandAction Command="{Binding WinLoadCommand}"></i:InvokeCommandAction>
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary
+                   Source="/StatTickerFive;component/Resources/StyleResource.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <BooleanToVisibilityConverter x:Key="booleanToVisibilityConverter"></BooleanToVisibilityConverter>
+            <local:LengthConverter x:Key="dataGridLengthConverter"></local:LengthConverter>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Border BorderThickness="0.89" CornerRadius="2" BorderBrush="{Binding BorderBrush}" BitmapEffect="{Binding ShadowEffect}" Width="Auto" Height="Auto" Background="White">
+        <Grid Width="525" Height="Auto" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="30" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="27"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Border CornerRadius="2,2,0,0" Background="{Binding TitleBackground}" Height="27" Grid.ColumnSpan="2">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="20"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" Margin="8,3,0,0" Text ="Queue Selection" HorizontalAlignment="Left" VerticalAlignment="Stretch" FontWeight="Bold" FontSize="14" Foreground="{Binding TitleForeground}"></TextBlock>
+                    <!--<TextBlock Grid.Column="1" Margin="0,3,5,0" HorizontalAlignment="Right" Text="{Binding ApplicationName}" FontWeight="Bold" FontSize="14" Foreground="{Binding TitleForeground}" />-->
+                    <Button Grid.Column="2"  Name="btnExit" HorizontalAlignment="Center" Height="20" Width="20" Style="{StaticResource AdminCloseButton}" Margin="2" Command="{Binding ConfigCancelCmd}" CommandParameter="{Binding ElementName=QueueConfig,Path=Title}"/>
+                </Grid>
+            </Border>
+            <TabControl Grid.Row="1" Grid.ColumnSpan="2"  Height="Auto" Name="AdminTabControl" Width="516" TabStripPlacement="Top" Margin="3">
+                <TabItem Name="ApplicationTabItem" HorizontalAlignment="Left" Width="Auto">
+                    <Border Background="White" BorderThickness="1" Margin="2" BorderBrush="#D6D7D6" Height="Auto" Width="510">
+                        <Grid Height="Auto" Width="Auto">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="0"></RowDefinition>
+                                <RowDefinition Height="{Binding StatisticsRowHeight}"></RowDefinition>
+                                <RowDefinition Height="283"></RowDefinition>
+                                <RowDefinition Height="*"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="200"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+
+                            <Border BorderBrush="#D6D7D6" Background="White" BorderThickness="1" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Height="36"  Width="Auto" Margin="2">
+                                <WrapPanel Width="495" Margin="0,5,0,0">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="130"></ColumnDefinition>
+                                            <ColumnDefinition Width="*"></ColumnDefinition>
+                                        </Grid.ColumnDefinitions>
+                                        <TextBlock Text="Select an Object Type" Grid.Column="0" Width="auto" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0"></TextBlock>
+                                        <ComboBox Name="cmbObjectType" DisplayMemberPath="Text" Grid.Column="1" HorizontalAlignment="Left" Width="150" ItemsSource="{Binding ObjectTypes, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" SelectedIndex="{Binding ObjectIndex}" >
+                                            <i:Interaction.Triggers>
+                                                <i:EventTrigger EventName="SelectionChanged">
+                                                    <i:InvokeCommandAction Command="{Binding ObjectTypeChangedCommand}" CommandParameter="{Binding ElementName=cmbObjectType, Path=SelectedItem}"></i:InvokeCommandAction>
+                                                </i:EventTrigger>
+                                            </i:Interaction.Triggers>
+                                        </ComboBox>
+                                    </Grid>
+                                </WrapPanel>
+                            </Border>
+
+                            <Border BorderBrush="#D6D7D6" Background="White" VerticalAlignment="Top" BorderThickness="1" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Height="278"  Width="Auto" Margin="2">
+                                <Border BorderBrush="{Binding TitleBackground}" BorderThickness="0.5" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Margin="2" Width="Auto">
+                                    <WrapPanel Width="Auto">
+                                        <DataGrid CanUserReorderColumns="False" Name="StatisticsGridView" HorizontalGridLinesBrush="#D6D7D6" VerticalGridLinesBrush="#D6D7D6" Background="White" CanUserResizeColumns="False" CanUserResizeRows="False"  HeadersVisibility="Column" ItemsSource="{Binding ConfiguredStatistics}" AutoGenerateColumns="False" CanUserAddRows="False" Style="{StaticResource CustomGrid}" Width="497" Height="272" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Visible" IsReadOnly="False">
+                                            <DataGrid.Columns>
+                                                <DataGridTemplateColumn Width="25">
+                                                    <DataGridTemplateColumn.CellTemplate>
+                                                        <DataTemplate>
+                                                            <CheckBox Name="chkbox" Margin="5" IsChecked="{Binding isGridChecked, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" IsEnabled="{Binding IsCheckBoxEnabled, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="20" Command="{Binding DataContext.ObjectCheckedCommand, RelativeSource={RelativeSource AncestorType=DataGrid}}">
+                                                            </CheckBox>
+                                                        </DataTemplate>
+                                                    </DataGridTemplateColumn.CellTemplate>
+                                                </DataGridTemplateColumn>
+
+                                                <DataGridTemplateColumn Width="223" Header="Section/Statistics Name">
+                                                    <DataGridTemplateColumn.CellTemplate>
+                                                        <DataTemplate>
+                                                            <TextBlock Name="lblStatName" Padding="5,0,0,0" Text ="{Binding SectionName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" >
+                                                                <TextBlock.ToolTip>
+                    <Border Background="White" BorderBrush="#ADAAAD" BorderThickness="0.5" Margin="-5">
+
+                        <TextBlock Name="SectionNameAvail" Text="{Binding SectionName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Row="0" Padding="10,5,10,0" FontWeight="Bold" FontFamily="Calibri" ></TextBlock>
+
+                    </Border>
+                </TextBlock.ToolTip>
+                                                            </TextBlock>
+                                                        </DataTemplate>
+                                                    </DataGridTemplateColumn.CellTemplate>
+                                                </DataGridTemplateColumn>
+
+                                                <DataGridTemplateColumn Width="229" Header="Description">
+                                                    <DataGridTemplateColumn.CellTemplate>
+                                                        <DataTemplate>
+                                                            <TextBlock Name="lblDisplayName" Padding="5,0,0,0" Text ="{Binding DisplayName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+                                                                <TextBlock.ToolTip>
+                    <Border Background="White" BorderBrush="#ADAAAD" BorderThickness="0.5" Margin="-5">
+
+                        <TextBlock Name="DisplayNameAvail" Text="{Binding DisplayName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Row="0" Padding="10,5,10,0" FontWeight="Bold" FontFamily="Calibri" ></TextBlock>
+
+                    </Border>
+                </TextBlock.ToolTip>
+                                                            </TextBlock>
+                                                        </DataTemplate>
+                                                    </DataGridTemplateColumn.CellTemplate>
+                                                </DataGridTemplateColumn>
+
+                                            </DataGrid.Columns>
+                                        </DataGrid>
+                                    </WrapPanel>
+                                </Border>
+                            </Border>
+
+                            <Border BorderBrush="#D6D7D6" VerticalAlignment="Top" Background="White" BorderThickness="1" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Height="278"  Width="Auto" Margin="2">
+                                <Border BorderBrush="{Binding TitleBackground}" BorderThickness="0.5" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Margin="2" Width="Auto">
+                                    <WrapPanel Width="Auto">
+                                        <FrameworkElement x:Name="ProxyElement" Visibility="Collapsed"/>
+                                        <DataGrid CanUserReorderColumns="False"  Name="ObjectsGridView" HorizontalGridLinesBrush="#D6D7D6" VerticalGridLinesBrush="#D6D7D6" Background="White" CanUserResizeColumns="False" CanUserResizeRows="False"  HeadersVisibility="Column" ItemsSource="{Binding SelectedObject, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" AutoGenerateColumns="False" CanUserAddRows="False" Style="{StaticResource CustomGrid}" Width="497" Height="272" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Visible">
+                                            <DataGrid.Columns>
+                                                
+                                                <DataGridTemplateColumn>
+                                                    <DataGridTemplateColumn.Header>
+                                                        <CheckBox IsChecked="{Binding RelativeSource={RelativeSource AncestorType={x:Type DataGrid}},Path=DataContext.IsDeselectAllChecked}" Command="{Binding DataContext.DeselectUncheck, RelativeSource={RelativeSource AncestorType=DataGrid}}" CommandParameter="{Binding}" Margin="2"/>
+                                                    </DataGridTemplateColumn.Header>
+                                                    <DataGridTemplateColumn.CellTemplate>
+                                                        <DataTemplate>
+                                                            <CheckBox Name="chkbox" Margin="5" IsChecked="{Binding IsObjectChecked, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  Command="{Binding DataContext.CheckedObjectsCommand, RelativeSource={RelativeSource AncestorType=DataGrid}}" CommandParameter="{Binding}"  Width="20"></CheckBox>
+                                                        </DataTemplate>
+                                                    </DataGridTemplateColumn.CellTemplate>
+                                                </DataGridTemplateColumn>
+
+                                                <DataGridTemplateColumn Header="{Binding DataContext.ObjectHeaderName, Source={x:Reference ProxyElement}, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Visibility="Visible" Width="150">
+                                                    <!--MinWidth="215" MaxWidth="447"-->
+                                                    <DataGridTemplateColumn.CellTemplate >
+
+                                                        <DataTemplate>
+                                                            <TextBlock Padding="5,0,0,0" Name="lblStatName" Text="{Binding ObjectName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" >
+                                                                <TextBlock.ToolTip>
+                    <Border Background="White" BorderBrush="#ADAAAD" BorderThickness="0.5" Margin="-5">
+
+                        <TextBlock Name="SectionNameAvail" Text="{Binding ObjectName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Row="0" Padding="10,5,10,0" FontWeight="Bold" FontFamily="Calibri" ></TextBlock>
+
+                    </Border>
+                </TextBlock.ToolTip>
+                                                            </TextBlock>
+                                                        </DataTemplate>
+
+                                                    </DataGridTemplateColumn.CellTemplate>
+                                                </DataGridTemplateColumn>
+
+                                                <DataGridTemplateColumn Header="{Binding DataContext.ObjectType, Source={x:Reference ProxyElement}, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Visibility="Visible" Width="150">
+                                                    <!--MinWidth="215" MaxWidth="447"-->
+                                                    <DataGridTemplateColumn.CellTemplate >
+
+                                                        <DataTemplate>
+                                                            <TextBlock Padding="5,0,0,0" Name="lblObjectName" Text="{Binding TypeObject, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" >
+                                                                <TextBlock.ToolTip>
+                                                                    <Border Background="White" BorderBrush="#ADAAAD" BorderThickness="0.5" Margin="-5">
+
+                                                                        <TextBlock Name="ObjType" Text="{Binding TypeObject, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Row="0" Padding="10,5,10,0" FontWeight="Bold" FontFamily="Calibri" ></TextBlock>
+
+                                                                    </Border>
+                                                                </TextBlock.ToolTip>
+                                                            </TextBlock>
+                                                        </DataTemplate>
+
+                                                    </DataGridTemplateColumn.CellTemplate>
+                                                </DataGridTemplateColumn>
+
+                                                <DataGridTemplateColumn Header="{Binding DataContext.SwitchtHeaderName, Source={x:Reference ProxyElement}, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Visibility="{Binding DataContext.ObjectSwitchNameGridColumnVisibility, Source={x:Reference ProxyElement}, Converter={StaticResource booleanToVisibilityConverter} }" Width="146">
+                                                    <DataGridTemplateColumn.CellTemplate>
+                                                        <DataTemplate>
+                                                            <TextBlock Padding="5,0,0,0" Name="lblSwitchName" Text="{Binding ObjectSwitchName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+                                                                <TextBlock.ToolTip>
+                    <Border Background="White" BorderBrush="#ADAAAD" BorderThickness="0.5" Margin="-5">
+                        <TextBlock Name="SectionNameAvail" Text="{Binding ObjectSwitchName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Row="0" Padding="10,5,10,0" FontWeight="Bold" FontFamily="Calibri" ></TextBlock>
+                    </Border>
+                </TextBlock.ToolTip>
+                                                            </TextBlock>
+                                                        </DataTemplate>
+                                                    </DataGridTemplateColumn.CellTemplate>
+                                                </DataGridTemplateColumn>
+
+
+                                            </DataGrid.Columns>
+                                        </DataGrid>
+                                    </WrapPanel>
+                                </Border>
+                            </Border>
+
+                            <Grid Grid.Row="3" Grid.Column="1" HorizontalAlignment="Right">
+                                <Button Grid.Column="1"  Style="{StaticResource  NormalButton}" Content="Save" Height="23" Width="75" HorizontalAlignment="Right"  Margin="2,2,5,2" Command="{Binding SaveObjectsCommand}" CommandParameter="{Binding ElementName=cmbObjectType,Path=SelectedValue}">
+                                    <Button.ToolTip>
+                                        <Border Background="White" BorderBrush="#ADAAAD" BorderThickness="0.5" Margin="-5">
+
+                                            <TextBlock Name="SaveSettings" Text="Save Objects" Grid.Row="0" Padding="10,5,10,0" FontWeight="Bold" FontFamily="Calibri" ></TextBlock>
+
+                                        </Border>
+                                    </Button.ToolTip>
+                                </Button>
+                            </Grid>
+                            <Grid Grid.Row="3" Grid.Column="0" HorizontalAlignment="Left">
+                                <Label Grid.Column="0" Content="{Binding SelectedCount,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="3,0,0,0" Foreground="Black" FontWeight="Bold"/>
+                            </Grid>
+                        </Grid>
+                    </Border>
+                </TabItem>
+            </TabControl>
+        </Grid>
+    </Border>
+</Window>

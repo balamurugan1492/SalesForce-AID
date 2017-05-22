@@ -1,0 +1,88 @@
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Connection.Manager\bin\Release\Pointel.Connection.Manager.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Connection.Manager\bin\Release\Pointel.Connection.Manager.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.ApplicationBlocks.Commons.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.Commons.Connection.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.Commons.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.Commons.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.Configuration.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.OpenMedia.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.WebMedia.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.Commons.Collections.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.Management.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.Routing.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.ApplicationBlocks.WarmStandby.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.WebMedia.Protocols.EspEmail.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.Outbound.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.Reporting.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.Voice.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.Contacts.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Connection.Manager\bin\Release\Genesyslab.Core.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.Commons.Collections.Binding.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Connection.Manager\obj\Release\Pointel.Connection.Manager.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Connection.Manager\obj\Release\Pointel.Connection.Manager.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Connection.Manager\bin\Release\Pointel.Connection.Manager.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Connection.Manager\bin\Release\Pointel.Connection.Manager.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.ApplicationBlocks.Commons.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.Commons.Connection.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.Commons.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.Commons.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.Configuration.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.OpenMedia.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.WebMedia.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.Commons.Collections.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.Management.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.Routing.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.ApplicationBlocks.WarmStandby.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.WebMedia.Protocols.EspEmail.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.Outbound.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.Reporting.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.Voice.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.Contacts.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Connection.Manager\bin\Release\Genesyslab.Core.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.Commons.Collections.Binding.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Connection.Manager\obj\Release\Pointel.Connection.Manager.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Connection.Manager\obj\Release\Pointel.Connection.Manager.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Connection.Manager\bin\Release\Pointel.Connection.Manager.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Connection.Manager\bin\Release\Pointel.Connection.Manager.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.ApplicationBlocks.Commons.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.Commons.Connection.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.Commons.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.Commons.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.Configuration.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.OpenMedia.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.WebMedia.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.Commons.Collections.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.Management.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.Routing.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.ApplicationBlocks.WarmStandby.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.WebMedia.Protocols.EspEmail.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.Outbound.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.Reporting.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.Voice.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.Contacts.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Connection.Manager\bin\Release\Genesyslab.Core.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.Commons.Collections.Binding.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Connection.Manager\obj\Release\Pointel.Connection.Manager.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Connection.Manager\obj\Release\Pointel.Connection.Manager.pdb
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Connection.Manager\bin\Release\Pointel.Connection.Manager.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Connection.Manager\bin\Release\Pointel.Connection.Manager.pdb
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.ApplicationBlocks.Commons.Protocols.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.Commons.Connection.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.Commons.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.Commons.Protocols.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.Configuration.Protocols.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.OpenMedia.Protocols.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.WebMedia.Protocols.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.Commons.Collections.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.Management.Protocols.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.Routing.Protocols.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.ApplicationBlocks.WarmStandby.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.WebMedia.Protocols.EspEmail.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.Outbound.Protocols.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.Reporting.Protocols.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.Voice.Protocols.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.Contacts.Protocols.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Connection.Manager\bin\Release\Genesyslab.Core.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Connection.Manager\bin\Release\Genesyslab.Platform.Commons.Collections.Binding.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Connection.Manager\obj\Release\Pointel.Connection.Manager.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Connection.Manager\obj\Release\Pointel.Connection.Manager.pdb

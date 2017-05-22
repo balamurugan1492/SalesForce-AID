@@ -1,0 +1,33 @@
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\NotifyIconWpf\bin\Release\Pointel.NotifyIconManager.xml
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\NotifyIconWpf\bin\Release\Pointel.NotifyIconManager.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\NotifyIconWpf\bin\Release\Pointel.NotifyIconManager.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\NotifyIconWpf\obj\Release\Pointel.NotifyIconManager.g.resources
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\NotifyIconWpf\obj\Release\Pointel.NotifyIconManager.Properties.Resources.resources
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\NotifyIconWpf\obj\Release\Pointel.NotifyIconManager.csproj.GenerateResource.Cache
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\NotifyIconWpf\obj\Release\Pointel.NotifyIconManager.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\NotifyIconWpf\obj\Release\Pointel.NotifyIconManager.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\NotifyIconWpf\bin\Release\Pointel.NotifyIconManager.xml
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\NotifyIconWpf\bin\Release\Pointel.NotifyIconManager.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\NotifyIconWpf\bin\Release\Pointel.NotifyIconManager.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\NotifyIconWpf\obj\Release\Pointel.NotifyIconManager.g.resources
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\NotifyIconWpf\obj\Release\Pointel.NotifyIconManager.Properties.Resources.resources
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\NotifyIconWpf\obj\Release\Pointel.NotifyIconManager.csproj.GenerateResource.Cache
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\NotifyIconWpf\obj\Release\Pointel.NotifyIconManager.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\NotifyIconWpf\obj\Release\Pointel.NotifyIconManager.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\NotifyIconWpf\bin\Release\Pointel.NotifyIconManager.xml
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\NotifyIconWpf\bin\Release\Pointel.NotifyIconManager.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\NotifyIconWpf\bin\Release\Pointel.NotifyIconManager.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\NotifyIconWpf\obj\Release\Pointel.NotifyIconManager.g.resources
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\NotifyIconWpf\obj\Release\Pointel.NotifyIconManager.Properties.Resources.resources
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\NotifyIconWpf\obj\Release\Pointel.NotifyIconManager.csproj.GenerateResource.Cache
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\NotifyIconWpf\obj\Release\Pointel.NotifyIconManager.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\NotifyIconWpf\obj\Release\Pointel.NotifyIconManager.pdb
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\NotifyIconWpf\bin\Release\Pointel.NotifyIconManager.xml
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\NotifyIconWpf\bin\Release\Pointel.NotifyIconManager.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\NotifyIconWpf\bin\Release\Pointel.NotifyIconManager.pdb
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\NotifyIconWpf\obj\Release\Pointel.NotifyIconManager.csprojResolveAssemblyReference.cache
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\NotifyIconWpf\obj\Release\Pointel.NotifyIconManager.g.resources
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\NotifyIconWpf\obj\Release\Pointel.NotifyIconManager.Properties.Resources.resources
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\NotifyIconWpf\obj\Release\Pointel.NotifyIconManager.csproj.GenerateResource.Cache
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\NotifyIconWpf\obj\Release\Pointel.NotifyIconManager.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\NotifyIconWpf\obj\Release\Pointel.NotifyIconManager.pdb

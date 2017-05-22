@@ -1,0 +1,43 @@
+<Settings>
+  <AppSetting>
+    <!--Host of the CME to be connected-->
+    <host></host>
+    <!--Port of the CME to be connected-->
+    <port></port>
+    <!--Application by which the user login-->
+    <ApplicationName></ApplicationName>
+    <!--Agents last logged in Place-->
+    <Place></Place>
+    <!--Position of the Application while startup-->
+    <Position></Position>
+    <GadgetWidth>200</GadgetWidth>
+    <!--Display Time for the statistics in Main Gadget window-->
+    <DisplayTime>3</DisplayTime>
+    <!--Displays the Statistics name and value as Bold -->
+    <StatisticsBold>True</StatisticsBold>
+    <!--Displays the number of error messages in login window -->
+    <ErrorDisplayCount>20</ErrorDisplayCount>
+    <!--Enable Password field in Login screen-->
+    <EnablePassword>True</EnablePassword>
+    <!--Enable Host field in Login screen-->
+    <EnableHost>True</EnableHost>
+    <!--Enable Port field in Login screen-->
+    <EnablePort>True</EnablePort>
+    <!--Enable Application Type field in Login screen-->
+    <EnableAppType>True</EnableAppType>
+    <!--Default Application Type-->
+    <DefaultAppType>All</DefaultAppType>
+    <!--Default Authentication Type-->
+    <DefaultAuthenticationType>StatServer,DB</DefaultAuthenticationType>
+    <!--Default Username for CME Authentication-->
+    <DefaultUsername></DefaultUsername>
+    <!--Default Password for CME Authentication-->
+    <DefaultPassword></DefaultPassword>
+    <!--Enable ApplicationName field in Login screen-->
+    <EnableApplicationName>True</EnableApplicationName>
+    <!--Allows to run multiple instances in same machine-->
+    <RunMultipleInstances>True</RunMultipleInstances>
+    <!--Appearence of the Application-->
+    <Theme>Outlook8</Theme>
+  </AppSetting>
+</Settings>

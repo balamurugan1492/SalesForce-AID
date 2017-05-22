@@ -1,0 +1,58 @@
+﻿<ResourceDictionary x:Class="Pointel.Softphone.Language.EnglishLanguage"
+                    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                    xmlns:s="clr-namespace:System;assembly=mscorlib"
+                    mc:Ignorable="d">
+    <!--Login-->
+    <s:String x:Key="keyTitle">Agent Interaction Desktop</s:String>
+    <s:String x:Key="keyTitleVersion">v 5.0.3.30</s:String>
+    <s:String x:Key="keyUserName">User Name:</s:String>
+    <s:String x:Key="keyPassword">Password:</s:String>
+    <s:String x:Key="keyApplicationName">Application Name:</s:String>
+    <s:String x:Key="keyHostName">Host Name:</s:String>
+    <s:String x:Key="keyPort">Port:</s:String>
+    <s:String x:Key="KeyLogIn">Log In</s:String>
+    <s:String x:Key="KeyCancel">Cancel</s:String>
+    <s:String x:Key="KeySkip">Skip</s:String>
+    <s:String x:Key="KeyKeepPlace">Keep recent place</s:String>
+    <s:String x:Key="KeyMore">More</s:String>
+    <s:String x:Key="KeyLess">Less</s:String>
+
+    <!--End-->
+    <!--Channel Selection-->
+    <s:String x:Key="KeyWelcome">Welcome</s:String>
+    <s:String x:Key="KeyWelcomeinfo">Please provide requested login information.</s:String>
+    <s:String x:Key="KeyPlace">Place:</s:String>
+    <s:String x:Key="KeyVoice">voice</s:String>
+    <s:String x:Key="KeyQueue">Queue:</s:String>
+    <s:String x:Key="KeyChangeLoginAccount">Change login account</s:String>
+    <s:String x:Key="KeyOk">Ok</s:String>
+    <s:String x:Key="KeyAgentLogin">Agent Login:</s:String>
+    <s:String x:Key="KeyAgentPassword">Agent Password</s:String>
+    <s:String x:Key="KeyLDCode">LD Code</s:String>
+    <s:String x:Key="KeyWrapTime">Wrap Time</s:String>
+    <!--End-->
+    <!--SoftPhone Bar-->
+    <s:String x:Key="keyLogin">Login</s:String>
+    <s:String x:Key="keyLogout">Logout</s:String>
+    <s:String x:Key="keyReady">Ready</s:String>
+    <s:String x:Key="keyNotReady">Not Ready</s:String>
+    <s:String x:Key="KeyTalk">Talk</s:String>
+    <s:String x:Key="KeyRelease">Release</s:String>
+    <s:String x:Key="KeyHold">Hold</s:String>
+    <s:String x:Key="KeyRetrieve">Retrieve</s:String>
+    <s:String x:Key="KeyTransfer">Trans</s:String>
+    <s:String x:Key="keyCompleteTransfer">Comp Trans</s:String>
+    <s:String x:Key="keyConfrence">Conf</s:String>
+    <s:String x:Key="keyCompleteConfrence">Comp Conf</s:String>
+    <s:String x:Key="KeyReConnect">Reconnect</s:String>
+    <s:String x:Key="KeyDial">Dial</s:String>
+    <s:String x:Key="KeyDTMF">DTMF</s:String>
+    <s:String x:Key="KeyCallData">Call Data</s:String>
+    <s:String x:Key="KeyAlternateCall">Alt-Call</s:String>
+    <s:String x:Key="KeyMergeCall">Merge Call</s:String>
+    <s:String x:Key="KeyDeleteConference">Delete Conf</s:String>
+    <!--End-->
+</ResourceDictionary>

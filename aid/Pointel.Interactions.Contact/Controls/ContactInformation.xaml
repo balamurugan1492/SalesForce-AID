@@ -1,0 +1,304 @@
+﻿<UserControl x:Class="Pointel.Interactions.Contact.Controls.ContactInformation"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:my="http://schemas.microsoft.com/wpf/2008/toolkit"
+             xmlns:Converter="clr-namespace:Pointel.Interactions.Contact.Converters"
+             mc:Ignorable="d"
+              FontFamily="Calibri" FontSize="12"
+             Loaded="UserControl_Loaded" KeyDown="UserControl_KeyDown">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary
+                   Source="/Pointel.Interactions.Contact;component/Resource/StylesResourceDictionary.xaml" />
+                <ResourceDictionary>
+                    <Converter:NameToVisibilityConverter x:Key="NameToVisibilityConverter"/>
+                </ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+            <DataTemplate x:Key="MediaTemplateVoice" x:Name="VoiceMedia">
+                <Image Width="16" Height="16" Source="/Agent.Interaction.Desktop;component/Images/Contact/Voice.png" />
+            </DataTemplate>
+            <DataTemplate x:Key="MediaTemplateEmail" x:Name="EmailMedia">
+                <Image Width="16" Height="16" Source="/Agent.Interaction.Desktop;component/Images/Contact/Email.png" />
+            </DataTemplate>
+            <DataTemplate x:Key="MediaTemplateChat" x:Name="ChatMedia">
+                <Image Width="16" Height="16" Source="/Agent.Interaction.Desktop;component/Images/Contact/Chat.png" />
+            </DataTemplate>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Border Width="Auto"  BorderBrush="#D6D7D6" BorderThickness="1">
+        <Grid>
+            <StackPanel Name="stk_Options" Margin="5" Panel.ZIndex="1000" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top" Height="25">
+                <Button Name="btnSave" Width="22" Height="22" Margin="0,0,5,0" Style="{StaticResource NormalImageButton}" VerticalAlignment="Top"  VerticalContentAlignment="Stretch" Click="btnSave_Click">
+                    <Image Name="imgSave" Margin="0.5">
+                        <Image.Style>
+                            <Style TargetType="Image">
+                                <Setter Property="Source" Value="/Agent.Interaction.Desktop;component/Images/Contact/Save-01.png"/>
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding ElementName=btnSave,Path=IsEnabled}" Value="False">
+                                        <Setter Property="Source" Value="/Agent.Interaction.Desktop;component/Images/Contact/Save-Disabled.png"/>
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Image.Style>
+                    </Image>
+                    <Button.ToolTip>
+                        <Border Background="White" BorderBrush="#ADAAAD" BorderThickness="0.5" Margin="-5">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"></RowDefinition>
+                                    <RowDefinition Height="*"></RowDefinition>
+                                </Grid.RowDefinitions>
+                                <TextBlock Name="SaveHeading" Text="Save Contact" Grid.Row="0" Padding="10,5,10,0" FontWeight="Bold" FontFamily="Calibri" ></TextBlock>
+                                <TextBlock Name="SaveContent" Grid.Row="1" Padding="10,2,10,10" TextWrapping="WrapWithOverflow" FontFamily="Calibri" Width="Auto" MaxWidth="200" Text="Save the contact information."/>
+                            </Grid>
+                        </Border>
+                    </Button.ToolTip>
+                </Button>
+                <Button Name="btnReset" Width="22" Height="22" Style="{StaticResource NormalImageButton}" VerticalAlignment="Top"  VerticalContentAlignment="Stretch" Click="btnReset_Click">
+                    <Image Name="imgReset" Margin="0.5">
+                        <Image.Style>
+                            <Style TargetType="Image">
+                                <Setter Property="Source" Value="/Agent.Interaction.Desktop;component/Images/Contact/Reset-01.png"></Setter>
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding ElementName=btnReset,Path=IsEnabled}" Value="False">
+                                        <Setter Property="Source" Value="/Agent.Interaction.Desktop;component/Images/Contact/Reset-Disabled.png"></Setter>
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Image.Style>
+
+                    </Image>
+                    <Button.ToolTip>
+                        <Border Background="White" BorderBrush="#ADAAAD" BorderThickness="0.5" Margin="-5">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"></RowDefinition>
+                                    <RowDefinition Height="*"></RowDefinition>
+                                </Grid.RowDefinitions>
+                                <TextBlock Name="ResetHeading" Text="Reset Contact" Grid.Row="0" Padding="10,5,10,0" FontWeight="Bold" FontFamily="Calibri" ></TextBlock>
+                                <TextBlock Name="ResetContent" Text="Reset the contact information." Grid.Row="1" Padding="10,2,10,10" TextWrapping="WrapWithOverflow" FontFamily="Calibri" Width="Auto" MaxWidth="200"/>
+                            </Grid>
+                        </Border>
+                    </Button.ToolTip>
+                </Button>
+            </StackPanel>
+            <TabControl Margin="2" SelectedIndex="0" Name="tbCallBack" Background="White" SelectionChanged="tbCallBack_SelectionChanged">
+                <TabItem  Background="White" Name="tabitemInformation" Header="Information" Selector.IsSelected="True">
+                    <Grid Background="Transparent" Name="grdMain" Loaded="gridInfoLoaded">
+                        <Grid.RowDefinitions>
+                            <RowDefinition  Name="rowDockError" Height="30"></RowDefinition>
+                            <RowDefinition Height="*" ></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid Width="Auto" Height="Auto"  Grid.Row="0" Background="LightYellow">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="30"></ColumnDefinition>
+                                <ColumnDefinition Width="*" Name="grdErrorColumn"></ColumnDefinition>
+                                <ColumnDefinition Width="30"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Image Source="/Agent.Interaction.Desktop;component/Images/Error.png" 
+                                 Grid.Column="0"  Margin="5" Width="20" Height="20"></Image>
+
+                            <TextBlock Name="lblError" Grid.Column="1" Loaded="lblError_Loaded" TextWrapping="Wrap"  VerticalAlignment="Center" Margin="5">
+                                    Can't save this contact , Enter the fields before saving.
+                            </TextBlock>
+
+
+                            <Button Name="btnCloseError" HorizontalAlignment="Right" Grid.Column="2" Height="20" Width="20"  Style="{StaticResource NormalImageButton}" VerticalAlignment="Center" Click="btnCloseError_Click" Margin="4">
+                                <Image Source="/Agent.Interaction.Desktop;component/Images/Contact/blue-close.png"></Image>
+                                <Button.ToolTip>
+                                    <Border Background="White" BorderBrush="#ADAAAD" BorderThickness="0.5" Margin="-5">
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="Auto"></RowDefinition>
+                                                <RowDefinition Height="*"></RowDefinition>
+                                            </Grid.RowDefinitions>
+                                            <TextBlock Text="Close Error" Grid.Row="0" Padding="10,5,10,0" FontWeight="Bold" FontFamily="Calibri" ></TextBlock>
+                                            <TextBlock Text="Close the error messages." Grid.Row="1" Padding="10,2,10,10" TextWrapping="WrapWithOverflow" FontFamily="Calibri" Width="Auto" MaxWidth="200"/>
+                                        </Grid>
+                                    </Border>
+                                </Button.ToolTip>
+                            </Button>
+                        </Grid>
+                        <ScrollViewer Name="scv_Information" Margin="2,4,2,2" Grid.Row="1" VerticalAlignment="Stretch" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+                            <ScrollViewer.Resources>
+                                <Style x:Key="{x:Type ScrollBar}" TargetType="{x:Type ScrollBar}">
+                                    <Setter Property="SnapsToDevicePixels" Value="True" />
+                                    <Setter Property="OverridesDefaultStyle" Value="true" />
+                                    <Style.Triggers>
+                                        <Trigger Property="Orientation" Value="Horizontal">
+                                            <Setter Property="Width" Value="Auto" />
+                                            <Setter Property="Height" Value="18" />
+                                            <Setter Property="Template" Value="{StaticResource HorizontalScrollBar}" />
+                                        </Trigger>
+                                        <Trigger Property="Orientation" Value="Vertical">
+                                            <Setter Property="Width" Value="18" />
+                                            <Setter Property="Height" Value="Auto" />
+                                            <Setter Property="Template" Value="{StaticResource VerticalScrollBar}" />
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </ScrollViewer.Resources>
+                            <StackPanel Name="stkPnlInfo" Orientation="Vertical">
+                                <!--<Grid Background="Transparent">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition  Name="rowPhoneNumber" Height="*" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>-->
+                                <GroupBox Margin="8" Header="General" Width="Auto" BorderBrush="#ADAAAD" BorderThickness="0.5">
+                                    <my:DataGrid Name="dgGeneralInfo" GridLinesVisibility="None" BorderBrush="Transparent" BorderThickness="0" Background="Transparent"
+                                        AutoGenerateColumns="False" CanUserAddRows="False" HeadersVisibility="None" Focusable="False"
+                                                 DataGridCell.GotFocus="DataGrid_GotFocus" >
+                                        <my:DataGrid.Columns>
+                                            <my:DataGridTemplateColumn Width="120" IsReadOnly="True">
+                                                <my:DataGridTemplateColumn.CellTemplate>
+                                                    <DataTemplate>
+                                                        <StackPanel Orientation="Horizontal" Width="100">
+                                                            <TextBlock Text="{Binding AttributeName}" Focusable="False" Margin="4,4,0,4"/>
+                                                            <TextBlock Text=" *" Margin="0,2,4,0" Foreground="Red" Focusable="False" FontFamily="Calibri" FontSize="14" Visibility="{Binding AttributeName, Converter={StaticResource NameToVisibilityConverter}}"/>
+                                                        </StackPanel>
+                                                    </DataTemplate>
+                                                </my:DataGridTemplateColumn.CellTemplate>
+                                                <my:DataGridTemplateColumn.CellStyle>
+                                                    <Style TargetType="my:DataGridCell">
+                                                        <Setter Property="IsTabStop" Value="False"></Setter>
+                                                        <Style.Triggers>
+                                                            <Trigger Property="IsSelected" Value="True">
+                                                                <Setter Property="Background" Value="Transparent"></Setter>
+                                                                <Setter Property="Foreground" Value="Black"></Setter>
+                                                                <Setter Property="BorderThickness" Value="0"></Setter>
+                                                            </Trigger>
+                                                        </Style.Triggers>
+                                                    </Style>
+                                                </my:DataGridTemplateColumn.CellStyle>
+                                            </my:DataGridTemplateColumn>
+                                            <my:DataGridTemplateColumn Width="120">
+                                                <my:DataGridTemplateColumn.CellTemplate>
+                                                    <DataTemplate>
+                                                        <TextBox UndoLimit="10" Text="{Binding AttributeValue}"  GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus" Width="120px" Height="26" ContextMenu="{StaticResource DefaultCopyContextmenu}"
+                                                      Tag="{Binding AttributeName}" Style="{StaticResource MyWaterMarkStyle}" Margin="0,4,0,4"  VerticalAlignment="Center" KeyUp="txtSingleAttr_KeyUp"/>
+                                                    </DataTemplate>
+                                                </my:DataGridTemplateColumn.CellTemplate>
+                                            </my:DataGridTemplateColumn>
+                                            <my:DataGridTemplateColumn>
+                                                <my:DataGridTemplateColumn.CellTemplate>
+                                                    <DataTemplate>
+                                                        <Button Name="btnDeleteSingleAtt"  Height="11" Width="11" Margin="3,6,0,6" Style="{StaticResource NormalImageButton}" VerticalAlignment="Center" Click="btnDeleteSingleAtt_Click">
+                                                            <Image Source="/Agent.Interaction.Desktop;component/Images/Contact/blue-close.png"></Image>
+                                                        </Button>
+                                                    </DataTemplate>
+                                                </my:DataGridTemplateColumn.CellTemplate>
+                                            </my:DataGridTemplateColumn>
+                                        </my:DataGrid.Columns>
+                                    </my:DataGrid>
+                                </GroupBox>
+                                <my:DataGrid Name="dgGroupData" GridLinesVisibility="None" Background="Transparent" BorderBrush="Transparent" 
+                                             AutoGenerateColumns="False" CanUserAddRows="False" HeadersVisibility="None"
+                                             DataGridCell.GotFocus="DataGrid_GotFocus"  FocusManager.FocusedElement="{Binding ElementName=txtAttributeValue}">
+                                    <my:DataGrid.Resources>
+                                        <Style x:Key="GroupData" TargetType="{x:Type GroupItem}">
+                                            <Setter Property="Template">
+                                                <Setter.Value>
+                                                    <ControlTemplate TargetType="{x:Type GroupItem}">
+                                                        <GroupBox  Margin="10">
+                                                            <GroupBox.Header>
+                                                                <StackPanel Orientation="Horizontal">
+                                                                    <TextBlock Text="{Binding Name}"/>
+                                                                    <TextBlock Text=" *" Foreground="Red" FontFamily="Calibri" FontSize="14" Visibility="{Binding Name, Converter={StaticResource NameToVisibilityConverter}}"/>
+                                                                </StackPanel>
+                                                            </GroupBox.Header>
+                                                            <StackPanel Orientation="Vertical">
+                                                                <ItemsPresenter></ItemsPresenter>
+                                                                <Button Name="btnAdd" Height="23" HorizontalAlignment="Left" Click="btnAdd_Click" Width="180" Margin="4" Padding="5,0,5,0" Style="{StaticResource NormalButton}">
+                                                                    <StackPanel Orientation="Horizontal">
+                                                                        <TextBlock Text="Add " Foreground="White" ></TextBlock>
+                                                                        <TextBlock  Text="{Binding Name}" Foreground="White" ></TextBlock>
+                                                                    </StackPanel>
+                                                                </Button>
+                                                            </StackPanel>
+                                                        </GroupBox>
+                                                    </ControlTemplate>
+                                                </Setter.Value>
+                                            </Setter>
+                                        </Style>
+                                    </my:DataGrid.Resources>
+                                    <my:DataGrid.GroupStyle>
+                                        <GroupStyle ContainerStyle="{StaticResource GroupData}">
+                                            <GroupStyle.Panel>
+                                                <ItemsPanelTemplate>
+                                                    <DataGridRowsPresenter>
+                                                    </DataGridRowsPresenter>
+                                                </ItemsPanelTemplate>
+                                            </GroupStyle.Panel>
+
+                                        </GroupStyle>
+                                    </my:DataGrid.GroupStyle>
+                                    <my:DataGrid.Columns>
+                                        <my:DataGridTemplateColumn >
+                                            <my:DataGridTemplateColumn.CellTemplate>
+                                                <DataTemplate>
+                                                    <TextBox UndoLimit="10" Name="txtAttributeValue" Text="{Binding AttributeValue}" Width="120px" Height="26" ContextMenu="{StaticResource DefaultCopyContextmenu}"
+                                                             Tag="{Binding AttributeName}" Style="{StaticResource MyWaterMarkStyle}"  Margin="4"
+                                                             VerticalAlignment="Center" LostFocus="txtAttributeAndDescription_LostFocus" 
+                                                             KeyUp="txtAttributeAndDescription_KeyUp" GotFocus="TextBox_GotFocus"></TextBox>
+                                                </DataTemplate>
+                                            </my:DataGridTemplateColumn.CellTemplate>
+
+                                        </my:DataGridTemplateColumn>
+                                        <my:DataGridTemplateColumn>
+                                            <my:DataGridTemplateColumn.CellTemplate>
+                                                <DataTemplate>
+                                                    <TextBox UndoLimit="10" Name="txtDescription" Text="{Binding Description}" Width="120px" Height="26" Tag="Description" Style="{StaticResource MyWaterMarkStyle}"  Margin="0,4,0,4"  VerticalAlignment="Center"
+                                                          LostFocus="txtAttributeAndDescription_LostFocus" 
+                                                             KeyUp="txtAttributeAndDescription_KeyUp" GotFocus="TextBox_GotFocus" ></TextBox>
+                                                </DataTemplate>
+                                            </my:DataGridTemplateColumn.CellTemplate>
+
+                                        </my:DataGridTemplateColumn>
+                                        <my:DataGridTemplateColumn>
+                                            <my:DataGridTemplateColumn.CellTemplate>
+                                                <DataTemplate>
+                                                    <Button Name="btnDelete" Height="11" Width="11" Click="btnDelete_Click"  Margin="3,6,6,6" Style="{StaticResource NormalImageButton}" VerticalAlignment="Center">
+                                                        <Image Source="/Agent.Interaction.Desktop;component/Images/Contact/blue-close.png" Height="10" Width="10"></Image>
+                                                    </Button>
+                                                </DataTemplate>
+                                            </my:DataGridTemplateColumn.CellTemplate>
+
+                                        </my:DataGridTemplateColumn>
+                                        <my:DataGridTemplateColumn>
+                                            <my:DataGridTemplateColumn.CellTemplate>
+                                                <DataTemplate>
+                                                    <RadioButton Name="rbPrimary" Focusable="False" IsChecked="{Binding Isprimary}" Style="{StaticResource rbstyle}" GroupName="{Binding AttributeName}" Tag="{Binding AttributeId}" Checked="rbPrimary_Checked" Unchecked="rbPrimary_Unchecked"  Margin="0,4,4,4"  VerticalAlignment="Center"></RadioButton>
+                                                </DataTemplate>
+                                            </my:DataGridTemplateColumn.CellTemplate>
+                                            <my:DataGridTemplateColumn.CellStyle>
+                                                <Style TargetType="{x:Type my:DataGridCell}">
+                                                    <Setter Property="IsTabStop" Value="False"/>
+                                                    <Style.Triggers>
+                                                        <Trigger Property="IsSelected" Value="True">
+                                                            <Setter Property="Background" Value="Transparent"/>
+                                                            <Setter Property="Foreground" Value="Black"/>
+                                                            <Setter Property="BorderThickness"  Value="0"/>
+                                                        </Trigger>
+                                                    </Style.Triggers>
+                                                </Style>
+                                            </my:DataGridTemplateColumn.CellStyle>
+                                        </my:DataGridTemplateColumn>
+                                    </my:DataGrid.Columns>
+                                </my:DataGrid>
+                                <!--</Grid>-->
+                            </StackPanel>
+                        </ScrollViewer>
+                    </Grid>
+                </TabItem>
+                <TabItem Header="History" Name="tabItemHistory" Background="White" >
+                    <Border Name="brHistory" Loaded="brHistory_Loaded" Background="White" SizeChanged="brHistory_SizeChanged">
+
+                    </Border>
+                </TabItem>
+            </TabControl>
+        </Grid>
+    </Border>
+</UserControl>

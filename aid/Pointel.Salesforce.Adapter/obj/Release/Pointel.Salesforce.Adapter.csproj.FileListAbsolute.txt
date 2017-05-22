@@ -1,0 +1,71 @@
+E:\Ilayaraja\Projects\IWS-SalesForce\SFDC_SOAP_API\Source\Redist8.5.112.08\Pointel.Salesforce.Adapter.dll.config
+E:\Ilayaraja\Projects\IWS-SalesForce\SFDC_SOAP_API\Source\Redist8.5.112.08\Pointel.Salesforce.Adapter.dll
+E:\Ilayaraja\Projects\IWS-SalesForce\SFDC_SOAP_API\Source\Redist8.5.112.08\Pointel.Salesforce.Adapter.XmlSerializers.dll
+E:\Ilayaraja\Projects\IWS-SalesForce\SFDC_SOAP_API\Source\Redist8.5.112.08\Pointel.Salesforce.Adapter.pdb
+E:\Ilayaraja\Projects\IWS-SalesForce\SFDC_SOAP_API\Source\Pointel.Salesforce.Adapter\Pointel.Salesforce.Adapter\obj\Release\SFDCViews\SFDCPopupWindow.g.cs
+E:\Ilayaraja\Projects\IWS-SalesForce\SFDC_SOAP_API\Source\Pointel.Salesforce.Adapter\Pointel.Salesforce.Adapter\obj\Release\GeneratedInternalTypeHelper.g.cs
+E:\Ilayaraja\Projects\IWS-SalesForce\SFDC_SOAP_API\Source\Pointel.Salesforce.Adapter\Pointel.Salesforce.Adapter\obj\Release\Pointel.Salesforce.Adapter_MarkupCompile.cache
+E:\Ilayaraja\Projects\IWS-SalesForce\SFDC_SOAP_API\Source\Pointel.Salesforce.Adapter\Pointel.Salesforce.Adapter\obj\Release\Pointel.Salesforce.Adapter_MarkupCompile.lref
+E:\Ilayaraja\Projects\IWS-SalesForce\SFDC_SOAP_API\Source\Pointel.Salesforce.Adapter\Pointel.Salesforce.Adapter\obj\Release\SFDCViews\SFDCPopupWindow.baml
+E:\Ilayaraja\Projects\IWS-SalesForce\SFDC_SOAP_API\Source\Pointel.Salesforce.Adapter\Pointel.Salesforce.Adapter\obj\Release\Pointel.Salesforce.Adapter.g.resources
+E:\Ilayaraja\Projects\IWS-SalesForce\SFDC_SOAP_API\Source\Pointel.Salesforce.Adapter\Pointel.Salesforce.Adapter\obj\Release\Pointel.Salesforce.Adapter.dll
+E:\Ilayaraja\Projects\IWS-SalesForce\SFDC_SOAP_API\Source\Pointel.Salesforce.Adapter\Pointel.Salesforce.Adapter\obj\Release\Pointel.Salesforce.Adapter.pdb
+E:\Ilayaraja\Projects\IWS-SalesForce\SFDC_SOAP_API\Source\Pointel.Salesforce.Adapter\Pointel.Salesforce.Adapter\obj\Release\Pointel.Salesforce.Adapter.XmlSerializers.dll
+E:\Ilayaraja\Projects\IWS-SalesForce\For AID\v2.4_SOAP_API\Pointel.Salesforce.Adapter\Pointel.Salesforce.Adapter\obj\Release\Pointel.Salesforce.Adapter.csprojResolveAssemblyReference.cache
+E:\Ilayaraja\Projects\IWS-SalesForce\For AID\v2.4_SOAP_API\Pointel.Salesforce.Adapter\Pointel.Salesforce.Adapter\obj\Release\SFDCViews\SFDCPopupWindow.g.cs
+E:\Ilayaraja\Projects\IWS-SalesForce\For AID\v2.4_SOAP_API\Pointel.Salesforce.Adapter\Pointel.Salesforce.Adapter\obj\Release\GeneratedInternalTypeHelper.g.cs
+E:\Ilayaraja\Projects\IWS-SalesForce\For AID\v2.4_SOAP_API\Pointel.Salesforce.Adapter\Pointel.Salesforce.Adapter\obj\Release\Pointel.Salesforce.Adapter_MarkupCompile.cache
+E:\Ilayaraja\Projects\IWS-SalesForce\For AID\v2.4_SOAP_API\Pointel.Salesforce.Adapter\Pointel.Salesforce.Adapter\obj\Release\Pointel.Salesforce.Adapter_MarkupCompile.lref
+E:\Ilayaraja\Projects\IWS-SalesForce\For AID\v2.4_SOAP_API\Pointel.Salesforce.Adapter\Pointel.Salesforce.Adapter\obj\Release\Pointel.Salesforce.Adapter.dll
+E:\Ilayaraja\Projects\IWS-SalesForce\For AID\v2.4_SOAP_API\Pointel.Salesforce.Adapter\Pointel.Salesforce.Adapter\obj\Release\Pointel.Salesforce.Adapter.pdb
+E:\Ilayaraja\Projects\IWS-SalesForce\For AID\v2.4_SOAP_API\Pointel.Salesforce.Adapter\Pointel.Salesforce.Adapter\obj\Release\Pointel.Salesforce.Adapter.XmlSerializers.dll
+E:\Ilayaraja\Projects\IWS-SalesForce\For AID\v2.4_SOAP_API\Redist8.5.112.08\Pointel.Salesforce.Adapter.dll.config
+E:\Ilayaraja\Projects\IWS-SalesForce\For AID\v2.4_SOAP_API\Redist8.5.112.08\Pointel.Salesforce.Adapter.dll
+E:\Ilayaraja\Projects\IWS-SalesForce\For AID\v2.4_SOAP_API\Redist8.5.112.08\Pointel.Salesforce.Adapter.XmlSerializers.dll
+E:\Ilayaraja\Projects\IWS-SalesForce\For AID\v2.4_SOAP_API\Redist8.5.112.08\Pointel.Salesforce.Adapter.pdb
+E:\Ilayaraja\Projects\IWS-SalesForce\For AID\v2.4_SOAP_API\Pointel.Salesforce.Adapter\Pointel.Salesforce.Adapter\obj\Release\SFDCViews\SFDCPopupWindow.baml
+E:\Ilayaraja\Projects\IWS-SalesForce\For AID\v2.4_SOAP_API\Pointel.Salesforce.Adapter\Pointel.Salesforce.Adapter\obj\Release\Pointel.Salesforce.Adapter.g.resources
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\bin\Release\Pointel.Salesforce.Adapter.dll.config
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\bin\Release\Pointel.Salesforce.Adapter.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\bin\Release\Pointel.Salesforce.Adapter.XmlSerializers.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\bin\Release\Pointel.Salesforce.Adapter.pdb
+\\192.168.100.164\e$\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Salesforce.Adapter\obj\Release\Pointel.Salesforce.Adapter.csprojResolveAssemblyReference.cache
+\\192.168.100.164\e$\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Salesforce.Adapter\obj\Release\SFDCViews\SFDCPopupWindow.g.cs
+\\192.168.100.164\e$\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Salesforce.Adapter\obj\Release\GeneratedInternalTypeHelper.g.cs
+\\192.168.100.164\e$\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Salesforce.Adapter\obj\Release\Pointel.Salesforce.Adapter_MarkupCompile.cache
+\\192.168.100.164\e$\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Salesforce.Adapter\obj\Release\Pointel.Salesforce.Adapter_MarkupCompile.lref
+\\192.168.100.164\e$\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Salesforce.Adapter\obj\Release\SFDCViews\SFDCPopupWindow.baml
+\\192.168.100.164\e$\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Salesforce.Adapter\obj\Release\Pointel.Salesforce.Adapter.g.resources
+\\192.168.100.164\e$\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Salesforce.Adapter\obj\Release\Pointel.Salesforce.Adapter.dll
+\\192.168.100.164\e$\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Salesforce.Adapter\obj\Release\Pointel.Salesforce.Adapter.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Salesforce.Adapter\bin\Release\Pointel.Salesforce.Adapter.dll.config
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Salesforce.Adapter\bin\Release\Pointel.Salesforce.Adapter.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Salesforce.Adapter\bin\Release\Pointel.Salesforce.Adapter.XmlSerializers.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Salesforce.Adapter\bin\Release\Pointel.Salesforce.Adapter.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Salesforce.Adapter\bin\Release\Genesyslab.Platform.ApplicationBlocks.Commons.Broker.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Salesforce.Adapter\bin\Release\Genesyslab.Platform.ApplicationBlocks.ConfigurationObjectModel.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Salesforce.Adapter\bin\Release\Genesyslab.Platform.Commons.Collections.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Salesforce.Adapter\bin\Release\Genesyslab.Platform.Commons.Connection.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Salesforce.Adapter\bin\Release\Genesyslab.Platform.Commons.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Salesforce.Adapter\bin\Release\Genesyslab.Platform.Commons.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Salesforce.Adapter\bin\Release\Genesyslab.Platform.Contacts.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Salesforce.Adapter\bin\Release\Genesyslab.Platform.OpenMedia.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Salesforce.Adapter\bin\Release\Genesyslab.Platform.Voice.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Salesforce.Adapter\bin\Release\Genesyslab.Platform.WebMedia.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Salesforce.Adapter\bin\Release\log4net.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Salesforce.Adapter\bin\Release\Newtonsoft.Json.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Salesforce.Adapter\bin\Release\Pointel.Salesforce.Plugin.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Salesforce.Adapter\bin\Release\Genesyslab.Platform.Configuration.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Salesforce.Adapter\bin\Release\Genesyslab.Core.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Salesforce.Adapter\bin\Release\Genesyslab.Platform.Commons.Collections.Binding.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Salesforce.Adapter\bin\Release\Pointel.Salesforce.Plugin.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Salesforce.Adapter\obj\Release\Pointel.Salesforce.Adapter.csprojResolveAssemblyReference.cache
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Salesforce.Adapter\obj\Release\SFDCViews\SFDCPopupWindow.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Salesforce.Adapter\obj\Release\GeneratedInternalTypeHelper.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Salesforce.Adapter\obj\Release\Pointel.Salesforce.Adapter_MarkupCompile.cache
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Salesforce.Adapter\obj\Release\Pointel.Salesforce.Adapter_MarkupCompile.lref
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Salesforce.Adapter\obj\Release\SFDCViews\SFDCPopupWindow.baml
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Salesforce.Adapter\obj\Release\Pointel.Salesforce.Adapter.g.resources
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Salesforce.Adapter\obj\Release\Pointel.Salesforce.Adapter.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Salesforce.Adapter\obj\Release\Pointel.Salesforce.Adapter.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Salesforce.Adapter\obj\Release\Pointel.Salesforce.Adapter.XmlSerializers.dll

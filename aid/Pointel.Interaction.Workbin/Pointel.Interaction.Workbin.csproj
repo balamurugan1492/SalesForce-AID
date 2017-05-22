@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A1561366-4288-4754-BE0E-031609875788}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pointel.Interaction.Workbin</RootNamespace>
+    <AssemblyName>Pointel.Interaction.Workbin</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Genesyslab.Platform.ApplicationBlocks.Commons.Broker, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\Redist\Genesyslab.Platform.ApplicationBlocks.Commons.Broker.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.ApplicationBlocks.Commons.Protocols">
+      <HintPath>..\Redist\Genesyslab.Platform.ApplicationBlocks.Commons.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.ApplicationBlocks.ConfigurationObjectModel, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\Redist\Genesyslab.Platform.ApplicationBlocks.ConfigurationObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Commons, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\Redist\Genesyslab.Platform.Commons.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Commons.Collections, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\Redist\Genesyslab.Platform.Commons.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Commons.Connection, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\Redist\Genesyslab.Platform.Commons.Connection.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Commons.Protocols, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\Redist\Genesyslab.Platform.Commons.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Configuration.Protocols, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\Redist\Genesyslab.Platform.Configuration.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Contacts.Protocols, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\Redist\Genesyslab.Platform.Contacts.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.OpenMedia.Protocols, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\Redist\Genesyslab.Platform.OpenMedia.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\Redist\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Pointel.Logger.Core, Version=1.0.3.6, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Redist\Pointel.Logger.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Pointel.WebDriver">
+      <HintPath>..\Redist\Pointel.WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="PresentationFramework.Classic" />
+    <Reference Include="PresentationUI, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="ReachFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Printing" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+    <Reference Include="WpfAnimatedGif">
+      <HintPath>..\Redist\WpfAnimatedGif.dll</HintPath>
+    </Reference>
+    <Reference Include="WPFToolkit, Version=3.5.40128.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Redist\WPFToolkit.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Application\ApplicationDetails.cs" />
+    <Compile Include="Controls\WorkbinUserControl.xaml.cs">
+      <DependentUpon>WorkbinUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PopUpWindow.xaml.cs">
+      <DependentUpon>PopUpWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\AttachmentDetails.cs" />
+    <Compile Include="Helpers\BaseDataTemplateSelector.cs" />
+    <Compile Include="Helpers\ContactServerHelper.cs" />
+    <Compile Include="Helpers\EmailCaseData.cs" />
+    <Compile Include="Helpers\IEmailCaseData.cs" />
+    <Compile Include="Helpers\Importer.cs" />
+    <Compile Include="Helpers\IQHelper.cs" />
+    <Compile Include="Helpers\IQMenuItem.cs" />
+    <Compile Include="Helpers\MediaImageDataTemplateSelector.cs" />
+    <Compile Include="Helpers\WorkbibMenuItem.cs" />
+    <Compile Include="Helpers\WorkbinData.cs" />
+    <Compile Include="Helpers\WorkbinMailDetails.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utility\ControlUtility.cs" />
+    <Compile Include="Utility\WorkbinConverter.cs" />
+    <Compile Include="Utility\WorkbinUtility.cs" />
+    <Compile Include="WorkbinService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Pointel.Configuration.Manager\Pointel.Configuration.Manager.csproj">
+      <Project>{870DEB13-F88C-4B03-B78C-C3EADB70BFD9}</Project>
+      <Name>Pointel.Configuration.Manager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pointel.Interactions.Core\Pointel.Interactions.Core.csproj">
+      <Project>{E1BFBD94-D72D-494F-95A9-9D2B3A6F545C}</Project>
+      <Name>Pointel.Interactions.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pointel.Interactions.DispositionCodes\Pointel.Interactions.DispositionCodes.csproj">
+      <Project>{4B8751A4-9E72-4153-88B2-39BA0399E313}</Project>
+      <Name>Pointel.Interactions.DispositionCodes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pointel.Interactions.IPlugins\Pointel.Interactions.IPlugins.csproj">
+      <Project>{F9ABF1FD-4F58-4FE4-9808-8B3C276097A1}</Project>
+      <Name>Pointel.Interactions.IPlugins</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pointel.Windows.Views.Common.Editor\Pointel.Windows.Views.Common.Editor.csproj">
+      <Project>{8E807142-752E-4792-8440-1803981D5C4F}</Project>
+      <Name>Pointel.Windows.Views.Common.Editor</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Controls\WorkbinUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Forms\PopUpWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resource\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D12288D8-503D-44D2-A651-E6D26D326457}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pointel.Softphone.Voice</RootNamespace>
+    <AssemblyName>Pointel.Softphone.Voice</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Pointelsoftphone32x32.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Genesyslab.Core, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\Redist\Genesyslab.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.ApplicationBlocks.Commons.Broker, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\Redist\Genesyslab.Platform.ApplicationBlocks.Commons.Broker.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.ApplicationBlocks.Commons.Protocols">
+      <HintPath>..\Redist\Genesyslab.Platform.ApplicationBlocks.Commons.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.ApplicationBlocks.ConfigurationObjectModel, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\Redist\Genesyslab.Platform.ApplicationBlocks.ConfigurationObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Commons, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\Redist\Genesyslab.Platform.Commons.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Commons.Collections, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\Redist\Genesyslab.Platform.Commons.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Commons.Connection, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\Redist\Genesyslab.Platform.Commons.Connection.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Commons.Protocols, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\Redist\Genesyslab.Platform.Commons.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Configuration.Protocols, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\Redist\Genesyslab.Platform.Configuration.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Voice.Protocols, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\Redist\Genesyslab.Platform.Voice.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\Redist\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Pointel.Logger.Core">
+      <HintPath>..\Redist\Pointel.Logger.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\Application\ReadConfigObjects.cs" />
+    <Compile Include="Core\Common\AgentStatus.cs" />
+    <Compile Include="Core\Common\ButtonStatusController.cs" />
+    <Compile Include="Core\Common\OutputValues.cs" />
+    <Compile Include="Core\ConnectionManager\VoiceConnectionManager.cs" />
+    <Compile Include="Core\Enumeration\PhoneFunctions.cs" />
+    <Compile Include="Core\Exceptions\CheckException.cs" />
+    <Compile Include="Core\ISoftphoneListener.cs" />
+    <Compile Include="Core\Listener\VoiceManager.cs" />
+    <Compile Include="Core\Request\RequestAgentAlternateCall.cs" />
+    <Compile Include="Core\Request\RequestAgentConference.cs" />
+    <Compile Include="Core\Request\RequestAgentDial.cs" />
+    <Compile Include="Core\Request\RequestAgentHold.cs" />
+    <Compile Include="Core\Request\RequestAgentMergeCall.cs" />
+    <Compile Include="Core\Request\RequestAgentNotReady.cs" />
+    <Compile Include="Core\Request\RequestAgentReady.cs" />
+    <Compile Include="Core\Request\RequestAgentReconnect.cs" />
+    <Compile Include="Core\Request\RequestAgentRedirectCall.cs" />
+    <Compile Include="Core\Request\RequestAgentReleaseCall.cs" />
+    <Compile Include="Core\Request\RequestAgentRetrieve.cs" />
+    <Compile Include="Core\Request\RequestAgentTransfer.cs" />
+    <Compile Include="Core\Request\RequestAnswer.cs" />
+    <Compile Include="Core\Request\RequestCallForward.cs" />
+    <Compile Include="Core\Request\RequestCancelCallForward.cs" />
+    <Compile Include="Core\Request\RequestDNDOff.cs" />
+    <Compile Include="Core\Request\RequestDNDOn.cs" />
+    <Compile Include="Core\Request\RequestDtmfSend.cs" />
+    <Compile Include="Core\Request\RequestLogin.cs" />
+    <Compile Include="Core\Request\RequestLogout.cs" />
+    <Compile Include="Core\Request\RequestQuerycall.cs" />
+    <Compile Include="Core\Request\RequestRegisterPlace.cs" />
+    <Compile Include="Core\Request\RequestServerQuery.cs" />
+    <Compile Include="Core\Request\RequestUnRegisterPlace.cs" />
+    <Compile Include="Core\Request\RequestUpdateAttachData.cs" />
+    <Compile Include="Core\SoftPhone.cs" />
+    <Compile Include="Core\SoftPhoneStatusController.cs" />
+    <Compile Include="Core\Util\Settings.cs" />
+    <Compile Include="Core\Util\ThreadSafeDictionary.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Pointel.Connection.Manager\Pointel.Connection.Manager.csproj">
+      <Project>{511e7fea-9fcf-4dee-a82f-073b82a376b3}</Project>
+      <Name>Pointel.Connection.Manager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pointel.Configuration.Manager\Pointel.Configuration.Manager.csproj">
+      <Project>{870DEB13-F88C-4B03-B78C-C3EADB70BFD9}</Project>
+      <Name>Pointel.Configuration.Manager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pointel.Interactions.IPlugins\Pointel.Interactions.IPlugins.csproj">
+      <Project>{F9ABF1FD-4F58-4FE4-9808-8B3C276097A1}</Project>
+      <Name>Pointel.Interactions.IPlugins</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pointelsoftphone32x32.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

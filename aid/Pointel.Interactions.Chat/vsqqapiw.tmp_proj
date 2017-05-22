@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4B6B71B9-20B2-4AD0-A914-6837966C1119}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pointel.Interactions.Chat</RootNamespace>
+    <AssemblyName>Pointel.Interactions.Chat</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Pointelsoftphone32x32.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationReader\ComClass.cs" />
+    <Compile Include="ApplicationReader\XMLHandler.cs" />
+    <Compile Include="Converters\StringtoImageSourceConverter.cs" />
+    <Compile Include="CustomControls\BindableRichTextBox.cs" />
+    <Compile Include="Converters\DGRowForegroundConverter.cs" />
+    <Compile Include="Converters\DGRowIsEnableConverter.cs" />
+    <Compile Include="CustomControls\FlashWindow.cs" />
+    <Compile Include="CustomControls\TimerLabel.cs" />
+    <Compile Include="HandleInteractions\ChatInteractionSubscriber.cs" />
+    <Compile Include="HandleInteractions\ChatListener.cs" />
+    <Compile Include="Helpers\ChatCaseData.cs" />
+    <Compile Include="Helpers\ChatPersonsStatus.cs" />
+    <Compile Include="Helpers\Contacts.cs" />
+    <Compile Include="Helpers\IChatCaseData.cs" />
+    <Compile Include="Helpers\IChatPersonsStatus.cs" />
+    <Compile Include="Helpers\IContacts.cs" />
+    <Compile Include="Helpers\Importer.cs" />
+    <Compile Include="Helpers\IPartyInfo.cs" />
+    <Compile Include="Helpers\IRecentInteractions.cs" />
+    <Compile Include="Helpers\PartyInfo.cs" />
+    <Compile Include="Helpers\RadialAnimation.cs" />
+    <Compile Include="Helpers\RecentInteractions.cs" />
+    <Compile Include="Helpers\SpellChecker.cs" />
+    <Compile Include="Settings\ChatDataContext.cs" />
+    <Compile Include="Settings\ChatUtil.cs" />
+    <Compile Include="UserControls\ChatConsultationWindow.xaml.cs">
+      <DependentUpon>ChatConsultationWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\DialPad.xaml.cs">
+      <DependentUpon>DialPad.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="UserControls\InteractionData.xaml.cs">
+      <DependentUpon>InteractionData.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WinForms\ChatMainWindow.xaml.cs">
+      <DependentUpon>ChatMainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WinForms\MessageBox.xaml.cs">
+      <DependentUpon>MessageBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WinForms\Notifier.xaml.cs">
+      <DependentUpon>Notifier.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Pointel.Configuration.Manager\Pointel.Configuration.Manager.csproj">
+      <Project>{870DEB13-F88C-4B03-B78C-C3EADB70BFD9}</Project>
+      <Name>Pointel.Configuration.Manager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pointel.Interactions.Chat.Core\Pointel.Interactions.Chat.Core.csproj">
+      <Project>{6137AE6E-494B-47DC-BCE9-0C9C38DDD156}</Project>
+      <Name>Pointel.Interactions.Chat.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pointel.Interactions.DispositionCodes\Pointel.Interactions.DispositionCodes.csproj">
+      <Project>{4B8751A4-9E72-4153-88B2-39BA0399E313}</Project>
+      <Name>Pointel.Interactions.DispositionCodes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pointel.Interactions.IPlugins\Pointel.Interactions.IPlugins.csproj">
+      <Project>{F9ABF1FD-4F58-4FE4-9808-8B3C276097A1}</Project>
+      <Name>Pointel.Interactions.IPlugins</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pointel.Salesforce.Plugin\Pointel.Salesforce.Plugin.csproj">
+      <Project>{f46e83e8-1ef0-4581-baee-1bd539205a6a}</Project>
+      <Name>Pointel.Salesforce.Plugin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pointel.TaskbarNotifier\Pointel.TaskbarNotifier.csproj">
+      <Project>{C807F74B-9C21-4A9F-8A60-C7D7AF7BCBBA}</Project>
+      <Name>Pointel.TaskbarNotifier</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pointel.WindowResizer\Pointel.WindowResizer.csproj">
+      <Project>{484A8648-56A6-44A8-AD34-8B7E3E26A41A}</Project>
+      <Name>Pointel.WindowResizer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <ReferencePath Include="E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Redist\Genesyslab.Platform.ApplicationBlocks.Commons.Broker.dll" />
+    <ReferencePath Include="E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Redist\Genesyslab.Platform.ApplicationBlocks.Commons.Protocols.dll" />
+    <ReferencePath Include="E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Redist\Genesyslab.Platform.ApplicationBlocks.ConfigurationObjectModel.dll" />
+    <ReferencePath Include="E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Redist\Genesyslab.Platform.Commons.Collections.dll" />
+    <ReferencePath Include="E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Redist\Genesyslab.Platform.Commons.Connection.dll" />
+    <ReferencePath Include="E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Redist\Genesyslab.Platform.Commons.dll" />
+    <ReferencePath Include="E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Redist\Genesyslab.Platform.Commons.Protocols.dll" />
+    <ReferencePath Include="E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Redist\Genesyslab.Platform.Configuration.Protocols.dll" />
+    <ReferencePath Include="E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Redist\Genesyslab.Platform.Contacts.Protocols.dll" />
+    <ReferencePath Include="E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Redist\Genesyslab.Platform.OpenMedia.Protocols.dll" />
+    <ReferencePath Include="E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Redist\Genesyslab.Platform.WebMedia.Protocols.dll" />
+    <ReferencePath Include="E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Redist\ICSharpCode.SharpZipLib.dll" />
+    <ReferencePath Include="E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Redist\log4net.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Microsoft.CSharp.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" />
+    <ReferencePath Include="E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Redist\NHunspell.dll" />
+    <ReferencePath Include="E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Configuration.Manager\bin\Release\Pointel.Configuration.Manager.dll" />
+    <ReferencePath Include="E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat.Core\bin\Release\Pointel.Interactions.Chat.Core.dll" />
+    <ReferencePath Include="E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.DispositionCodes\bin\Release\Pointel.Interactions.DispositionCodes.dll" />
+    <ReferencePath Include="E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.IPlugins\bin\Release\Pointel.Interactions.IPlugins.dll" />
+    <ReferencePath Include="E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Redist\Pointel.Logger.Core.dll" />
+    <ReferencePath Include="E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Salesforce.Plugin\bin\Release\Pointel.Salesforce.Plugin.dll" />
+    <ReferencePath Include="E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.TaskbarNotifier\bin\Release\Pointel.TaskbarNotifier.dll" />
+    <ReferencePath Include="E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.WindowResizer\bin\Release\Pointel.WindowResizer.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\PresentationCore.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\PresentationFramework.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.ComponentModel.Composition.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Configuration.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Core.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.DataSetExtensions.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Drawing.dll" />
+    <ReferencePath Include="E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Redist\System.Windows.Controls.Input.Toolkit.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Windows.Forms.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xaml.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.Linq.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\WindowsBase.dll" />
+    <ReferencePath Include="E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Redist\WpfAnimatedGif.dll" />
+    <ReferencePath Include="E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Redist\WPFToolkit.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\obj\Release\UserControls\ChatConsultationWindow.g.cs" />
+    <Compile Include="E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\obj\Release\UserControls\InteractionData.g.cs" />
+    <Compile Include="E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\obj\Release\WinForms\ChatMainWindow.g.cs" />
+    <Compile Include="E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\obj\Release\WinForms\MessageBox.g.cs" />
+    <Compile Include="E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\obj\Release\WinForms\Notifier.g.cs" />
+    <Compile Include="E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\obj\Release\UserControls\DialPad.g.cs" />
+    <Compile Include="E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\obj\Release\GeneratedInternalTypeHelper.g.cs" />
+  </ItemGroup>
+</Project>

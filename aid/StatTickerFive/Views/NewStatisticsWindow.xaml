@@ -1,0 +1,103 @@
+﻿<Window x:Class="StatTickerFive.Views.NewStatisticsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:StatTickerFive.Helpers"
+        xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+        Title="NewStatConfigurations" Name="NewStatConfig" Height="Auto" Width="Auto" SizeToContent="WidthAndHeight" Topmost="False" WindowStyle="None"  Background="{Binding BackgroundColor}" WindowStartupLocation="CenterScreen"
+        AllowsTransparency="True"  
+        Icon="/StatTickerFive;component/Images/StatTickerFive-32x32-01.png">
+
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="MouseLeftButtonDown">
+            <i:InvokeCommandAction Command="{Binding DragCmd}" CommandParameter="{Binding ElementName=NewStatConfig,Path=Title}"></i:InvokeCommandAction>
+        </i:EventTrigger>
+        <i:EventTrigger EventName="Loaded">
+            <i:InvokeCommandAction Command="{Binding WinLoadCommand}"></i:InvokeCommandAction>
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary
+                   Source="/StatTickerFive;component/Resources/StyleResource.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <BooleanToVisibilityConverter x:Key="booleanToVisibilityConverter"></BooleanToVisibilityConverter>
+            <local:LengthConverter x:Key="dataGridLengthConverter"></local:LengthConverter>
+            
+        </ResourceDictionary>
+    </Window.Resources>
+    <Border BorderThickness="0.89" CornerRadius="2" BorderBrush="{Binding BorderBrush}" BitmapEffect="{Binding ShadowEffect}" Width="525" Height="300" Background="White">
+        <Grid Width="525" Height="300" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="27"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Border CornerRadius="2,2,0,0" Background="{Binding TitleBackground}" Height="27" Grid.Row="0">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="25"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" Margin="8,3,0,0" Text ="New Statistics" HorizontalAlignment="Left" VerticalAlignment="Stretch" FontWeight="Bold" FontSize="14" Foreground="{Binding TitleForeground}"></TextBlock>
+                    <TextBlock Grid.Column="1" Margin="0,3,5,0" HorizontalAlignment="Right" Text="{Binding ApplicationName}" FontWeight="Bold" FontSize="14" Foreground="{Binding TitleForeground}" />
+                    <Button Grid.Column="2" Name="btnExit"  HorizontalAlignment="Center" Height="20" Width="20" Style="{StaticResource AdminCloseButton}" Margin="2" Command="{Binding ConfigCancelCmd}">
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="Click">
+                                <i:InvokeCommandAction Command="{Binding CloseCmd}" CommandParameter="{Binding ElementName=NewStatConfig,Path=Title }"></i:InvokeCommandAction>
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
+                        
+                    </Button>
+                </Grid>
+            </Border>
+            <Grid Height="Auto" Width="Auto" Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                <Button Grid.Row="0" Margin="5,0,0,0" Width="20" HorizontalAlignment="Left" Height="20" Command="{Binding SaveCmd}" CommandParameter="{Binding ElementName=NewStatConfig,Path=Title}" Background="Transparent" Style="{StaticResource ImageButton}" ToolTip="Save">
+                    <Image Source="/StatTickerFive;component/Images/save.png" Height="19" Width="20" ></Image>
+                </Button>
+                    <Border BorderBrush="#D6D7D6" Background="White" VerticalAlignment="Top" BorderThickness="1" Grid.Row="1" Height="247"  Width="515" Margin="2">
+
+                    <Border BorderBrush="{Binding TitleBackground}" BorderThickness="0.5" Width="505" Height="237">
+                        <DataGrid CanUserReorderColumns="False" Name="StatisticsGridView" HorizontalGridLinesBrush="#D6D7D6" VerticalGridLinesBrush="#D6D7D6" Background="White" CanUserResizeColumns="False" CanUserResizeRows="False"  HeadersVisibility="Column" AutoGenerateColumns="False" CanUserAddRows="False" Style="{StaticResource CustomGrid}" Width="503" Height="235" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Visible" IsReadOnly="False" ItemsSource="{Binding ObjectStatistics, NotifyOnTargetUpdated=True, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}">
+                            <DataGrid.Columns>
+                                <DataGridTemplateColumn Width="25">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <CheckBox Name="chkbox" Margin="5" Width="20" IsChecked="{Binding isGridChecked, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                                      Command="{Binding DataContext.SelectNewStatistics,RelativeSource={RelativeSource AncestorType=DataGrid}}" CommandParameter="{Binding}">
+                                            </CheckBox>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+
+                                <DataGridTemplateColumn Width="230" Header="Section/Statistics Name">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Name="lblStatName" Padding="5,0,0,0" Text ="{Binding ObjectName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" ToolTip="{Binding ObjectName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" ></TextBlock>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+
+                                <DataGridTemplateColumn Width="228" Header="Description">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Name="lblDisplayName" Padding="5,0,0,0" Text ="{Binding ObjectDescription, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" ToolTip="{Binding ObjectDescription, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBlock>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Border>
+                </Border>
+
+                </Grid>
+        </Grid>
+    </Border>
+
+</Window>

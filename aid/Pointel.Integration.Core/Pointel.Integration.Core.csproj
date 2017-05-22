@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6E0294F3-C465-454F-B8BF-716DA836B473}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pointel.Integration.Core</RootNamespace>
+    <AssemblyName>Pointel.Integration.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Pointelsoftphone32x32.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="adodb, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>C:\Program Files\Microsoft Visual Studio 9.0\Visual Studio Tools for Office\PIA\Office12\adodb.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Core, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\Redist\Genesyslab.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.ApplicationBlocks.Commons.Broker, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\Redist\Genesyslab.Platform.ApplicationBlocks.Commons.Broker.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.ApplicationBlocks.Commons.Protocols">
+      <HintPath>..\Redist\Genesyslab.Platform.ApplicationBlocks.Commons.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.ApplicationBlocks.ConfigurationObjectModel, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\Redist\Genesyslab.Platform.ApplicationBlocks.ConfigurationObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Commons, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\Redist\Genesyslab.Platform.Commons.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Commons.Collections, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\Redist\Genesyslab.Platform.Commons.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Commons.Protocols, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\Redist\Genesyslab.Platform.Commons.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Configuration.Protocols, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\Redist\Genesyslab.Platform.Configuration.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Voice.Protocols, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\Redist\Genesyslab.Platform.Voice.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\Redist\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Pointel.Common.DataAccess">
+      <HintPath>..\Redist\Pointel.Common.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Pointel.Common.DataBase">
+      <HintPath>..\Redist\Pointel.Common.DataBase.dll</HintPath>
+    </Reference>
+    <Reference Include="Pointel.Logger.Core">
+      <HintPath>..\Redist\Pointel.Logger.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Pointel.WebDriver, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\Redist\Pointel.WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\Redist\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Agent Activities\AgentActivities.cs" />
+    <Compile Include="Application\ReadApplication.cs" />
+    <Compile Include="CallDetails.cs" />
+    <Compile Include="Common\OutputValues.cs" />
+    <Compile Include="Data\FileIntegrationData.cs" />
+    <Compile Include="Data\HimmsIntegrationData.cs" />
+    <Compile Include="Data\PipeIntegrationData.cs" />
+    <Compile Include="Data\WebIntegrationData.cs" />
+    <Compile Include="DesktopMessenger.cs" />
+    <Compile Include="Helper\BasicService.cs" />
+    <Compile Include="Helper\DataParser.cs" />
+    <Compile Include="Helper\MediaEventHelper.cs" />
+    <Compile Include="Helper\PortDataParser.cs" />
+    <Compile Include="Helper\PortServiceHelper.cs" />
+    <Compile Include="IMIDHandler.cs" />
+    <Compile Include="iSubjects\iCallData.cs" />
+    <Compile Include="iSubjects\iCrmDbIntegration.cs" />
+    <Compile Include="iSubjects\iFileIntegration.cs" />
+    <Compile Include="iSubjects\IntegrationAction.cs" />
+    <Compile Include="iSubjects\iPipeIntegration.cs" />
+    <Compile Include="iSubjects\iPortIntegration.cs" />
+    <Compile Include="Manager\MultiClienTCPPort.cs" />
+    <Compile Include="Observers\AgentActivitySubscriber.cs" />
+    <Compile Include="Observers\CrmDbSubscriber.cs" />
+    <Compile Include="Observers\FileSubscriber.cs" />
+    <Compile Include="Observers\HimmsSubscriber.cs" />
+    <Compile Include="Observers\PipeSubscriber.cs" />
+    <Compile Include="Observers\PortSubscriber.cs" />
+    <Compile Include="Observers\UrlSubscriber.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Providers\CallDataProviders.cs" />
+    <Compile Include="Providers\UnSubscriber.cs" />
+    <Compile Include="Util\CallData.cs" />
+    <Compile Include="Util\CrmDbIntegration.cs" />
+    <Compile Include="Util\FileIntegration.cs" />
+    <Compile Include="Util\PipeIntegration.cs" />
+    <Compile Include="Util\PortIntegration.cs" />
+    <Compile Include="Util\PortSettings.cs" />
+    <Compile Include="Util\Settings.cs" />
+    <Compile Include="XML Storage\XMLFile.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Pointel.Configuration.Manager\Pointel.Configuration.Manager.csproj">
+      <Project>{870DEB13-F88C-4B03-B78C-C3EADB70BFD9}</Project>
+      <Name>Pointel.Configuration.Manager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pointel.Desktop.Access.Control\Pointel.Desktop.Access.Control.csproj">
+      <Project>{CCBE735E-E893-48D1-9035-0BF2AC1DBDA4}</Project>
+      <Name>Pointel.Desktop.Access.Control</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pointel.Integration.PlugIn\Pointel.Integration.PlugIn.csproj">
+      <Project>{DD1F4B1C-2FE9-4DD4-818A-0ABE8187CD75}</Project>
+      <Name>Pointel.Integration.PlugIn</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pointel.Softphone.Voice\Pointel.Softphone.Voice.csproj">
+      <Project>{D12288D8-503D-44D2-A651-E6D26D326457}</Project>
+      <Name>Pointel.Softphone.Voice</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pointelsoftphone32x32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="MSHTML">
+      <Guid>{3050F1C5-98B5-11CF-BB82-00AA00BDCE0B}</Guid>
+      <VersionMajor>4</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="SHDocVw">
+      <Guid>{EAB22AC0-30C1-11CF-A7EB-0000C05BAE0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

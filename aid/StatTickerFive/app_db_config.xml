@@ -1,0 +1,135 @@
+<AppConfig>
+  <StatTickerFive>
+    <!--Database connection configurations if the Application Type is Database-->
+    <DbSetting>
+      <!--Type of the Database to be connected-->
+      <db-Type></db-Type>
+      <!--Host address of the DB-->
+      <db-Host></db-Host>
+      <!--Port address of the DB-->
+      <db-Port></db-Port>
+      <!--Name of the Database to be connected-->
+      <db-Name></db-Name>
+      <!--Database Username-->
+      <db-Username></db-Username>
+      <!--Database Password-->
+      <db-Password></db-Password>
+      <!--Unique SID of the database-->
+      <db-Sid></db-Sid>
+      <!--Unique name of the database-->
+      <db-Sname></db-Sname>
+      <!--Source of the DB (SQLServer, SQLite, ORACLE)-->
+      <db-Source></db-Source>
+      <!--Login query for DB Authentication-->
+      <db-loginquery>select count(*) from RESOURCE_DETAILS where</db-loginquery>
+    </DbSetting>
+    <DbColor>#F7718C</DbColor>
+    <!--List of Tagged statistics-->
+    <DbTaggedStats></DbTaggedStats>
+    <!--Database statistics configurations if the Application Type is Database -->
+    <dbstatistics>
+      <!--Name of the Query-->
+      <db.query1>
+        <!-- Statistics properties -->
+        <db.displayname>State 2</db.displayname>
+        <db.threshold1>5</db.threshold1>
+        <db.threshold2>15</db.threshold2>
+        <db.color1>#3C474D</db.color1>
+        <db.color2>Green</db.color2>
+        <db.color3>Red</db.color3>
+        <db.tooltipname>Agent State 2</db.tooltipname>
+        <db.format>T</db.format>
+        <db.query>select RESOURCE_STATE_KEY from RESOURCE_STATE where STATE_NAME='NotReadyForNextCall'</db.query>
+      </db.query1>
+      <!--Name of the Query-->
+      <db.query2>
+        <!-- Statistics properties -->
+        <db.displayname>State 2</db.displayname>
+        <db.threshold1>5</db.threshold1>
+        <db.threshold2>15</db.threshold2>
+        <db.color1>Green</db.color1>
+        <db.color2>#1F4C91</db.color2>
+        <db.color3>Red</db.color3>
+        <db.tooltipname>Agent State 3</db.tooltipname>
+        <db.format>D</db.format>
+        <db.query>select RESOURCE_STATE_KEY from RESOURCE_STATE where STATE_NAME='NotReadyForNextCall'</db.query>
+      </db.query2>
+      <!--Name of the Query-->
+      <db.query3>
+        <!-- Statistics properties -->
+        <db.displayname>State 2</db.displayname>
+        <db.threshold1>5</db.threshold1>
+        <db.threshold2>15</db.threshold2>
+        <db.color1>Green</db.color1>
+        <db.color2>#1F4C91</db.color2>
+        <db.color3>Red</db.color3>
+        <db.tooltipname>Agent State 3</db.tooltipname>
+        <db.format>D</db.format>
+        <db.query>select RESOURCE_STATE_KEY from RESOURCE_STATE where STATE_NAME='Busy'</db.query>
+      </db.query3>
+      <!--Name of the Query-->
+      <db.query4>
+        <!-- Statistics properties -->
+        <db.displayname>State 2</db.displayname>
+        <db.threshold1>5</db.threshold1>
+        <db.threshold2>15</db.threshold2>
+        <db.color1>Green</db.color1>
+        <db.color2>#1F4C91</db.color2>
+        <db.color3>Red</db.color3>
+        <db.tooltipname>Agent State 3</db.tooltipname>
+        <db.format>D</db.format>
+        <db.query>select RESOURCE_STATE_KEY from RESOURCE_STATE where STATE_NAME='CallConsult'</db.query>
+      </db.query4>
+    </dbstatistics>
+    <!--Enable Disable features of the application -->
+    <enable.disable-channels>
+      <statistics.enable-alwaysontop>True</statistics.enable-alwaysontop>
+      <statistics.enable-hhmmssformat>False</statistics.enable-hhmmssformat>
+      <statistics.enable-log>True</statistics.enable-log>
+      <statistics.enable-maingadget>True</statistics.enable-maingadget>
+      <statistics.enable-menu-button>True</statistics.enable-menu-button>
+      <statistics.enable-notification-balloon>False</statistics.enable-notification-balloon>
+      <statistics.enable-notification-close>False</statistics.enable-notification-close>
+      <statistics.enable-submenu-close-gadget>True</statistics.enable-submenu-close-gadget>
+      <statistics.enable-submenu-ontop>True</statistics.enable-submenu-ontop>
+      <statistics.enable-systemdraggable>True</statistics.enable-systemdraggable>
+      <statistics.enable-tag-button>True</statistics.enable-tag-button>
+      <statistics.enable-tag-vertical>True</statistics.enable-tag-vertical>
+      <statistics.enable-untag-button>True</statistics.enable-untag-button>
+      <statistics.enable-submenu-alertnotification>True</statistics.enable-submenu-alertnotification>
+      <statistics.enable-submenu-showheader>True</statistics.enable-submenu-showheader>
+      <statistics.enable-notify-primary-screen>True</statistics.enable-notify-primary-screen>
+      <statistics.enable-header>True</statistics.enable-header>
+    </enable.disable-channels>
+    <!--Application logger properties-->
+    <statistics.log>
+      <statistics.log.conversionpattern>%date [%5thread] %-15level %5C{1}.%-25M  -  %-70message%newline</statistics.log.conversionpattern>
+      <statistics.log.datepattern>yyyy-MM-dd</statistics.log.datepattern>
+      <statistics.log.filename>D:/Logs/StatTickerFive/</statistics.log.filename>
+      <statistics.log.filterlevel>STF</statistics.log.filterlevel>
+      <statistics.log.level>Info,Debug</statistics.log.level>
+      <statistics.log.maxfilesize>5MB</statistics.log.maxfilesize>
+      <statistics.log.maxlevel>Trace</statistics.log.maxlevel>
+      <statistics.log.maxrollbacksize>5</statistics.log.maxrollbacksize>
+      <statistics.log.minlevel>All</statistics.log.minlevel>
+      <statistics.log.rollstyle>size</statistics.log.rollstyle>
+    </statistics.log>
+    <!--Threshold Notifier Alerts-->
+    <alert>
+      <statistics.alert.audio-path>E:\E Drive\Elango\New Folder\Desktop\UD\01.07.14\MUSIC's\bell.mp3</statistics.alert.audio-path>
+      <statistics.alert.audio-play.attempt>4</statistics.alert.audio-play.attempt>
+      <statistics.alert.audio-play.duration>2</statistics.alert.audio-play.duration>
+      <statistics.alert.popup.attempt>3</statistics.alert.popup.attempt>
+      <statistics.alert.popup.duration>10</statistics.alert.popup.duration>
+      <statistics.alert.popup.font-bold>false</statistics.alert.popup.font-bold>
+      <statistics.alert.popup.font-color>Black</statistics.alert.popup.font-color>
+      <statistics.alert.popup.screen-color>#007edf,#FFFFFF</statistics.alert.popup.screen-color>
+    </alert>
+    <!--Application Error vallues-->
+    <_errors_>
+      <db.authentication>Authentication failed to Connect the Database. Please check the  provided credentials.</db.authentication>
+      <db.connection>Connection to the Database couln't be establish. Please check the connection.</db.connection>
+      <nostat.configured>Please configure any statistics for the logged in Agent.</nostat.configured>
+    </_errors_>
+  </StatTickerFive>
+</AppConfig>

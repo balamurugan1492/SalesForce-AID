@@ -1,0 +1,43 @@
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Softphone.Language\bin\Release\Pointel.Softphone.Language.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Softphone.Language\bin\Release\Pointel.Softphone.Language.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Softphone.Language\obj\Release\EnglishLanguage.baml
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Softphone.Language\obj\Release\SpanishLanguage.baml
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Softphone.Language\obj\Release\EnglishLanguage.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Softphone.Language\obj\Release\SpanishLanguage.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Softphone.Language\obj\Release\Pointel.Softphone.Language_MarkupCompile.cache
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Softphone.Language\obj\Release\Pointel.Softphone.Language.g.resources
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Softphone.Language\obj\Release\Pointel.Softphone.Language.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.Softphone.Language\obj\Release\Pointel.Softphone.Language.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Softphone.Language\bin\Release\Pointel.Softphone.Language.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Softphone.Language\bin\Release\Pointel.Softphone.Language.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Softphone.Language\obj\Release\EnglishLanguage.baml
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Softphone.Language\obj\Release\SpanishLanguage.baml
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Softphone.Language\obj\Release\EnglishLanguage.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Softphone.Language\obj\Release\SpanishLanguage.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Softphone.Language\obj\Release\Pointel.Softphone.Language_MarkupCompile.cache
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Softphone.Language\obj\Release\Pointel.Softphone.Language.g.resources
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Softphone.Language\obj\Release\Pointel.Softphone.Language.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Softphone.Language\obj\Release\Pointel.Softphone.Language.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Softphone.Language\obj\Release\Pointel.Softphone.Language.csprojResolveAssemblyReference.cache
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Softphone.Language\bin\Release\Pointel.Softphone.Language.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Softphone.Language\bin\Release\Pointel.Softphone.Language.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Softphone.Language\obj\Release\Pointel.Softphone.Language.csprojResolveAssemblyReference.cache
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Softphone.Language\obj\Release\EnglishLanguage.baml
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Softphone.Language\obj\Release\SpanishLanguage.baml
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Softphone.Language\obj\Release\EnglishLanguage.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Softphone.Language\obj\Release\SpanishLanguage.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Softphone.Language\obj\Release\Pointel.Softphone.Language_MarkupCompile.cache
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Softphone.Language\obj\Release\Pointel.Softphone.Language.g.resources
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Softphone.Language\obj\Release\Pointel.Softphone.Language.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Softphone.Language\obj\Release\Pointel.Softphone.Language.pdb
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Softphone.Language\bin\Release\Pointel.Softphone.Language.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Softphone.Language\bin\Release\Pointel.Softphone.Language.pdb
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Softphone.Language\obj\Release\Pointel.Softphone.Language.csprojResolveAssemblyReference.cache
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Softphone.Language\obj\Release\EnglishLanguage.baml
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Softphone.Language\obj\Release\SpanishLanguage.baml
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Softphone.Language\obj\Release\EnglishLanguage.g.cs
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Softphone.Language\obj\Release\SpanishLanguage.g.cs
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Softphone.Language\obj\Release\Pointel.Softphone.Language_MarkupCompile.cache
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Softphone.Language\obj\Release\Pointel.Softphone.Language.g.resources
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Softphone.Language\obj\Release\Pointel.Softphone.Language.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Softphone.Language\obj\Release\Pointel.Softphone.Language.pdb

@@ -1,0 +1,508 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DEEC38ED-AD5D-4F68-AE37-C0B6FA50CCCE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StatTickerFive</RootNamespace>
+    <AssemblyName>StatTickerFive</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+    <PublishUrl>http://localhost/StatTickerFive/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>StatTickerFive.App</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>StatTickerFive-32x32-01.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Genesyslab.Platform.ApplicationBlocks.Commons.Broker, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Redist\Genesyslab.Platform.ApplicationBlocks.Commons.Broker.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.ApplicationBlocks.Commons.Protocols, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Redist\Genesyslab.Platform.ApplicationBlocks.Commons.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.ApplicationBlocks.ConfigurationObjectModel, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Redist\Genesyslab.Platform.ApplicationBlocks.ConfigurationObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Commons, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Redist\Genesyslab.Platform.Commons.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Commons.Collections, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Redist\Genesyslab.Platform.Commons.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Commons.Connection, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Redist\Genesyslab.Platform.Commons.Connection.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Commons.Protocols, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Redist\Genesyslab.Platform.Commons.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Configuration.Protocols, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Redist\Genesyslab.Platform.Configuration.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Reporting.Protocols">
+      <HintPath>..\Redist\Genesyslab.Platform.Reporting.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\Redist\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net">
+      <HintPath>..\Redist\Lucene.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Pointel.AlertNotifier, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\Redist\Pointel.AlertNotifier.dll</HintPath>
+    </Reference>
+    <Reference Include="Pointel.IPlugin.Interface, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\Redist\Pointel.IPlugin.Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="Pointel.Logger.Core">
+      <HintPath>..\Redist\Pointel.Logger.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity">
+      <HintPath>..\Redist\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WPFToolkit, Version=3.5.40128.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Redist\WPFToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="WPFToolkit.Extended, Version=1.5.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Redist\WPFToolkit.Extended.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.Toolkit">
+      <HintPath>..\Redist\Xceed.Wpf.Toolkit.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Converters\ColorBlendConverter.cs" />
+    <Compile Include="Converters\ColorToSolidColorBrushConverter.cs" />
+    <Compile Include="Converters\ScrollbarOnFarLeftConverter.cs" />
+    <Compile Include="Converters\ScrollbarOnFarRightConverter.cs" />
+    <Compile Include="Converters\WindowColors.cs" />
+    <Compile Include="Converters\WindowControl.cs" />
+    <Compile Include="Helpers\DelegateCommand.cs" />
+    <Compile Include="Converters\InverseBoolConverter.cs" />
+    <Compile Include="Converters\MultiConverter.cs" />
+    <Compile Include="Helpers\ObjectValues.cs" />
+    <Compile Include="Helpers\StatisticsSearch.cs" />
+    <Compile Include="Helpers\StatisticsSupport.cs" />
+    <Compile Include="Helpers\StatisticsProperties.cs" />
+    <Compile Include="InstallerClass1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InstallerClass1.Designer.cs">
+      <DependentUpon>InstallerClass1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\IndexPage.cs" />
+    <Compile Include="Helpers\NotificationObject.cs" />
+    <Compile Include="Helpers\Settings.cs" />
+    <Compile Include="Helpers\StatisticsInfo.cs" />
+    <Compile Include="Helpers\ValidationClass.cs" />
+    <Compile Include="Helpers\XMLStorage.cs" />
+    <Compile Include="PluginContainer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\Views\MainGadgetControl.xaml.cs">
+      <DependentUpon>MainGadgetControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Views\TabValue.xaml.cs">
+      <DependentUpon>TabValue.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Views\TagGadgetControl.xaml.cs">
+      <DependentUpon>TagGadgetControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\AdminConfigWindowViewModel.cs" />
+    <Compile Include="ViewModels\CustomNotifierViewModel.cs" />
+    <Compile Include="ViewModels\LoginWindowViewModel.cs" />
+    <Compile Include="ViewModels\MainWindowViewModel.cs" />
+    <Compile Include="ViewModels\MessageBoxViewModel.cs" />
+    <Compile Include="ViewModels\NewStatisticsWindowViewModel.cs" />
+    <Compile Include="ViewModels\ObjectConfigWindowViewModel.cs" />
+    <Compile Include="ViewModels\StatisticsWindowViewModel.cs" />
+    <Compile Include="ViewModels\TabValueViewModel.cs" />
+    <Compile Include="ViewModels\ThresholdNotiferViewModel.cs" />
+    <Compile Include="ViewModels\UserLevelStatisticsConfigViewModel.cs" />
+    <Compile Include="Views\AdminMainWindow.xaml.cs">
+      <DependentUpon>AdminMainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AdminConfigWindow.xaml.cs">
+      <DependentUpon>AdminConfigWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NewObjectConfigWindow.xaml.cs">
+      <DependentUpon>NewObjectConfigWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NewStatisticsWindow.xaml.cs">
+      <DependentUpon>NewStatisticsWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ObjectConfigWindow.xaml.cs">
+      <DependentUpon>ObjectConfigWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CustomAlertNotifier.xaml.cs">
+      <DependentUpon>CustomAlertNotifier.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CustomNotifier.xaml.cs">
+      <DependentUpon>CustomNotifier.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LoginWindow.xaml.cs">
+      <DependentUpon>LoginWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MessageBox.xaml.cs">
+      <DependentUpon>MessageBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\StatisticsConfigWindow.xaml.cs">
+      <DependentUpon>StatisticsConfigWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\StatisticsWindow.xaml.cs">
+      <DependentUpon>StatisticsWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SwitchWindow.xaml.cs">
+      <DependentUpon>SwitchWindow.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\application_view_list.png" />
+    <Resource Include="Images\br_down.ico" />
+    <Resource Include="Images\br_up.ico" />
+    <Resource Include="Images\chart_bar.png" />
+    <Resource Include="Images\control_eject_blue.png" />
+    <Resource Include="Images\control_fastforward.png" />
+    <Resource Include="Images\control_fastforward_blue.png" />
+    <Resource Include="Images\control_pause.png" />
+    <Resource Include="Images\control_pause_blue.png" />
+    <Resource Include="Images\control_play.png" />
+    <Resource Include="Images\control_play_blue.png" />
+    <Resource Include="Images\control_rewind.png" />
+    <Resource Include="Images\control_rewind_blue.png" />
+    <Resource Include="Images\control_start.png" />
+    <Resource Include="Images\control_start_blue.png" />
+    <Resource Include="Images\control_stop.png" />
+    <Resource Include="Images\control_stop_blue.png" />
+    <Resource Include="Images\Custom Close selected.png" />
+    <Resource Include="Images\eject.png" />
+    <Resource Include="Images\Error.png" />
+    <Resource Include="Images\resultset_first.png" />
+    <Resource Include="Images\resultset_last.png" />
+    <Resource Include="Images\resultset_next.png" />
+    <Resource Include="Images\StatTickerFive-32x32-01.ico" />
+    <Resource Include="Images\StatTickerFive-32x32-01.png" />
+    <Resource Include="Images\StatTiker.ico" />
+    <Resource Include="Images\tag-add.png" />
+    <Resource Include="Images\tag-remove.png" />
+    <Resource Include="Images\tag_blue.png" />
+    <Resource Include="Images\tag_blue_add.png" />
+    <Resource Include="Images\tag_blue_delete.png" />
+    <Resource Include="Images\tag_blue_edit.png" />
+    <Resource Include="Images\tag_green.png" />
+    <Resource Include="Images\tag_orange.png" />
+    <Resource Include="Images\tag_pink.png" />
+    <Resource Include="Images\tag_purple.png" />
+    <Resource Include="Images\tag_red.png" />
+    <Resource Include="Images\tag_yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="Resources\Common.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\StyleResource.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\Views\MainGadgetControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\Views\TabValue.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\Views\TagGadgetControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\AdminMainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\AdminConfigWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\NewObjectConfigWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\NewStatisticsWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\ObjectConfigWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\CustomAlertNotifier.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\CustomNotifier.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\LoginWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\MessageBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\StatisticsConfigWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\StatisticsWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\SwitchWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\1424975429_gtk-edit.png" />
+    <Resource Include="Images\1424976589_pen.png" />
+    <Resource Include="Images\Back.png" />
+    <Content Include="Images\close_hover.png" />
+    <Content Include="Images\close_inactive.png" />
+    <Content Include="Images\close_normal.png" />
+    <Content Include="Images\close_pressed.png" />
+    <Content Include="Images\close_rounded_hover.png" />
+    <Content Include="Images\close_rounded_inactive.png" />
+    <Content Include="Images\close_rounded_normal.png" />
+    <Content Include="Images\close_rounded_pressed.png" />
+    <Content Include="Images\close_toolwindow_hover.png" />
+    <Content Include="Images\close_toolwindow_inactive.png" />
+    <Content Include="Images\close_toolwindow_normal.png" />
+    <Content Include="Images\close_toolwindow_pressed.png" />
+    <Content Include="Images\editButton.png" />
+    <Resource Include="Images\editIcon.png" />
+    <Resource Include="Images\Edit_Grey.png" />
+    <Resource Include="Images\Pen_Box.png" />
+    <Content Include="Images\maximize_disabled.png" />
+    <Content Include="Images\maximize_hover.png" />
+    <Content Include="Images\maximize_inactive.png" />
+    <Content Include="Images\maximize_normal.png" />
+    <Content Include="Images\maximize_pressed.png" />
+    <Content Include="Images\minimize_hover.png" />
+    <Content Include="Images\minimize_inactive.png" />
+    <Content Include="Images\minimize_normal.png" />
+    <Content Include="Images\minimize_pressed.png" />
+    <Resource Include="Images\new.png" />
+    <Resource Include="Images\ObjectSetting.png" />
+    <Content Include="Images\resize_grip.png" />
+    <Content Include="Images\restore_disabled.png" />
+    <Content Include="Images\restore_hover.png" />
+    <Content Include="Images\restore_inactive.png" />
+    <Content Include="Images\restore_normal.png" />
+    <Content Include="Images\restore_pressed.png" />
+    <Resource Include="Images\StatTickerFive-32x32-01_BB.png" />
+    <Resource Include="Images\StatTickerFive-32x32-01_Yahoo.png" />
+    <Resource Include="Images\save.png" />
+    <Resource Include="Images\undo.png" />
+    <Content Include="StatTickerFive-32x32-01.ico" />
+    <Resource Include="Images\Custom Close.png" />
+    <Resource Include="Images\eject_blue.png" />
+    <Resource Include="Images\eject_gray.png" />
+    <Resource Include="Images\eject_yahoo.png" />
+    <Resource Include="Images\next_blue.png" />
+    <Resource Include="Images\next_gray.png" />
+    <Resource Include="Images\next_yahoo.png" />
+    <Resource Include="Images\play_blue.png" />
+    <Resource Include="Images\play_gray.png" />
+    <Resource Include="Images\play_yahoo.png" />
+    <Resource Include="Images\previous_blue.png" />
+    <Resource Include="Images\previous_gray.png" />
+    <Resource Include="Images\previous_yahoo.png" />
+    <Resource Include="Images\stop_blue.png" />
+    <Resource Include="Images\stop_gray.png" />
+    <Resource Include="Images\stop_yahoo.png" />
+    <Content Include="app_config.xml" />
+    <Content Include="app_db_config.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="InstallerClass1.resx">
+      <DependentUpon>InstallerClass1.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Pointel.Statistics.Core\Pointel.Statistics.Core.csproj">
+      <Project>{B49F7E04-7239-4A37-8F7C-4E1322F604CF}</Project>
+      <Name>Pointel.Statistics.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pointel.Statistics.TaskbarNotifier\Pointel.Statistics.TaskbarNotifier.csproj">
+      <Project>{48030EEA-29CA-4A61-A676-FF0840413FE8}</Project>
+      <Name>Pointel.Statistics.TaskbarNotifier</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,22 @@
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.TaskbarNotifier\bin\Release\Pointel.TaskbarNotifier.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.TaskbarNotifier\obj\Release\Pointel.TaskbarNotifier.g.resources
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.TaskbarNotifier\obj\Release\Pointel.TaskbarNotifier.Properties.Resources.resources
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.TaskbarNotifier\obj\Release\Pointel.TaskbarNotifier.csproj.GenerateResource.Cache
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.15\Pointel.TaskbarNotifier\obj\Release\Pointel.TaskbarNotifier.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.TaskbarNotifier\bin\Release\Pointel.TaskbarNotifier.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.TaskbarNotifier\obj\Release\Pointel.TaskbarNotifier.g.resources
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.TaskbarNotifier\obj\Release\Pointel.TaskbarNotifier.Properties.Resources.resources
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.TaskbarNotifier\obj\Release\Pointel.TaskbarNotifier.csproj.GenerateResource.Cache
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.TaskbarNotifier\obj\Release\Pointel.TaskbarNotifier.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.TaskbarNotifier\bin\Release\Pointel.TaskbarNotifier.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.TaskbarNotifier\obj\Release\Pointel.TaskbarNotifier.csprojResolveAssemblyReference.cache
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.TaskbarNotifier\obj\Release\Pointel.TaskbarNotifier.g.resources
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.TaskbarNotifier\obj\Release\Pointel.TaskbarNotifier.Properties.Resources.resources
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.TaskbarNotifier\obj\Release\Pointel.TaskbarNotifier.csproj.GenerateResource.Cache
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.TaskbarNotifier\obj\Release\Pointel.TaskbarNotifier.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.TaskbarNotifier\bin\Release\Pointel.TaskbarNotifier.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.TaskbarNotifier\obj\Release\Pointel.TaskbarNotifier.csprojResolveAssemblyReference.cache
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.TaskbarNotifier\obj\Release\Pointel.TaskbarNotifier.g.resources
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.TaskbarNotifier\obj\Release\Pointel.TaskbarNotifier.Properties.Resources.resources
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.TaskbarNotifier\obj\Release\Pointel.TaskbarNotifier.csproj.GenerateResource.Cache
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.TaskbarNotifier\obj\Release\Pointel.TaskbarNotifier.dll

@@ -1,0 +1,1010 @@
+﻿<UserControl x:Class="Pointel.Interaction.Workbin.Controls.WorkbinUserControl"
+            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+              xmlns:c="clr-namespace:Pointel.Interaction.Workbin.Controls"
+             xmlns:gif="http://wpfanimatedgif.codeplex.com"
+             xmlns:my="http://schemas.microsoft.com/wpf/2008/toolkit"
+             xmlns:self="clr-namespace:Pointel.Interaction.Workbin.Helpers"
+             xmlns:pointel="clr-namespace:Pointel.Interaction.Workbin.Controls;assembly=Pointel.Interaction.Workbin"
+             xmlns:Microsoft_Windows_Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Classic"  
+             mc:Ignorable="d" FontFamily="Calibri" Margin="2" FontSize="12" Loaded="UserControl_Loaded" Unloaded="UserControl_Unloaded" Name="userControlWorkbin" SizeChanged="userControlWorkbin_SizeChanged">
+    <UserControl.CommandBindings>
+        <CommandBinding Command="Open" Executed="Open_Executed" CanExecute="Open_CanExecute"></CommandBinding>
+        <CommandBinding Command="Delete" Executed="Delete_Executed" CanExecute="Delete_CanExecute"></CommandBinding>
+    </UserControl.CommandBindings>
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary
+                   Source="/Pointel.Interaction.Workbin;component/Resource/Generic.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <DataTemplate x:Key="MediaTemplateVoice" x:Name="VoiceMedia">
+                <Image Width="20" Height="20" Source="/Agent.Interaction.Desktop;component/Images/Contact/Voice.png" />
+            </DataTemplate>
+            <DataTemplate x:Key="MediaTemplateEmailInbound" x:Name="EmailMediaInbound">
+                <Image Width="20" Height="20" Source="/Agent.Interaction.Desktop;component/Images/Email/Inbound1.png" />
+            </DataTemplate>
+            <DataTemplate x:Key="MediaTemplateEmailOutbound" x:Name="EmailMediaOutbound">
+                <Image Width="20" Height="20" Source="/Agent.Interaction.Desktop;component/Images/Email/Outbound2.png" />
+            </DataTemplate>
+            <DataTemplate x:Key="MediaTemplateChat" x:Name="ChatMedia">
+                <Image Width="20" Height="20" Source="/Agent.Interaction.Desktop;component/Images/Contact/Chat.png" />
+            </DataTemplate>
+            <DataTemplate x:Key="MediaTemplateDefault" x:Name="DefaultMedia">
+                <Image Width="20" Height="20" Source="/Agent.Interaction.Desktop;component/Images/Transparent.gif" />
+            </DataTemplate>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Grid>
+        <Border Name="BrdOpacity" VirtualizingStackPanel.IsVirtualizing="True" Background="#4a4a4a" Panel.ZIndex="0" Opacity="0.1" Width="{Binding ElementName=userControlWorkbin, Path=Width}" Height="{Binding ElementName=userControlWorkbin, Path=Height}"/>
+        <!--<StackPanel Name="gridPreload" Panel.ZIndex="0" Margin="0,110,0,0">-->
+        <Image Name="ImgPreload" Panel.ZIndex="0"  Width="100" Height="100" VerticalAlignment="Center" HorizontalAlignment="Center"
+                gif:ImageBehavior.AnimatedSource="/Agent.Interaction.Desktop;component/Images/Loading.gif"></Image>
+        <!--<TextBlock Name="txtLoadingProgress" VerticalAlignment="Center" Text="Loading..." Foreground="White" FontSize="14" HorizontalAlignment="Center" Margin="5"/>-->
+        <!--</StackPanel>-->
+        <!--<Border Name="MainBorder">-->
+        <!-- DockPanel To hold the window regions and max,min,close buttons-->
+        <Grid>
+            <Grid Name="gridCompleteContainer" ShowGridLines="False" Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition MinWidth="200"  Width="200" MaxWidth="200" />
+                    <ColumnDefinition Width="2" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Border Grid.Column="0" BorderBrush="#D6D7D6" BorderThickness="1">
+                    <DockPanel>
+                        <Button DockPanel.Dock="Bottom" Name="btnMyInteractionQueue" Visibility="Collapsed" Content="My Interaction Queue" Padding="5"  Background="#D9EBFC" Style="{StaticResource WorkbinButton}" Click="btnMyInteractionQueue_Click"></Button>
+                        <Button DockPanel.Dock="Bottom" Name="btnMyTeamWorkbin" Visibility="Collapsed" Content="My Team Workbins" Padding="5"  Background="#D9EBFC" Style="{StaticResource WorkbinButton}" Click="btnMyTeamWorkbin_Click"></Button>
+                        <Button DockPanel.Dock="Bottom" Name="btnMyWorkbin" Content="My Workbin" Padding="5" Background="#D9EBFC" Style="{StaticResource WorkbinButton}" Click="btnMyWorkbin_Click"></Button>
+                        <Grid DockPanel.Dock="Top">
+                            <TreeView Name="tvWorkbin" SelectedItemChanged="tvWorkbin_SelectedItemChanged"  Margin="2">
+                                <TreeView.ItemTemplate>
+                                    <HierarchicalDataTemplate ItemsSource="{Binding Items}">
+                                        <WrapPanel Background="{Binding Color}">
+                                            <Image Name="treeImg" Stretch="Fill" Source="/Agent.Interaction.Desktop;component/Images/EMail/Email Workbin.png" Margin="0,0,1,0" VerticalAlignment="Center"  Width="25" Visibility="{Binding Visible}"></Image>
+                                            <TextBlock Text="{Binding Title}" VerticalAlignment="Center" />
+                                            <TextBlock Text="{Binding Count}" Visibility="{Binding Visible}" VerticalAlignment="Center" />
+                                        </WrapPanel>
+                                        <!--<HierarchicalDataTemplate.Triggers>
+                                            <DataTrigger Binding="{IsSelected" Value="True">
+                                                <Setter TargetName="treeImg" Property="Source" Value="/Agent.Interaction.Desktop;component/Images/Email/openedmail.png"/>
+                                            </DataTrigger>
+                                        </HierarchicalDataTemplate.Triggers>-->
+                                    </HierarchicalDataTemplate>
+                                </TreeView.ItemTemplate>
+                                <TreeView.ItemContainerStyle>
+                                    <Style TargetType="TreeViewItem">
+                                        <Setter Property="IsSelected" Value="{Binding IsSelected}" />
+                                        <Setter Property="IsExpanded" Value="{Binding IsExpanded}" />
+                                        <!--<Setter Property="BorderThickness" Value="1.5"/>-->
+                                        <Style.Triggers>
+                                            <Trigger Property="IsSelected" Value="True">
+                                                <Setter Property="TextElement.Background" Value="#adc6e5"/>
+                                                <Setter Property="TextElement.Foreground" Value="#0575AF"></Setter>
+                                                <Setter Property="TextElement.FontWeight" Value="Bold"></Setter>
+                                                <Setter Property="TextElement.FontSize" Value="12"></Setter>
+                                                <!--<Setter Property="Image.Source" Value="emailwhite.png"></Setter>-->
+                                            </Trigger>
+                                            <MultiTrigger>
+                                                <MultiTrigger.Conditions>
+                                                    <Condition Property="IsSelected" Value="True"/>
+                                                    <Condition Property="IsSelectionActive" Value="False"/>
+                                                </MultiTrigger.Conditions>
+                                                <!--<Setter Property="BorderBrush" Value="LightGray"/>-->
+                                            </MultiTrigger>
+                                        </Style.Triggers>
+                                        <Style.Resources>
+                                            <Style TargetType="Border">
+                                                <Setter Property="CornerRadius" Value="2"/>
+                                            </Style>
+                                        </Style.Resources>
+                                    </Style>
+                                </TreeView.ItemContainerStyle>
+                                <TreeView.Resources>
+                                    <LinearGradientBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" EndPoint="0,1" StartPoint="0,0">
+                                        <GradientStop Color="#FFD9F4FF" Offset="0"/>
+                                        <GradientStop Color="#FF9BDDFB" Offset="1"/>
+                                    </LinearGradientBrush>
+                                    <LinearGradientBrush x:Key="{x:Static SystemColors.ControlBrushKey}" EndPoint="0,1" StartPoint="0,0">
+                                        <GradientStop Color="#FFEEEDED" Offset="0"/>
+                                        <GradientStop Color="#FFDDDDDD" Offset="1"/>
+                                    </LinearGradientBrush>
+                                    <SolidColorBrush x:Key="{x:Static SystemColors.HighlightTextBrushKey}" Color="Black" />
+                                    <SolidColorBrush x:Key="{x:Static SystemColors.ControlTextBrushKey}" Color="Black" />
+                                </TreeView.Resources>
+                            </TreeView>
+                            <TreeView Name="tvInteractionQueue" SelectedItemChanged="tvInteractionQueue_SelectedItemChanged" Visibility="Collapsed" Margin="2">
+                                <TreeView.ItemTemplate>
+                                    <HierarchicalDataTemplate ItemsSource="{Binding Items}">
+                                        <WrapPanel Background="{Binding Color}">
+                                            <Image  Source="{Binding ImagePath}" Margin="0,0,5,5" VerticalAlignment="Center" Width="20" Height="17"></Image>
+                                            <TextBlock Text="{Binding DisplayName}"  Margin="0,0,0,5" VerticalAlignment="Center" />
+                                        </WrapPanel>
+                                    </HierarchicalDataTemplate>
+                                </TreeView.ItemTemplate>
+                                <TreeView.ItemContainerStyle>
+                                    <Style TargetType="TreeViewItem">
+                                        <Setter Property="IsSelected" Value="{Binding IsSelected}" />
+                                        <Setter Property="IsExpanded" Value="{Binding IsExpanded}" />
+                                        <!--<Setter Property="BorderThickness" Value="1.5"/>-->
+                                        <Style.Triggers>
+                                            <Trigger Property="IsSelected" Value="True">
+                                                <Setter Property="TextElement.Background" Value="#adc6e5"/>
+                                                <Setter Property="TextElement.Foreground" Value="#0575AF"></Setter>
+                                                <Setter Property="TextElement.FontWeight" Value="Bold"></Setter>
+                                                <Setter Property="TextElement.FontSize" Value="12"></Setter>
+                                                <!--<Setter Property="Image.Source" Value="emailwhite.png"></Setter>-->
+                                            </Trigger>
+                                            <MultiTrigger>
+                                                <MultiTrigger.Conditions>
+                                                    <Condition Property="IsSelected" Value="True"/>
+                                                    <Condition Property="IsSelectionActive" Value="False"/>
+                                                </MultiTrigger.Conditions>
+                                                <!--<Setter Property="BorderBrush" Value="LightGray"/>-->
+                                            </MultiTrigger>
+                                        </Style.Triggers>
+                                        <Style.Resources>
+                                            <Style TargetType="Border">
+                                                <Setter Property="CornerRadius" Value="2"/>
+                                            </Style>
+                                        </Style.Resources>
+                                    </Style>
+                                </TreeView.ItemContainerStyle>
+                                <TreeView.Resources>
+                                    <LinearGradientBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" EndPoint="0,1" StartPoint="0,0">
+                                        <GradientStop Color="#FFD9F4FF" Offset="0"/>
+                                        <GradientStop Color="#FF9BDDFB" Offset="1"/>
+                                    </LinearGradientBrush>
+                                    <LinearGradientBrush x:Key="{x:Static SystemColors.ControlBrushKey}" EndPoint="0,1" StartPoint="0,0">
+                                        <GradientStop Color="#FFEEEDED" Offset="0"/>
+                                        <GradientStop Color="#FFDDDDDD" Offset="1"/>
+                                    </LinearGradientBrush>
+                                    <SolidColorBrush x:Key="{x:Static SystemColors.HighlightTextBrushKey}" Color="Black" />
+                                    <SolidColorBrush x:Key="{x:Static SystemColors.ControlTextBrushKey}" Color="Black" />
+                                </TreeView.Resources>
+                            </TreeView>
+                            <TextBlock Margin="10" Name="txtErrorinConfig" DockPanel.Dock="Top" HorizontalAlignment="Center" Visibility="Collapsed"></TextBlock>
+                        </Grid>
+                    </DockPanel>
+                </Border>
+
+                <GridSplitter  Grid.Column="1" ResizeBehavior="PreviousAndNext"  BorderBrush="#D6D7D6" BorderThickness="2" ResizeDirection="Columns"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Height="Auto" Margin="2,0,2,0">
+                </GridSplitter>
+                <TabControl Grid.Column="2" Grid.Row="1">
+                    <TabItem  Name="ShowCurrentWorkbin" BorderBrush="#D6D7D6" BorderThickness="1">
+                        <TabItem.Header>
+                            <TextBlock Text="No Workbin Selected"  FontWeight="Bold"></TextBlock>
+                        </TabItem.Header>
+                        <!--<StackPanel>-->
+                        <!--Complete Workbin Explorer Area -->
+                        <Grid>
+                            <Grid Margin="2" Background="Transparent" Name="gridWorkbinExplorer" ScrollViewer.VerticalScrollBarVisibility="Auto">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Name="grMessage" Height="0" ></RowDefinition>
+                                    <RowDefinition  Name="rowMainMenu" Height="65"  ></RowDefinition>
+                                    <RowDefinition Height="*" ></RowDefinition>
+                                </Grid.RowDefinitions>
+
+
+                                <!--Workbin Messsage-->
+                                <Grid Width="Auto" Height="Auto"  Grid.Row="0" Background="LightYellow">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="30"></ColumnDefinition>
+                                        <ColumnDefinition Width="*" Name="grdErrorColumn"></ColumnDefinition>
+                                        <ColumnDefinition Width="30"></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+                                    <Image Source="/Agent.Interaction.Desktop;component/Images/Contact/Error.png" 
+                                 Grid.Column="0"  Margin="5" Width="15" Height="15"></Image>
+
+                                    <TextBlock Name="txtInteractionMessage" Grid.Column="1"  VerticalAlignment="Center" Margin="5">
+
+                                    </TextBlock>
+
+
+                                    <Button Name="btnCloseError" HorizontalAlignment="Right" Grid.Column="2" Height="20" Width="20"  Style="{StaticResource NormalImageButton}" VerticalAlignment="Center" Click="btnCloseError_Click" Margin="4">
+                                        <Image Source="/Agent.Interaction.Desktop;component/Images/Contact/blue-close.png"></Image>
+                                        <Button.ToolTip>
+                                            <Border Background="White" BorderBrush="#ADAAAD" BorderThickness="0.5" Margin="-5">
+                                                <Grid>
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition Height="Auto"></RowDefinition>
+                                                        <RowDefinition Height="*"></RowDefinition>
+                                                    </Grid.RowDefinitions>
+                                                    <TextBlock Text="Close Error" Grid.Row="0" Padding="10,5,10,0" FontWeight="Bold" FontFamily="Calibri" ></TextBlock>
+                                                    <TextBlock Text="Close the error messages." Grid.Row="1" Padding="10,2,10,10" TextWrapping="WrapWithOverflow" FontFamily="Calibri" Width="Auto" MaxWidth="200"/>
+                                                </Grid>
+                                            </Border>
+                                        </Button.ToolTip>
+                                    </Button>
+                                </Grid>
+
+                                <!--Mail functionalities-->
+                                <Grid Name="StandardEmailImage" Visibility="Collapsed" Height="Auto" ShowGridLines="False"  Grid.Row="1" Width="Auto" Margin="3" >
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Name="gcInteractionQueue" Width="0" />
+                                        <ColumnDefinition Name="gcWorkbin" Width="Auto" />
+                                        <ColumnDefinition Name="gcOpenMail"   Width="Auto" />
+                                        <ColumnDefinition  Name="gcReply" Width="Auto" />
+                                        <ColumnDefinition Name="gcReplyAll" Width="Auto" />
+                                        <ColumnDefinition Name="gcPrint" Width="Auto" />
+                                        <ColumnDefinition Name="gcMarkdone" Width="Auto" />
+                                        <ColumnDefinition Name="gcDelete" Width="Auto" />
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="Auto" />
+                                    </Grid.ColumnDefinitions>
+                                    <!--Interaction Queue Mail Button-->
+                                    <!--<Button Name="btnQueueMail" FontFamily="Calibri" MinWidth="45"  Padding="5" Height="50" Style="{StaticResource NormalImageButton}" VerticalAlignment="Top"  VerticalContentAlignment="Stretch" Click="btnQueueMail_Click">
+                                <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                                    <Image Name="imgQueueMail"  Width="18" Height="18"></Image>
+                                    <TextBlock Name="TitleQueueMail" Text="Queue" HorizontalAlignment="Center" TextAlignment="Center"  FontFamily="Calibri" TextWrapping="Wrap" Margin="2,0,2,0"></TextBlock>
+                                </StackPanel>
+                                <Button.ToolTip>
+                                    <Border Background="White" BorderBrush="#ADAAAD" BorderThickness="0.5" Margin="-5">
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="Auto"></RowDefinition>
+                                                <RowDefinition Height="*"></RowDefinition>
+                                            </Grid.RowDefinitions>
+                                            <TextBlock Name="QueueMailHeading" Text="MoveToQueue" Grid.Row="0" Padding="10,5,10,0" FontWeight="Bold" FontFamily="Calibri" ></TextBlock>
+                                            <TextBlock Name="QueueMailContent" Text="Move interaction to Queue" Grid.Row="1" Padding="10,2,10,10" TextWrapping="WrapWithOverflow" FontFamily="Calibri" Width="Auto" MaxWidth="200">
+                                            </TextBlock>
+                                        </Grid>
+                                    </Border>
+                                </Button.ToolTip>
+                            </Button>-->
+                                    <!--Workbin mail-->
+                                    <Button Name="btnWorkbinMail"  Padding="5" FontFamily="Calibri" MinWidth="45" Grid.Column="1" Style="{StaticResource NormalImageButton}" VerticalAlignment="Top"  VerticalContentAlignment="Stretch" Click="btnWorkbinMail_Click">
+                                        <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                                            <Image  Name="imgWorkbinMail"  Source="/Agent.Interaction.Desktop;component/Images/EMail/Email transfer.png" Width="30" Height="35">
+                                            </Image>
+                                            <TextBlock Name="TitleWorkbinMail" Text="Transfer" HorizontalAlignment="Center" TextAlignment="Center"  FontFamily="Calibri" TextWrapping="Wrap" Margin="2,0,2,0"></TextBlock>
+                                        </StackPanel>
+                                        <Button.ToolTip>
+                                            <Border Background="White" BorderBrush="#ADAAAD" BorderThickness="0.5" Margin="-5">
+                                                <Grid>
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition Height="Auto"></RowDefinition>
+                                                        <RowDefinition Height="*"></RowDefinition>
+                                                    </Grid.RowDefinitions>
+                                                    <TextBlock Name="WorkbinMailHeading" Text="Transfer Mail" Grid.Row="0" Padding="10,5,10,0" FontWeight="Bold" FontFamily="Calibri" ></TextBlock>
+                                                    <TextBlock Name="WorkbinMailContent" Text="Transfer the selected mail." Grid.Row="1" Padding="10,2,10,10" TextWrapping="WrapWithOverflow" FontFamily="Calibri" Width="Auto" MaxWidth="200">
+                                                    </TextBlock>
+                                                </Grid>
+                                            </Border>
+                                        </Button.ToolTip>
+                                    </Button>
+                                    <!--Open Mail Button-->
+                                    <Button Name="btnOpenMail"  Padding="5" FontFamily="Calibri" MinWidth="45" Grid.Column="2" Style="{StaticResource NormalImageButton}" VerticalAlignment="Top"  VerticalContentAlignment="Stretch" Click="btnOpenMail_Click">
+                                        <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                                            <Image Name="imgOpen" Source="/Agent.Interaction.Desktop;component/Images/EMail/Email Open.png" Width="30" Height="35"></Image>
+                                            <TextBlock Name="TitleOpen" Text="Open" HorizontalAlignment="Center" TextAlignment="Center"  FontFamily="Calibri" TextWrapping="Wrap" Margin="2,0,2,0"></TextBlock>
+                                        </StackPanel>
+                                        <Button.ToolTip>
+                                            <Border Background="White" BorderBrush="#ADAAAD" BorderThickness="0.5" Margin="-5">
+                                                <Grid>
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition Height="Auto"></RowDefinition>
+                                                        <RowDefinition Height="*"></RowDefinition>
+                                                    </Grid.RowDefinitions>
+                                                    <TextBlock Text="Open Mail" Grid.Row="0" Padding="10,5,10,0" FontWeight="Bold" FontFamily="Calibri" ></TextBlock>
+                                                    <TextBlock Text="Open selected mail in window" Grid.Row="1" Padding="10,2,10,10" TextWrapping="WrapWithOverflow" FontFamily="Calibri" Width="Auto" MaxWidth="200">
+                                                    </TextBlock>
+                                                </Grid>
+                                            </Border>
+                                        </Button.ToolTip>
+                                    </Button>
+                                    <!--Reply mail-->
+                                    <Button Name="btnReplyMail"  Padding="5" FontFamily="Calibri" MinWidth="45" Grid.Column="3" Style="{StaticResource NormalImageButton}" VerticalAlignment="Top"  VerticalContentAlignment="Stretch" Click="btnReplyMail_Click">
+                                        <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                                            <Image  Name="imgReply" Source="/Agent.Interaction.Desktop;component/Images/EMail/Email Reply.png" Width="30" Height="35"></Image>
+                                            <TextBlock Name="TitleReply" Text="Reply" HorizontalAlignment="Center" TextAlignment="Center"  FontFamily="Calibri" TextWrapping="Wrap" Margin="2,0,2,0"></TextBlock>
+                                        </StackPanel>
+                                        <Button.ToolTip>
+                                            <Border Background="White" BorderBrush="#ADAAAD" BorderThickness="0.5" Margin="-5">
+                                                <Grid>
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition Height="Auto"></RowDefinition>
+                                                        <RowDefinition Height="*"></RowDefinition>
+                                                    </Grid.RowDefinitions>
+                                                    <TextBlock Text="Reply Mail" Grid.Row="0" Padding="10,5,10,0" FontWeight="Bold" FontFamily="Calibri" ></TextBlock>
+                                                    <TextBlock Text="Reply to selected mail." Grid.Row="1" Padding="10,2,10,10" TextWrapping="WrapWithOverflow" FontFamily="Calibri" Width="Auto" MaxWidth="200">
+                                                    </TextBlock>
+                                                </Grid>
+                                            </Border>
+                                        </Button.ToolTip>
+                                    </Button>
+                                    <!--Reply All -->
+                                    <Button Name="btnReplyAllMail"  Padding="5" FontFamily="Calibri" MinWidth="45" Grid.Column="4" Style="{StaticResource NormalImageButton}" VerticalAlignment="Top"  VerticalContentAlignment="Stretch" Click="btnReplyAllMail_Click">
+                                        <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                                            <Image Name="imgReplyAll" Source="/Agent.Interaction.Desktop;component/Images/EMail/Email Reply all.png" Width="30" Height="35"></Image>
+                                            <TextBlock Name="TitleReplyAll" Text="Reply All" HorizontalAlignment="Center" TextAlignment="Center"  FontFamily="Calibri" TextWrapping="Wrap" Margin="2,0,2,0"></TextBlock>
+                                        </StackPanel>
+                                        <Button.ToolTip>
+                                            <Border Background="White" BorderBrush="#ADAAAD" BorderThickness="0.5" Margin="-5">
+                                                <Grid>
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition Height="Auto"></RowDefinition>
+                                                        <RowDefinition Height="*"></RowDefinition>
+                                                    </Grid.RowDefinitions>
+                                                    <TextBlock Text="Reply All" Grid.Row="0" Padding="10,5,10,0" FontWeight="Bold" FontFamily="Calibri" ></TextBlock>
+                                                    <TextBlock Text="Reply to all for selected mail." Grid.Row="1" Padding="10,2,10,10" TextWrapping="WrapWithOverflow" FontFamily="Calibri" Width="Auto" MaxWidth="200">
+                                                    </TextBlock>
+                                                </Grid>
+                                            </Border>
+                                        </Button.ToolTip>
+                                    </Button>
+
+                                    <!--Mark Done-->
+                                    <Button Name="btnPrint"  Padding="5" MinWidth="45" FontFamily="Calibri" Grid.Column="5" Style="{StaticResource NormalImageButton}" VerticalAlignment="Top"  VerticalContentAlignment="Stretch" Click="btnPrint_Click">
+                                        <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                                            <Image Source="/Agent.Interaction.Desktop;component/Images/Email/Print.png" Width="30" Height="35"></Image>
+                                            <TextBlock Text="Print" HorizontalAlignment="Center" TextAlignment="Center"  FontFamily="Calibri" TextWrapping="Wrap" Margin="2,0,2,0"></TextBlock>
+                                        </StackPanel>
+                                        <Button.ToolTip>
+                                            <Border Background="White" BorderBrush="#ADAAAD" BorderThickness="0.5" Margin="-5">
+                                                <Grid>
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition Height="Auto"></RowDefinition>
+                                                        <RowDefinition Height="*"></RowDefinition>
+                                                    </Grid.RowDefinitions>
+                                                    <TextBlock Text="Print Interaction" Grid.Row="0" Padding="10,5,10,0" FontWeight="Bold" FontFamily="Calibri" ></TextBlock>
+                                                    <TextBlock Text="Print the selected interaction." Grid.Row="1" Padding="10,2,10,10" TextWrapping="WrapWithOverflow" FontFamily="Calibri" Width="Auto" MaxWidth="200">
+                                                    </TextBlock>
+                                                </Grid>
+                                            </Border>
+                                        </Button.ToolTip>
+                                    </Button>
+
+                                    <!--Mark Done-->
+                                    <Button Name="btnMarkDone"  Padding="5" MinWidth="45" FontFamily="Calibri" Grid.Column="6" Style="{StaticResource NormalImageButton}" VerticalAlignment="Top"  VerticalContentAlignment="Stretch" Click="btnMarkDone_Click">
+                                        <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                                            <Image Name="imgMarkDone" Source="/Agent.Interaction.Desktop;component/Images/EMail/Email Done.png" Width="30" Height="35"></Image>
+                                            <TextBlock  Name="TitleMarkDone" Text="Mark Done" HorizontalAlignment="Center" TextAlignment="Center"  FontFamily="Calibri" TextWrapping="Wrap" Margin="2,0,2,0"></TextBlock>
+                                        </StackPanel>
+                                        <Button.ToolTip>
+                                            <Border Background="White" BorderBrush="#ADAAAD" BorderThickness="0.5" Margin="-5">
+                                                <Grid>
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition Height="Auto"></RowDefinition>
+                                                        <RowDefinition Height="*"></RowDefinition>
+                                                    </Grid.RowDefinitions>
+                                                    <TextBlock Name="MarkDoneMailHeading" Text="Mark Done" Grid.Row="0" Padding="10,5,10,0" FontWeight="Bold" FontFamily="Calibri" ></TextBlock>
+                                                    <TextBlock Name="MarkDoneMailContent" Text="Mark done selected mail." Grid.Row="1" Padding="10,2,10,10" TextWrapping="WrapWithOverflow" FontFamily="Calibri" Width="Auto" MaxWidth="200">
+                                                    </TextBlock>
+                                                </Grid>
+                                            </Border>
+                                        </Button.ToolTip>
+                                    </Button>
+                                    <!--Delete-->
+                                    <Button Name="btnDelete"  Padding="5" MinWidth="45" FontFamily="Calibri" Grid.Column="7" Style="{StaticResource NormalImageButton}" VerticalAlignment="Top"  VerticalContentAlignment="Stretch" Click="btnDelete_Click">
+                                        <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                                            <Image Name="imgDelete" Source="/Agent.Interaction.Desktop;component/Images/EMail/Email delete.png" Width="30" Height="35"></Image>
+                                            <TextBlock  Text="Delete" HorizontalAlignment="Center" TextAlignment="Center"  FontFamily="Calibri" TextWrapping="Wrap" Margin="2,0,2,0"></TextBlock>
+                                        </StackPanel>
+                                        <Button.ToolTip>
+                                            <Border Background="White" BorderBrush="#ADAAAD" BorderThickness="0.5" Margin="-5">
+                                                <Grid>
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition Height="Auto"></RowDefinition>
+                                                        <RowDefinition Height="*"></RowDefinition>
+                                                    </Grid.RowDefinitions>
+                                                    <TextBlock  Text="Delete Mail" Grid.Row="0" Padding="10,5,10,0" FontWeight="Bold" FontFamily="Calibri" ></TextBlock>
+                                                    <TextBlock Name="txtDeleteToolTip"  Text="Delete the selected mail." Grid.Row="1" Padding="10,2,10,10" TextWrapping="WrapWithOverflow" FontFamily="Calibri" Width="Auto" MaxWidth="200">
+                                                    </TextBlock>
+                                                </Grid>
+                                            </Border>
+                                        </Button.ToolTip>
+                                    </Button>
+
+                                    <Button Name="btnSnapShot" MinWidth="45" Margin="0,0,8,0" Padding="5" FontFamily="Calibri" Grid.Column="9" Style="{StaticResource NormalImageButton}" VerticalAlignment="Top"  VerticalContentAlignment="Stretch" Click="btnSnapShot_Click" Visibility="{Binding IQVisiblity}">
+                                        <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                                            <Image Name="imgSnapShot" Source="/Agent.Interaction.Desktop;component/Images/Reload.png"   Width="30" Height="35"></Image>
+                                            <TextBlock Name="TitleSnapShot" HorizontalAlignment="Center" Text="Snapshot" TextAlignment="Center"  FontFamily="Calibri" TextWrapping="Wrap" Margin="2,0,2,0"></TextBlock>
+                                        </StackPanel>
+                                        <Button.ToolTip>
+                                            <Border Background="White" BorderBrush="#ADAAAD" BorderThickness="0.5" Margin="-5">
+                                                <Grid>
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition Height="Auto"></RowDefinition>
+                                                        <RowDefinition Height="*"></RowDefinition>
+                                                    </Grid.RowDefinitions>
+                                                    <TextBlock Name="SnapShotHeading" Text="Snapshot"  Grid.Row="0" Padding="10,5,10,0" FontWeight="Bold" FontFamily="Calibri" ></TextBlock>
+                                                    <TextBlock Name="SnapShotContent" Text="Refresh the list of interactions" Grid.Row="1" Padding="10,2,10,10" TextWrapping="WrapWithOverflow" FontFamily="Calibri" Width="Auto" MaxWidth="200">
+                                                    </TextBlock>
+                                                </Grid>
+                                            </Border>
+                                        </Button.ToolTip>
+                                    </Button>
+
+                                    <!--Expand Collapse button-->
+                                    <Button Name="btnExpand" MinWidth="45" Margin="0,0,8,0" Padding="5" FontFamily="Calibri" Grid.Column="10" Style="{StaticResource NormalImageButton}" VerticalAlignment="Top"  VerticalContentAlignment="Stretch" Click="btnExpand_Click">
+                                        <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                                            <Image Name="imgExpand" Source="/Agent.Interaction.Desktop;component/Images/HideDetails.png"   Width="30" Height="35"></Image>
+                                            <TextBlock Name="TitleExpand" HorizontalAlignment="Center" Text="Hide Details" TextAlignment="Center"  FontFamily="Calibri" TextWrapping="Wrap" Margin="2,0,2,0"></TextBlock>
+                                        </StackPanel>
+                                        <Button.ToolTip>
+                                            <Border Background="White" BorderBrush="#ADAAAD" BorderThickness="0.5" Margin="-5">
+                                                <Grid>
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition Height="Auto"></RowDefinition>
+                                                        <RowDefinition Height="*"></RowDefinition>
+                                                    </Grid.RowDefinitions>
+                                                    <TextBlock Name="ExpandMailHeading" Text="Hide Details"  Grid.Row="0" Padding="10,5,10,0" FontWeight="Bold" FontFamily="Calibri" ></TextBlock>
+                                                    <TextBlock Name="ExpandMailContent" Text="Hide details for selected mail." Grid.Row="1" Padding="10,2,10,10" TextWrapping="WrapWithOverflow" FontFamily="Calibri" Width="Auto" MaxWidth="200">
+                                                    </TextBlock>
+                                                </Grid>
+                                            </Border>
+                                        </Button.ToolTip>
+                                    </Button>
+                                </Grid>
+
+                                <!--Middle panel here-->
+                                <ScrollViewer Name="svMainContent" Grid.Row="2" VerticalScrollBarVisibility="Auto">
+                                    <!-- SizeChanged="GridSize_SizeChanged">-->
+                                    <ScrollViewer.Resources>
+                                        <Style TargetType="ScrollBar">
+                                            <Setter Property="SnapsToDevicePixels" Value="True" />
+                                            <Setter Property="OverridesDefaultStyle" Value="true" />
+                                            <Style.Triggers>
+                                                <Trigger Property="Orientation" Value="Vertical">
+                                                    <Setter Property="Width" Value="18" />
+                                                    <Setter Property="Height" Value="Auto" />
+                                                    <Setter Property="Template" Value="{StaticResource VerticalScrollBar}" />
+                                                </Trigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </ScrollViewer.Resources>
+                                    <Grid
+                                    Name="Middle" Visibility="Collapsed">
+                                        <Grid Name="MiddleGrid" Grid.Row="0"  Grid.Column="1">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="Auto" Name="rowdefHistory" />
+                                                <RowDefinition MinHeight="300" Height="*" Name="rowdefDetails" />
+                                            </Grid.RowDefinitions>
+                                            <Grid Name="gridWorkbin" Grid.Row="0" Margin="2">
+                                                <Grid.Resources>
+                                                    <ControlTemplate x:Key="VerticalScrollBar" TargetType="{x:Type ScrollBar}">
+                                                        <Grid>
+                                                            <Grid.RowDefinitions>
+                                                                <RowDefinition  MaxHeight="18" />
+                                                                <RowDefinition Height="0.00001*" />
+                                                                <RowDefinition MaxHeight="18" />
+                                                            </Grid.RowDefinitions>
+                                                            <Border  Grid.RowSpan="3" Background="#F0F0F0" />
+                                                            <RepeatButton Grid.Row="0" Style="{StaticResource ScrollBarLineButton}" Height="18" Command="ScrollBar.LineUpCommand" Content="M 0 4 L 8 4 L 4 0 Z" />
+                                                            <Track Name="PART_Track" Grid.Row="1" IsDirectionReversed="true">
+                                                                <Track.DecreaseRepeatButton>
+                                                                    <RepeatButton Style="{StaticResource ScrollBarPageButton}" Command="ScrollBar.PageUpCommand" />
+                                                                </Track.DecreaseRepeatButton>
+                                                                <Track.Thumb>
+                                                                    <Thumb Style="{StaticResource ScrollBarThumb}" Margin="1,0,1,0" Background="{StaticResource HorizontalNormalBrush}" BorderBrush="{StaticResource HorizontalNormalBorderBrush}" />
+                                                                </Track.Thumb>
+                                                                <Track.IncreaseRepeatButton>
+                                                                    <RepeatButton Style="{StaticResource ScrollBarPageButton}" Command="ScrollBar.PageDownCommand" />
+                                                                </Track.IncreaseRepeatButton>
+                                                            </Track>
+                                                            <RepeatButton Grid.Row="3" Style="{StaticResource ScrollBarLineButton}" Height="18" Command="ScrollBar.LineDownCommand" Content="M 0 0 L 4 4 L 8 0 Z" />
+                                                        </Grid>
+                                                    </ControlTemplate>
+                                                    <ControlTemplate x:Key="HorizontalScrollBar" TargetType="{x:Type ScrollBar}">
+                                                        <Grid>
+                                                            <Grid.ColumnDefinitions>
+                                                                <ColumnDefinition MaxWidth="18" />
+                                                                <ColumnDefinition Width="0.00001*" />
+                                                                <ColumnDefinition MaxWidth="18" />
+                                                            </Grid.ColumnDefinitions>
+                                                            <Border Grid.ColumnSpan="3" Background="#F0F0F0" />
+                                                            <RepeatButton Grid.Column="0"      Style="{StaticResource ScrollBarLineButton}" Width="18" Command="ScrollBar.LineLeftCommand" Content="M 4 0 L 4 8 L 0 4 Z" />
+                                                            <Track Name="PART_Track"  Grid.Column="1" IsDirectionReversed="False">
+                                                                <Track.DecreaseRepeatButton>
+                                                                    <RepeatButton Style="{StaticResource ScrollBarPageButton}" Command="ScrollBar.PageLeftCommand" />
+                                                                </Track.DecreaseRepeatButton>
+                                                                <Track.Thumb>
+                                                                    <Thumb Style="{StaticResource ScrollBarThumb}" Margin="0,1,0,1"  Background="{StaticResource NormalBrush}" BorderBrush="{StaticResource NormalBorderBrush}" />
+                                                                </Track.Thumb>
+                                                                <Track.IncreaseRepeatButton>
+                                                                    <RepeatButton Style="{StaticResource ScrollBarPageButton}"  Command="ScrollBar.PageRightCommand" />
+                                                                </Track.IncreaseRepeatButton>
+                                                            </Track>
+                                                            <RepeatButton Grid.Column="3" Style="{StaticResource ScrollBarLineButton}"  Width="18" Command="ScrollBar.LineRightCommand" Content="M 0 0 L 4 4 L 0 8 Z" />
+                                                        </Grid>
+                                                    </ControlTemplate>
+                                                    <Style TargetType="{x:Type ScrollBar}">
+                                                        <Setter Property="SnapsToDevicePixels" Value="True" />
+                                                        <Setter Property="OverridesDefaultStyle" Value="true" />
+                                                        <Style.Triggers>
+                                                            <Trigger Property="Orientation" Value="Horizontal">
+                                                                <Setter Property="Width" Value="Auto" />
+                                                                <Setter Property="Height" Value="18" />
+                                                                <Setter Property="Template" Value="{StaticResource HorizontalScrollBar}" />
+                                                            </Trigger>
+                                                            <Trigger Property="Orientation" Value="Vertical">
+                                                                <Setter Property="Width" Value="18" />
+                                                                <Setter Property="Height" Value="Auto" />
+                                                                <Setter Property="Template" Value="{StaticResource VerticalScrollBar}" />
+                                                            </Trigger>
+                                                        </Style.Triggers>
+                                                    </Style>
+                                                </Grid.Resources>
+                                                <my:DataGrid Background="White" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"  SelectionUnit="FullRow"
+                                                    HorizontalContentAlignment="Left" HorizontalGridLinesBrush="#D6D7D6" VerticalGridLinesBrush="#D6D7D6"
+                                                    CanUserAddRows="False"  CanUserDeleteRows="False" 
+                                                    AutoGenerateColumns="False" RowHeaderWidth="0" Name="dgWorkbin" ItemsSource="{Binding SelectedWorkbinDetails}" 
+                                                     BeginningEdit="dgWorkbin_BeginningEdit" SelectedCellsChanged="dgWorkbin_SelectedCellsChanged"
+                                                     KeyUp="dgWorkbin_KeyUp" MinHeight="150">
+                                                    <my:DataGrid.ContextMenu>
+                                                        <ContextMenu Style="{StaticResource ContextMenu}">
+                                                        </ContextMenu>
+                                                    </my:DataGrid.ContextMenu>
+                                                    <my:DataGrid.Columns>
+                                                        <my:DataGridTemplateColumn MaxWidth="30" MinWidth="30"  Header="">
+                                                            <my:DataGridTemplateColumn.CellTemplate>
+                                                                <DataTemplate>
+                                                                    <StackPanel Orientation="Horizontal">
+                                                                        <Image Source="{Binding MailImage}" Width="20" Height="20" Margin="2">
+                                                                            <Image.ToolTip>
+                                                                                <StackPanel Orientation="Horizontal">
+                                                                                    <TextBlock Text="{Binding TypeId}"></TextBlock>
+                                                                                    <TextBlock Text=" mail."></TextBlock>
+                                                                                </StackPanel>
+
+                                                                            </Image.ToolTip>
+                                                                        </Image>
+                                                                        <!--<Image Source="/Agent.Interaction.Desktop;component/Images/Email/Inbound1.png" Width="20" Height="20" Margin="2"/>-->
+                                                                        <!--<TextBlock  Text="{Binding InteractionId}" Visibility="Collapsed"/>-->
+                                                                    </StackPanel>
+                                                                </DataTemplate>
+                                                            </my:DataGridTemplateColumn.CellTemplate>
+                                                        </my:DataGridTemplateColumn>
+                                                        <my:DataGridTemplateColumn Width="*" Header="From">
+                                                            <my:DataGridTemplateColumn.CellTemplate>
+                                                                <DataTemplate>
+                                                                    <StackPanel Orientation="Horizontal">
+                                                                        <TextBlock Text="{Binding From}" Margin="4,4,0,4">
+                                                                            <TextBlock.ToolTip>
+                                                                                <TextBlock Padding="5" Text="{Binding From}"></TextBlock>
+                                                                            </TextBlock.ToolTip>                                                                    
+                                                                </TextBlock>
+                                                                    </StackPanel>
+                                                                </DataTemplate>
+                                                            </my:DataGridTemplateColumn.CellTemplate>
+                                                        </my:DataGridTemplateColumn>
+                                                        <my:DataGridTemplateColumn Width="*" Header="Subject">
+                                                            <my:DataGridTemplateColumn.CellTemplate>
+                                                                <DataTemplate>
+                                                                    <StackPanel Orientation="Horizontal">
+                                                                        <TextBlock Text="{Binding Subject}" Margin="4,4,0,4">
+                                                                            <TextBlock.ToolTip>
+                                                                                <TextBlock Padding="5" Text="{Binding Subject}"></TextBlock>
+                                                                            </TextBlock.ToolTip>                                                                    
+                                                                </TextBlock>
+                                                                    </StackPanel>
+                                                                </DataTemplate>
+                                                            </my:DataGridTemplateColumn.CellTemplate>
+                                                        </my:DataGridTemplateColumn>
+                                                        <my:DataGridTemplateColumn Width="*" Header="Received">
+                                                            <my:DataGridTemplateColumn.CellTemplate>
+                                                                <DataTemplate>
+                                                                    <StackPanel Orientation="Horizontal">
+                                                                        <TextBlock Text="{Binding ReceivedDate}" Margin="4,4,0,4">
+                                                                            <TextBlock.ToolTip>
+                                                                                <TextBlock Padding="5" Text="{Binding ReceivedDate}"></TextBlock>
+                                                                            </TextBlock.ToolTip>     
+                                                                        </TextBlock>
+                                                                    </StackPanel>
+                                                                </DataTemplate>
+                                                            </my:DataGridTemplateColumn.CellTemplate>
+                                                        </my:DataGridTemplateColumn>
+                                                    </my:DataGrid.Columns>
+                                                    <my:DataGrid.Resources>
+                                                        <ContextMenu x:Key="RowMenu"  Style="{StaticResource ContextMenu}" DataContext="{Binding PlacementTarget.DataContext, RelativeSource={RelativeSource Self}}" Opened="ContextMenu_Opened">
+                                                            <!--<ContextMenu.Resources>
+                                                        <Style x:Key="ImgSize" TargetType="Image">
+                                                            <Setter Property="Width" Value="8"></Setter>
+                                                            <Setter Property="Height" Value="8"></Setter>
+                                                        </Style>
+                                                    </ContextMenu.Resources>-->
+                                                            <MenuItem  Name="mnuMailOpen" Header="Open" Click="MenuOpenMail_Click">
+                                                                <MenuItem.Icon>
+                                                                    <Image  Name="mnuOpenimage"  Source="/Agent.Interaction.Desktop;component/Images/EMail/Email Open.png" Width="15" Height="15">
+                                                                    </Image>
+                                                                </MenuItem.Icon>
+                                                            </MenuItem>
+                                                            <MenuItem Name="mnuMarkDone" Header="Mark Done" Click="mnuMarkDone_Click">
+                                                                <MenuItem.Icon>
+                                                                    <Image  Name="mnuMarkDoneimage"  Source="/Agent.Interaction.Desktop;component/Images/EMail/Email Done.png" Width="15" Height="15">
+                                                                    </Image>
+                                                                </MenuItem.Icon>
+                                                            </MenuItem>
+                                                            <MenuItem Name="mnuReply" Header="Reply" Click="mnuReply_Click">
+                                                                <MenuItem.Icon>
+                                                                    <Image  Name="mnureplyimage"   Source="/Agent.Interaction.Desktop;component/Images/EMail/Email Reply.png" Width="15" Height="15">
+                                                                    </Image>
+                                                                </MenuItem.Icon>
+                                                            </MenuItem>
+                                                            <MenuItem Name="mnuReplyAll" Header="Reply All" Click="mnuReplyAll_Click">
+                                                                <MenuItem.Icon>
+                                                                    <Image  Name="mnuReplyAllimage"   Source="/Agent.Interaction.Desktop;component/Images/EMail/Email Reply all.png" Width="15" Height="15">
+                                                                    </Image>
+                                                                </MenuItem.Icon>
+                                                            </MenuItem>
+                                                            <MenuItem Name="mnuDelete" Header="Delete" Click="mnuDelete_Click">
+                                                                <MenuItem.Icon>
+                                                                    <Image   Source="/Agent.Interaction.Desktop;component/Images/EMail/Email delete.png" Width="15" Height="15">
+                                                                    </Image>
+                                                                </MenuItem.Icon>
+                                                            </MenuItem>
+                                                            <MenuItem Name="mnuMove" Header="Move to">
+                                                                <MenuItem.Icon>
+                                                                    <Image   Source="/Agent.Interaction.Desktop;component/Images/Email/transfer1.png" Width="15" Height="15">
+                                                                    </Image>
+                                                                </MenuItem.Icon>
+                                                            </MenuItem>
+                                                        </ContextMenu>
+                                                    </my:DataGrid.Resources>
+                                                    <my:DataGrid.RowStyle>
+                                                        <Style TargetType="my:DataGridRow">
+                                                            <!--<EventSetter Event="MouseLeftButtonDown" Handler="dgWorkbin_MouseDoubleClick" />
+                                                    <EventSetter Event="MouseDown" Handler="DgWorkbin_MouseClick" />-->
+                                                            <Setter Property="ContextMenu" Value="{StaticResource RowMenu}" />
+                                                            <Style.Triggers>
+                                                                <Trigger Property="IsSelected" Value="True">
+                                                                    <Setter Property="Background" Value="{StaticResource HighlightedBrush}" />
+                                                                </Trigger>
+                                                                <Trigger Property="IsMouseOver" Value="True">
+                                                                    <Setter Property="Background" Value="#E3F9FE"></Setter>
+                                                                </Trigger>
+                                                            </Style.Triggers>
+                                                        </Style>
+                                                    </my:DataGrid.RowStyle>
+                                                </my:DataGrid>
+
+                                            </Grid>
+                                            <Grid Name="grdIQ" Width="Auto" Visibility="{Binding IQVisiblity}">
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition MinHeight="150"/>
+                                                    <RowDefinition Height="30"/>
+                                                </Grid.RowDefinitions>
+                                                <Border Name="brdIQ" Margin="2" Grid.Row="0"  BorderBrush="#D6D7D6" BorderThickness="1"  Visibility="{Binding IQVisiblity}" Width="Auto">
+                                                    <my:DataGrid Background="White" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" MinHeight="150"
+                                                    HorizontalContentAlignment="Left" HorizontalGridLinesBrush="#D6D7D6" VerticalGridLinesBrush="#D6D7D6"
+                                                    AutoGenerateColumns="True" CanUserAddRows="False" RowHeaderWidth="0" CanUserDeleteRows="False" IsReadOnly="True"
+                                                    CanUserSortColumns="False" Name="dgIQ"  ItemsSource="{Binding}" 
+                                                     SelectionChanged="dgIQ_SelectionChanged" AutoGeneratingColumn="dgIQ_AutoGeneratingColumn"
+                                                        Margin="2"  ScrollViewer.HorizontalScrollBarVisibility="Auto" RowHeight="25" Visibility="{Binding IQVisiblity}">
+                                                        <my:DataGrid.RowStyle>
+                                                            <Style TargetType="my:DataGridRow">
+                                                                <Style.Triggers>
+                                                                    <Trigger Property="IsSelected" Value="True">
+                                                                        <Setter Property="Background" Value="{StaticResource HighlightedBrush}" />
+                                                                    </Trigger>
+                                                                    <Trigger Property="IsMouseOver" Value="True">
+                                                                        <Setter Property="Background" Value="#E3F9FE"></Setter>
+                                                                    </Trigger>
+                                                                </Style.Triggers>
+                                                            </Style>
+                                                        </my:DataGrid.RowStyle>
+                                                    </my:DataGrid>
+                                                </Border>
+                                                <Border Name="brdPaging" Grid.Row="1" BorderBrush="#D6D7D6" Margin="2"  BorderThickness="2,2,2,2" Padding="2" Background="Transparent" Visibility="{Binding IQVisiblity}">
+                                                    <Grid>
+                                                        <StackPanel Margin="2,0,0,0" Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Left">
+                                                            <Button Name="btnFirstPage" Style="{StaticResource NormalImageButton}" Width="20" Click="btnFirstPage_Click">
+                                                                <!--Content="&lt;&lt;"-->
+                                                                <Image Width="10" Height="10"  Source="/Agent.Interaction.Desktop;component/Images/Contact/FirstPage-01.png" />
+                                                                <Button.ToolTip>
+                                                                    <Border Background="White" BorderBrush="#ADAAAD" BorderThickness="0.5" Margin="-5">
+                                                                        <TextBlock Name="FirstHeading" Text="First Page" Grid.Row="0" Padding="10,5,10,0" FontWeight="Bold" FontFamily="Calibri" ></TextBlock>
+                                                                    </Border>
+                                                                </Button.ToolTip>
+                                                            </Button>
+                                                            <Button Name="btnPreviousPage" Style="{StaticResource NormalImageButton}" Width="20"  Click="btnPreviousPage_Click">
+                                                                <!--Content="&lt;"-->
+                                                                <Image Width="10" Height="10"   Source="/Agent.Interaction.Desktop;component/Images/Contact/PreviousPage-01.png" />
+                                                                <Button.ToolTip>
+                                                                    <Border Background="White" BorderBrush="#ADAAAD" BorderThickness="0.5" Margin="-5">
+                                                                        <TextBlock Name="PreviousHeading" Text="Previous Page" Grid.Row="0" Padding="10,5,10,0" FontWeight="Bold" FontFamily="Calibri" />
+                                                                    </Border>
+                                                                </Button.ToolTip>
+                                                            </Button>
+                                                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                                                                <TextBlock Name="txtStart" Text="0" VerticalAlignment="Center"/>
+                                                                <TextBlock Text=" - " VerticalAlignment="Center"/>
+                                                                <TextBlock Name="txtEnd" Text="0" VerticalAlignment="Center"   Margin="5,0,0,0"/>
+                                                            </StackPanel>
+                                                            <Button Name="btnNextPage" Style="{StaticResource NormalImageButton}" Width="20" Click="btnNextPage_Click">
+                                                                <!--Content="&gt;"-->
+                                                                <Image Width="10" Height="10"  Source="/Agent.Interaction.Desktop;component/Images/Contact/NextPage-01.png" />
+                                                                <Button.ToolTip>
+                                                                    <Border Background="White" BorderBrush="#ADAAAD" BorderThickness="0.5" Margin="-5">
+                                                                        <TextBlock Name="NextHeading" Text="Next Page" Grid.Row="0" Padding="10,5,10,0" FontWeight="Bold" FontFamily="Calibri" ></TextBlock>
+                                                                    </Border>
+                                                                </Button.ToolTip>
+                                                            </Button>
+                                                            <Button Style="{StaticResource NormalImageButton}" Width="0" Click="btnLastPage_Click" Visibility="Collapsed">
+                                                                <!--Content="&gt;&gt;"-->
+                                                                <Image x:Name ="imgLastIndex"  Width="10" Height="10" Source="/Agent.Interaction.Desktop;component/Images/Contact/LastPage-01.png" />
+                                                                <Button.ToolTip>
+                                                                    <Border Background="White" BorderBrush="#ADAAAD" BorderThickness="0.5" Margin="-5">
+                                                                        <TextBlock Name="LastHeading" Text="Last Page" Grid.Row="0" Padding="10,5,10,0" FontWeight="Bold" FontFamily="Calibri" ></TextBlock>
+                                                                    </Border>
+                                                                </Button.ToolTip>
+                                                            </Button>
+
+                                                        </StackPanel>
+                                                        <StackPanel Margin="0,0,2,0" Grid.Row="1" VerticalAlignment="Center" Orientation="Horizontal" HorizontalAlignment="Right">
+
+                                                            <TextBlock Text="Items per page " VerticalAlignment="Center"   Margin="5,0,0,0"/>
+                                                            <ComboBox  Name="cmbItemsPerPage" SelectedIndex="0" Visibility="Visible" VerticalAlignment="Center" Text="" MinWidth="5" Style="{StaticResource ComboBox}" ItemsSource="{Binding AvailableDirPageSizes}"  Margin="5,0,0,0" SelectionChanged="cmbItemsPerPage_SelectionChanged"/>
+                                                        </StackPanel>
+                                                    </Grid>
+                                                </Border>
+                                            </Grid>
+
+                                            <TextBlock Grid.Row="2" VerticalAlignment="Top" Margin="0,50,0,0" HorizontalAlignment="Center" Visibility="Visible" Name="txtNoDetails"
+                                           Text="Please select interaction to view details"></TextBlock>
+                                            <TextBlock Grid.Row="2" VerticalAlignment="Top" Margin="0,50,0,0" HorizontalAlignment="Center" Visibility="Visible" Name="txtNocontactServer"
+                                           Text="The Contact Server is out of service"></TextBlock>
+                                            <TabControl Grid.Row="2"  Name="tbCallBack" BorderBrush="#D6D7D6" BorderThickness="1" Margin="2" SelectionChanged="tbCallBack_SelectionChanged">
+                                                <TabItem Header="Details" Background="Transparent">
+                                                    <Grid>
+                                                        <Grid Margin="2" Name="gridDetails" Visibility="Collapsed">
+                                                            <Grid.ColumnDefinitions>
+                                                                <ColumnDefinition  Width="*" />
+                                                            </Grid.ColumnDefinitions>
+                                                            <Grid.RowDefinitions>
+                                                                <RowDefinition  Height="Auto" />
+                                                                <RowDefinition Height="Auto" />
+                                                                <RowDefinition Name="dockCC" Height="20" />
+                                                                <RowDefinition Name="dockBCC" Height="20" />
+                                                                <RowDefinition Name="dockState" Height="Auto" />
+                                                                <RowDefinition Name="dockAttach" Height="Auto" />
+                                                                <RowDefinition  Height="*" />
+                                                            </Grid.RowDefinitions>
+                                                            <DockPanel  Grid.Row="0" Grid.Column="0" Margin="1">
+                                                                <Grid Name="subjectGrid" DockPanel.Dock="Top">
+                                                                    <Grid.ColumnDefinitions>
+                                                                        <ColumnDefinition></ColumnDefinition>
+                                                                        <ColumnDefinition Width="20"></ColumnDefinition>
+                                                                    </Grid.ColumnDefinitions>
+                                                                    <Grid.RowDefinitions>
+                                                                        <RowDefinition />
+                                                                    </Grid.RowDefinitions>
+                                                                    <TextBox UndoLimit="10"  Name="txtSubjectBold" Text="{Binding Subject}" Padding="0,0,5,0" Grid.Row=" 0" Grid.Column="0"  HorizontalAlignment="Left" BorderBrush="Transparent" BorderThickness="0" VerticalAlignment="Center" IsReadOnly="True" FontWeight="Bold" Cursor="Hand" GotMouseCapture="txt_GotMouseCapture" >
+                                                                        <TextBox.ToolTip>
+                                                                            <TextBlock Padding="5" Text="{Binding Subject}"></TextBlock>
+                                                                        </TextBox.ToolTip>
+                                                                    </TextBox>
+                                                                    <TextBlock Name="txtDot" Grid.Column="1" VerticalAlignment="Center" Background="White" Text="..."  FontWeight="Bold" HorizontalAlignment="Right"></TextBlock>
+                                                                </Grid>
+                                                            </DockPanel>
+                                                            <DockPanel Name="ToFrom" Grid.Row="1" Grid.Column="0" Margin="1">
+                                                                <DockPanel.Background>
+                                                                    <ImageBrush  Stretch="None" TileMode="Tile" Viewport="0,0,741,11" ViewportUnits="Absolute" />
+                                                                </DockPanel.Background>
+                                                                <Grid>
+                                                                    <Grid.ColumnDefinitions>
+                                                                        <ColumnDefinition  Width="Auto" />
+                                                                        <ColumnDefinition  Width="*" />
+                                                                        <ColumnDefinition  Width="Auto" />
+                                                                    </Grid.ColumnDefinitions>
+                                                                    <Grid.RowDefinitions>
+                                                                        <RowDefinition Height="Auto"  Name="gcTo" />
+                                                                        <RowDefinition Height="Auto" Name="gcFrom"  />
+
+                                                                    </Grid.RowDefinitions>
+
+                                                                    <Label Name="lblTo" FontFamily="Calibri" VerticalAlignment="Center" Grid.Column="0" FontWeight="Bold" Content="To:"></Label>
+                                                                    <TextBox UndoLimit="10" Name="txtTo" Grid.ColumnSpan="2" Text="{Binding To}" FontFamily="Calibri" Grid.Column="1"  VerticalAlignment="Center"  BorderBrush="Transparent" BorderThickness="0" IsReadOnly="True" Cursor="Hand"  GotMouseCapture="txt_GotMouseCapture" >
+                                                                        <TextBox.ToolTip>
+                                                                            <TextBlock Padding="5" Text="{Binding To}"></TextBlock>
+                                                                        </TextBox.ToolTip>
+                                                                    </TextBox>
+
+                                                                    <Label Name="lblFrom" FontFamily="Calibri"  Grid.Row="1" Grid.Column="0" VerticalAlignment="Center"   FontWeight="Bold" Content="From:"></Label>
+                                                                    <TextBox UndoLimit="10" Name="txtFrom" Text="{Binding From}" FontFamily="Calibri" Grid.Row="1" Grid.Column="1"  VerticalAlignment="Center"  BorderBrush="Transparent" BorderThickness="0" IsReadOnly="True" Cursor="Hand" GotMouseCapture="txt_GotMouseCapture">
+                                                                        <TextBox.ToolTip>
+                                                                            <TextBlock Padding="5" Text="{Binding From}"></TextBlock>
+                                                                        </TextBox.ToolTip>
+                                                                    </TextBox>
+                                                                    <TextBox UndoLimit="10" Grid.Row="1" Grid.Column="2" Text="{Binding ReceivedDate}" BorderBrush="Transparent" BorderThickness="0" IsReadOnly="True" Cursor="Hand" GotMouseCapture="txt_GotMouseCapture">
+                                                                        <TextBox.ToolTip>
+                                                                            <TextBlock Padding="5" Text="{Binding ReceivedDate}"></TextBlock>
+                                                                        </TextBox.ToolTip>
+                                                                    </TextBox>
+                                                                </Grid>
+                                                            </DockPanel>
+                                                            <DockPanel Name="dkpCc" Grid.Column="0" Grid.Row="2" Margin="1">
+                                                                <Grid>
+                                                                    <Grid.ColumnDefinitions>
+                                                                        <ColumnDefinition  Width="40" />
+                                                                        <ColumnDefinition  Width="*" />
+
+                                                                    </Grid.ColumnDefinitions>
+
+                                                                    <Grid.RowDefinitions>
+
+                                                                        <RowDefinition Height="Auto" />
+
+                                                                    </Grid.RowDefinitions>
+
+                                                                    <Label Name="lblCc" FontFamily="Calibri" VerticalAlignment="Center"  Grid.Row="0" Grid.Column="0" FontWeight="Bold" Content="Cc:"></Label>
+
+                                                                    <TextBox UndoLimit="10" Name="txtCcText" Text="{Binding CC}" FontFamily="Calibri" Grid.Row="0" Grid.Column="1"  VerticalAlignment="Center" BorderBrush="Transparent" BorderThickness="0" IsReadOnly="True" Cursor="Hand" GotMouseCapture="txt_GotMouseCapture">
+                                                                        <TextBox.ToolTip>
+                                                                            <TextBlock Padding="5" Text="{Binding CC}"></TextBlock>
+                                                                        </TextBox.ToolTip>
+                                                                    </TextBox>
+                                                                </Grid>
+                                                            </DockPanel>
+                                                            <DockPanel Name="dkpBCc" Grid.Column="0" Grid.Row="3" Margin="1">
+                                                                <Grid>
+                                                                    <Grid.ColumnDefinitions>
+                                                                        <ColumnDefinition  Width="40" />
+                                                                        <ColumnDefinition  Width="*" />
+
+                                                                    </Grid.ColumnDefinitions>
+
+                                                                    <Grid.RowDefinitions>
+
+                                                                        <RowDefinition Height="Auto" />
+
+                                                                    </Grid.RowDefinitions>
+
+                                                                    <Label Name="lblBCc" FontFamily="Calibri" VerticalAlignment="Center"  Grid.Row="0" Grid.Column="0" FontWeight="Bold" Content="BCc:"></Label>
+
+                                                                    <TextBox UndoLimit="10" Name="txtBCcText" Text="{Binding BCC}" FontFamily="Calibri" Grid.Row="0" Grid.Column="1"  VerticalAlignment="Center" BorderBrush="Transparent" BorderThickness="0" IsReadOnly="True" Cursor="Hand" GotMouseCapture="txt_GotMouseCapture">
+                                                                        <TextBox.ToolTip>
+                                                                            <TextBlock Padding="5" Text="{Binding BCC}"></TextBlock>
+                                                                        </TextBox.ToolTip>
+                                                                    </TextBox>
+                                                                </Grid>
+                                                            </DockPanel>
+                                                            <DockPanel Name="dkpState" Grid.Column="0" Grid.Row="4" Margin="1">
+                                                                <Grid>
+                                                                    <Grid.ColumnDefinitions>
+                                                                        <ColumnDefinition  Width="40" />
+                                                                        <ColumnDefinition  Width="*" />
+
+                                                                    </Grid.ColumnDefinitions>
+
+                                                                    <Grid.RowDefinitions>
+
+                                                                        <RowDefinition Height="Auto" />
+
+                                                                    </Grid.RowDefinitions>
+
+                                                                    <Label Name="lblState" FontFamily="Calibri" VerticalAlignment="Center"  Grid.Row="0" Grid.Column="0" FontWeight="Bold" Content="State:"></Label>
+
+                                                                    <TextBox UndoLimit="10" Name="txtStateText" Text="{Binding InterationState}" FontFamily="Calibri" Grid.Row="0" Grid.Column="1"  VerticalAlignment="Center" BorderBrush="Transparent" BorderThickness="0" IsReadOnly="True" Cursor="Hand" GotMouseCapture="txt_GotMouseCapture">
+                                                                        <TextBox.ToolTip>
+                                                                            <TextBlock Padding="5" Text="{Binding InterationState}"></TextBlock>
+                                                                        </TextBox.ToolTip>
+                                                                    </TextBox>
+                                                                </Grid>
+                                                            </DockPanel>
+
+                                                            <ScrollViewer Name="attacScroll" SizeChanged="attacScroll_SizeChanged"  Grid.Row="5" Grid.Column="0" Height="Auto" MaxHeight="35"  VerticalAlignment="Stretch" ScrollViewer.CanContentScroll="True" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Auto" Margin="0,0,2,0">
+                                                                <WrapPanel Name="dpAttachments"  ScrollViewer.VerticalScrollBarVisibility="Auto" />
+                                                            </ScrollViewer>
+                                                            <!--<Border  Name="WebContentBorder" Background="Transparent" BorderBrush="Transparent" BorderThickness="0"  Margin="-1">-->
+                                                            <DockPanel  Grid.Row="6" Name="dcMailMessageContainer" MinHeight="100">
+
+                                                            </DockPanel>
+                                                            <!--</Border>-->
+                                                        </Grid>
+
+                                                        <Grid Margin="2" Name="gridOtherMediaDetails" Visibility="Collapsed">
+                                                            <DockPanel  Margin="5">
+                                                                <Grid>
+                                                                    <Grid.ColumnDefinitions>
+                                                                        <ColumnDefinition  Width="40" />
+                                                                        <ColumnDefinition  Width="*" />
+
+                                                                    </Grid.ColumnDefinitions>
+
+                                                                    <Grid.RowDefinitions>
+
+                                                                        <RowDefinition Height="Auto" />
+
+                                                                    </Grid.RowDefinitions>
+
+                                                                    <Label  FontFamily="Calibri" VerticalAlignment="Center"  Grid.Row="0" Grid.Column="0" FontWeight="Bold" Content="State:"></Label>
+
+                                                                    <TextBox UndoLimit="10"  Text="{Binding InterationState}" FontFamily="Calibri" Grid.Row="0" Grid.Column="1"  VerticalAlignment="Center" BorderBrush="Transparent" BorderThickness="0" IsReadOnly="True" Cursor="Hand" GotMouseCapture="txt_GotMouseCapture">
+                                                                        <TextBox.ToolTip>
+                                                                            <TextBlock Padding="5" Text="{Binding InterationState}"></TextBlock>
+                                                                        </TextBox.ToolTip>
+                                                                    </TextBox>
+                                                                </Grid>
+                                                            </DockPanel>
+                                                        </Grid>
+                                                    </Grid>
+                                                </TabItem>
+                                                <TabItem Header="Note"  Background="White">
+                                                    <ScrollViewer Name="svNote" Margin="2" HorizontalScrollBarVisibility="Auto"  VerticalScrollBarVisibility="Auto">
+                                                        <TextBox UndoLimit="10" Name="txtNotes" Text="{Binding EmailNotes}"  Grid.Row="0" Grid.Column="0" ScrollViewer.HorizontalScrollBarVisibility="Auto" IsReadOnly="True"
+         ScrollViewer.VerticalScrollBarVisibility="Auto"  AcceptsReturn="True"></TextBox>
+                                                    </ScrollViewer>
+                                                </TabItem>
+                                                <TabItem Header="Case Data"  Background="White"  Name="tapCaseInfo">
+                                                    <ScrollViewer Margin="2" HorizontalScrollBarVisibility="Disabled"  VerticalScrollBarVisibility="Auto">
+                                                        <DockPanel Name="dockCaseData" Visibility="Collapsed" LastChildFill="True" VerticalAlignment="Top" HorizontalAlignment="Left">
+                                                            <Grid Background="White" Grid.Row="1" Margin="2">
+                                                                <Grid.RowDefinitions>
+                                                                    <RowDefinition Height="Auto"></RowDefinition>
+                                                                    <RowDefinition Height="Auto"></RowDefinition>
+                                                                </Grid.RowDefinitions>
+
+                                                                <Border Name="bdrUSerDataContainer"   BorderBrush="#D6D7D6" Grid.Row="0" BorderThickness="1" Margin="2" Grid.Column="0" HorizontalAlignment="Stretch">
+                                                                    <Grid>
+                                                                        <my:DataGrid Background="White" Name="dgUserData" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"  
+                                                    HorizontalContentAlignment="Left" HorizontalGridLinesBrush="#D6D7D6" VerticalGridLinesBrush="#D6D7D6"
+                                                    AutoGenerateColumns="False" HorizontalScrollBarVisibility="Disabled" CanUserAddRows="False" RowHeaderWidth="0" CanUserDeleteRows="False" 
+                                                    CanUserSortColumns="True" ItemsSource="{Binding CaseData}">
+                                                                            <my:DataGrid.Columns>
+                                                                                <my:DataGridTemplateColumn Width="*" Header="Key">
+                                                                                    <my:DataGridTemplateColumn.CellTemplate>
+                                                                                        <DataTemplate>
+                                                                                            <StackPanel Orientation="Horizontal">
+                                                                                                <TextBlock Text="{Binding Key}" Margin="4,4,0,4"/>
+                                                                                            </StackPanel>
+                                                                                        </DataTemplate>
+                                                                                    </my:DataGridTemplateColumn.CellTemplate>
+                                                                                </my:DataGridTemplateColumn>
+                                                                                <my:DataGridTemplateColumn Width="*" Header="Value">
+                                                                                    <my:DataGridTemplateColumn.CellTemplate>
+                                                                                        <DataTemplate>
+                                                                                            <StackPanel Orientation="Horizontal">
+                                                                                                <TextBlock Text="{Binding Value}" Margin="4,4,0,4"/>
+                                                                                            </StackPanel>
+                                                                                        </DataTemplate>
+                                                                                    </my:DataGridTemplateColumn.CellTemplate>
+                                                                                </my:DataGridTemplateColumn>
+                                                                            </my:DataGrid.Columns>
+                                                                        </my:DataGrid>
+                                                                        <TextBlock Name="txtNoCaseData" Text="No case data available to display" HorizontalAlignment="Center" Margin="20"></TextBlock>
+                                                                    </Grid>
+                                                                </Border>
+
+                                                                <DockPanel Background="White" Grid.Row="1"  VerticalAlignment="Top" Margin="2">
+                                                                    <Label Name="lblDispositionHeader" DockPanel.Dock="Top" FontFamily="Calibri" FontSize="12" VerticalAlignment="Bottom"  FontWeight="Bold" Content="Disposition Code:" Foreground="#E643AFC6"></Label>
+                                                                    <Label Name="lblDisposition"  DockPanel.Dock="Left" FontFamily="Calibri" FontSize="12" FontWeight="Bold" Content="DispositionCode:"></Label>
+                                                                    <TextBlock Name="txtDisposition" DockPanel.Dock="Left" VerticalAlignment="Center"  FontFamily="Calibri" FontSize="12"  Text="{Binding DispositionKey}"></TextBlock>
+                                                                </DockPanel>
+                                                            </Grid>
+                                                        </DockPanel>
+                                                    </ScrollViewer>
+                                                </TabItem>
+                                            </TabControl>
+
+                                        </Grid>
+                                    </Grid>
+                                </ScrollViewer>
+                            </Grid>
+                            <!--<MediaElement Name="imgWorkbinLoader"  Source="/Agent.Interaction.Desktop;component/Images/Loading.gif" Width="100" Height="100"></MediaElement>-->
+                            <TextBlock Text="Loading.." Name="txtLoading" FontSize="12" HorizontalAlignment="Center" Margin="20"></TextBlock>
+                            <TextBlock VerticalAlignment="Top" HorizontalAlignment="Center" Margin="20,40" Visibility="Collapsed"  Name="txtNoItem" Text="No interaction available to display."></TextBlock>
+                        </Grid>
+
+
+                        <!--It will show if the interactio server is not available -->
+                        <!--<TextBlock Name="txtNoInteractionServer" Text="Interaction Server Not Available" VerticalAlignment="Center" HorizontalAlignment="Center" Visibility="Collapsed"></TextBlock>-->
+                        <!--</StackPanel>-->
+                    </TabItem>
+                </TabControl>
+            </Grid>
+
+            <!--Show Message when the work bin in disabled-->
+            <TextBlock Name="txtUnavailableError" Visibility="Collapsed" TextAlignment="Center" Padding="20" >Work bin temporaily unavailable</TextBlock>
+        </Grid>
+
+        <!--</Border>-->
+    </Grid>
+</UserControl>

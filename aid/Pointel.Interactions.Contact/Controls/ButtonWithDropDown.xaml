@@ -1,0 +1,49 @@
+﻿<UserControl x:Class="Pointel.Interactions.Contact.Controls.ButtonWithDropDown"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:my="http://schemas.microsoft.com/wpf/2008/toolkit"
+             xmlns:Converter="clr-namespace:Pointel.Interactions.Contact.Converters">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary  Source="/Pointel.Interactions.Contact;component/Resource/StylesResourceDictionary.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <DataTemplate x:Key="MediaTemplateVoice" x:Name="VoiceMedia">
+                <Image Width="16" Height="16" Source="/Agent.Interaction.Desktop;component/Images/Contact/Voice.png" />
+            </DataTemplate>
+            <DataTemplate x:Key="MediaTemplateEmail" x:Name="EmailMedia">
+                <Image Width="16" Height="16" Source="/Agent.Interaction.Desktop;component/Images/Contact/Email.png" />
+            </DataTemplate>
+            <DataTemplate x:Key="MediaTemplateChat" x:Name="ChatMedia">
+                <Image Width="16" Height="16" Source="/Agent.Interaction.Desktop;component/Images/Contact/Chat.png" />
+            </DataTemplate>
+            <Converter:NameToVisibilityConverter x:Key="NameToVisibilityConverter"/>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"></ColumnDefinition>
+                <ColumnDefinition Width="1.5*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button Name="btnImg" Style="{StaticResource NormalImageButton1}" Click="btnImg_Click">
+                <Button.Content>
+                    <Image Name="imgIcon"></Image>
+                </Button.Content>
+                <Button.ToolTip>
+                    <WrapPanel>
+                        <TextBlock Name="TxtPrefix" Text="Call to "></TextBlock>
+                        <TextBlock Name="btnValue" ></TextBlock>
+                    </WrapPanel>
+                </Button.ToolTip>
+            </Button>
+            <Button Name="btnOption" Style="{StaticResource NormalImageButton1}" Grid.Column="1" Click="btnOption_Click">
+                <Button.Content>
+                    <Image Source="/Agent.Interaction.Desktop;component/Images/Contact/Arrow.png"></Image>
+                </Button.Content>
+            </Button>
+        </Grid>
+    </Grid>
+</UserControl>

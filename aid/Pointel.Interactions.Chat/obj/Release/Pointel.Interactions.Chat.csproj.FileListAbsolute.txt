@@ -1,0 +1,195 @@
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\bin\Release\Pointel.Interactions.Chat.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\bin\Release\Pointel.Interactions.Chat.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\bin\Release\Genesyslab.Platform.ApplicationBlocks.Commons.Broker.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\bin\Release\Genesyslab.Platform.ApplicationBlocks.Commons.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\bin\Release\Genesyslab.Platform.ApplicationBlocks.ConfigurationObjectModel.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\bin\Release\Genesyslab.Platform.Commons.Collections.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\bin\Release\Genesyslab.Platform.Commons.Connection.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\bin\Release\Genesyslab.Platform.Commons.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\bin\Release\Genesyslab.Platform.Commons.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\bin\Release\Genesyslab.Platform.Configuration.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\bin\Release\Genesyslab.Platform.Contacts.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\bin\Release\Genesyslab.Platform.OpenMedia.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\bin\Release\Genesyslab.Platform.WebMedia.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\bin\Release\ICSharpCode.SharpZipLib.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\bin\Release\log4net.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\bin\Release\Pointel.Configuration.Manager.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\bin\Release\Pointel.Interactions.Chat.Core.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\bin\Release\Pointel.Interactions.DispositionCodes.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\bin\Release\Pointel.Interactions.IPlugins.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\bin\Release\Pointel.Logger.Core.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\bin\Release\Pointel.Salesforce.Plugin.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\bin\Release\Pointel.TaskbarNotifier.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\bin\Release\Pointel.WindowResizer.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\bin\Release\System.Windows.Controls.Input.Toolkit.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\bin\Release\WpfAnimatedGif.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\bin\Release\WPFToolkit.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\bin\Release\Pointel.Connection.Manager.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\bin\Release\Genesyslab.Platform.Voice.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\bin\Release\Genesyslab.Platform.Management.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\bin\Release\Genesyslab.Platform.Routing.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\bin\Release\Genesyslab.Platform.ApplicationBlocks.WarmStandby.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\bin\Release\Genesyslab.Platform.WebMedia.Protocols.EspEmail.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\bin\Release\Genesyslab.Platform.Outbound.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\bin\Release\Genesyslab.Platform.Reporting.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\bin\Release\Genesyslab.Core.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\bin\Release\Genesyslab.Platform.Commons.Collections.Binding.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\bin\Release\Pointel.Configuration.Manager.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\bin\Release\Pointel.Interactions.Chat.Core.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\bin\Release\Pointel.Interactions.DispositionCodes.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\bin\Release\Pointel.Interactions.IPlugins.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\bin\Release\Pointel.Salesforce.Plugin.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\bin\Release\Pointel.WindowResizer.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\bin\Release\Pointel.Connection.Manager.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\obj\Release\UserControls\InteractionData.baml
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\obj\Release\WinForms\MessageBox.baml
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\obj\Release\WinForms\Notifier.baml
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\obj\Release\UserControls\ChatConsultationWindow.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\obj\Release\UserControls\InteractionData.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\obj\Release\WinForms\ChatMainWindow.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\obj\Release\WinForms\MessageBox.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\obj\Release\WinForms\Notifier.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\obj\Release\UserControls\DialPad.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\obj\Release\GeneratedInternalTypeHelper.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\obj\Release\Pointel.Interactions.Chat_MarkupCompile.cache
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\obj\Release\Pointel.Interactions.Chat_MarkupCompile.lref
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\obj\Release\UserControls\ChatConsultationWindow.baml
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\obj\Release\WinForms\ChatMainWindow.baml
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\obj\Release\Resources\StylesResourceDictionary.baml
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\obj\Release\UserControls\DialPad.baml
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\obj\Release\Pointel.Interactions.Chat.g.resources
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\obj\Release\Pointel.Interactions.Chat.Properties.Resources.resources
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\obj\Release\Pointel.Interactions.Chat.csproj.GenerateResource.Cache
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\obj\Release\Pointel.Interactions.Chat.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\obj\Release\Pointel.Interactions.Chat.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.18\Pointel.Interactions.Chat\obj\Release\Pointel.Interactions.Chat.csprojResolveAssemblyReference.cache
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Pointel.Interactions.Chat.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Pointel.Interactions.Chat.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Genesyslab.Platform.ApplicationBlocks.Commons.Broker.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Genesyslab.Platform.ApplicationBlocks.Commons.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Genesyslab.Platform.ApplicationBlocks.ConfigurationObjectModel.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Genesyslab.Platform.Commons.Collections.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Genesyslab.Platform.Commons.Connection.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Genesyslab.Platform.Commons.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Genesyslab.Platform.Commons.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Genesyslab.Platform.Configuration.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Genesyslab.Platform.Contacts.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Genesyslab.Platform.OpenMedia.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Genesyslab.Platform.WebMedia.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\ICSharpCode.SharpZipLib.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\log4net.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Pointel.Configuration.Manager.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Pointel.Interactions.Chat.Core.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Pointel.Interactions.DispositionCodes.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Pointel.Interactions.IPlugins.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Pointel.Logger.Core.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Pointel.Salesforce.Plugin.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Pointel.TaskbarNotifier.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Pointel.WindowResizer.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\System.Windows.Controls.Input.Toolkit.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\WpfAnimatedGif.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\WPFToolkit.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Pointel.Connection.Manager.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Genesyslab.Platform.Voice.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Genesyslab.Platform.Management.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Genesyslab.Platform.Routing.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Genesyslab.Platform.ApplicationBlocks.WarmStandby.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Genesyslab.Platform.WebMedia.Protocols.EspEmail.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Genesyslab.Platform.Outbound.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Genesyslab.Platform.Reporting.Protocols.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Genesyslab.Core.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Genesyslab.Platform.Commons.Collections.Binding.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Pointel.Configuration.Manager.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Pointel.Interactions.Chat.Core.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Pointel.Interactions.DispositionCodes.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Pointel.Interactions.IPlugins.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Pointel.Salesforce.Plugin.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Pointel.WindowResizer.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Pointel.Connection.Manager.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\obj\Release\Pointel.Interactions.Chat.csprojResolveAssemblyReference.cache
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\obj\Release\UserControls\InteractionData.baml
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\obj\Release\WinForms\MessageBox.baml
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\obj\Release\WinForms\Notifier.baml
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\obj\Release\UserControls\ChatConsultationWindow.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\obj\Release\UserControls\InteractionData.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\obj\Release\WinForms\ChatMainWindow.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\obj\Release\WinForms\MessageBox.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\obj\Release\WinForms\Notifier.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\obj\Release\UserControls\DialPad.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\obj\Release\GeneratedInternalTypeHelper.g.cs
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\obj\Release\Pointel.Interactions.Chat_MarkupCompile.cache
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\obj\Release\Pointel.Interactions.Chat_MarkupCompile.lref
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\obj\Release\UserControls\ChatConsultationWindow.baml
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\obj\Release\WinForms\ChatMainWindow.baml
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\obj\Release\Resources\StylesResourceDictionary.baml
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\obj\Release\UserControls\DialPad.baml
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\obj\Release\Pointel.Interactions.Chat.g.resources
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\obj\Release\Pointel.Interactions.Chat.Properties.Resources.resources
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\obj\Release\Pointel.Interactions.Chat.csproj.GenerateResource.Cache
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\obj\Release\Pointel.Interactions.Chat.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Interactions.Chat\obj\Release\Pointel.Interactions.Chat.pdb
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Pointel.Interactions.Chat.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Pointel.Interactions.Chat.pdb
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Genesyslab.Platform.ApplicationBlocks.Commons.Broker.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Genesyslab.Platform.ApplicationBlocks.Commons.Protocols.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Genesyslab.Platform.ApplicationBlocks.ConfigurationObjectModel.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Genesyslab.Platform.Commons.Collections.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Genesyslab.Platform.Commons.Connection.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Genesyslab.Platform.Commons.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Genesyslab.Platform.Commons.Protocols.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Genesyslab.Platform.Configuration.Protocols.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Genesyslab.Platform.Contacts.Protocols.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Genesyslab.Platform.OpenMedia.Protocols.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Genesyslab.Platform.WebMedia.Protocols.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\ICSharpCode.SharpZipLib.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\log4net.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Pointel.Configuration.Manager.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Pointel.Interactions.Chat.Core.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Pointel.Interactions.DispositionCodes.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Pointel.Interactions.IPlugins.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Pointel.Logger.Core.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Pointel.Salesforce.Plugin.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Pointel.TaskbarNotifier.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Pointel.WindowResizer.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\System.Windows.Controls.Input.Toolkit.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\WpfAnimatedGif.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\WPFToolkit.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Pointel.Connection.Manager.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Genesyslab.Platform.Voice.Protocols.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Genesyslab.Platform.Management.Protocols.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Genesyslab.Platform.Routing.Protocols.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Genesyslab.Platform.ApplicationBlocks.WarmStandby.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Genesyslab.Platform.WebMedia.Protocols.EspEmail.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Genesyslab.Platform.Outbound.Protocols.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Genesyslab.Platform.Reporting.Protocols.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Genesyslab.Core.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Genesyslab.Platform.Commons.Collections.Binding.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Pointel.Configuration.Manager.pdb
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Pointel.Interactions.Chat.Core.pdb
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Pointel.Interactions.DispositionCodes.pdb
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Pointel.Interactions.IPlugins.pdb
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Pointel.Salesforce.Plugin.pdb
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Pointel.WindowResizer.pdb
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\bin\Release\Pointel.Connection.Manager.pdb
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\obj\Release\Pointel.Interactions.Chat.csprojResolveAssemblyReference.cache
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\obj\Release\UserControls\InteractionData.baml
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\obj\Release\WinForms\MessageBox.baml
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\obj\Release\WinForms\Notifier.baml
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\obj\Release\UserControls\ChatConsultationWindow.g.cs
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\obj\Release\UserControls\InteractionData.g.cs
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\obj\Release\WinForms\ChatMainWindow.g.cs
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\obj\Release\WinForms\MessageBox.g.cs
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\obj\Release\WinForms\Notifier.g.cs
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\obj\Release\UserControls\DialPad.g.cs
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\obj\Release\GeneratedInternalTypeHelper.g.cs
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\obj\Release\Pointel.Interactions.Chat_MarkupCompile.cache
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\obj\Release\Pointel.Interactions.Chat_MarkupCompile.lref
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\obj\Release\UserControls\ChatConsultationWindow.baml
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\obj\Release\WinForms\ChatMainWindow.baml
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\obj\Release\Resources\StylesResourceDictionary.baml
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\obj\Release\UserControls\DialPad.baml
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\obj\Release\Pointel.Interactions.Chat.g.resources
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\obj\Release\Pointel.Interactions.Chat.Properties.Resources.resources
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\obj\Release\Pointel.Interactions.Chat.csproj.GenerateResource.Cache
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\obj\Release\Pointel.Interactions.Chat.dll
+E:\Projects\ClickOnceDeployment\WorkOuts\Elavon v5.0.3.22\Pointel.Interactions.Chat\obj\Release\Pointel.Interactions.Chat.pdb

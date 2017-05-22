@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{35E29EBF-BADB-45E2-85BF-78D0A4145751}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pointel.Interactions.TeamCommunicator</RootNamespace>
+    <AssemblyName>Pointel.Interactions.TeamCommunicator</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>true</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Genesyslab.Platform.ApplicationBlocks.Commons.Broker, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\Redist\Genesyslab.Platform.ApplicationBlocks.Commons.Broker.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.ApplicationBlocks.Commons.Protocols">
+      <HintPath>..\Redist\Genesyslab.Platform.ApplicationBlocks.Commons.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.ApplicationBlocks.ConfigurationObjectModel, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\Redist\Genesyslab.Platform.ApplicationBlocks.ConfigurationObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Commons, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\Redist\Genesyslab.Platform.Commons.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Commons.Collections, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\Redist\Genesyslab.Platform.Commons.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Commons.Connection, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\Redist\Genesyslab.Platform.Commons.Connection.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Commons.Protocols, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\Redist\Genesyslab.Platform.Commons.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Configuration.Protocols, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\Redist\Genesyslab.Platform.Configuration.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Contacts.Protocols, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\Redist\Genesyslab.Platform.Contacts.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.OpenMedia.Protocols, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\Redist\Genesyslab.Platform.OpenMedia.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Reporting.Protocols">
+      <HintPath>..\Redist\Genesyslab.Platform.Reporting.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\Redist\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net">
+      <HintPath>..\Redist\Lucene.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder2">
+      <HintPath>..\Redist\Microsoft.Practices.ObjectBuilder2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>..\Redist\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration">
+      <HintPath>..\Redist\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Pointel.Logger.Core, Version=1.0.3.6, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Redist\Pointel.Logger.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Controls.Input.Toolkit">
+      <HintPath>..\Redist\System.Windows.Controls.Input.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WPFToolkit">
+      <HintPath>..\Redist\WPFToolkit.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppReader\XMLHandler.cs" />
+    <Compile Include="ConnectionManager\StatisticsConnectionManager.cs" />
+    <Compile Include="Helpers\ConfigParser.cs" />
+    <Compile Include="Helpers\LuceneParser.cs" />
+    <Compile Include="Request\RequestStatistics.cs" />
+    <Compile Include="Settings\Datacontext.cs" />
+    <Compile Include="UserControls\DialPad.xaml.cs">
+      <DependentUpon>DialPad.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\TeamCommunicator.xaml.cs">
+      <DependentUpon>TeamCommunicator.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WinForms\Favorites.xaml.cs">
+      <DependentUpon>Favorites.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WinForms\MessageBox.xaml.cs">
+      <DependentUpon>MessageBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\ITeamCommunicator.cs" />
+    <Compile Include="Helpers\TeamCommunicator.cs" />
+    <Compile Include="InteractionHandler\Listener.cs" />
+    <Page Include="Resources\StylesResourceDictionary.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\DialPad.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\TeamCommunicator.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WinForms\Favorites.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WinForms\MessageBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Add.png" />
+    <Resource Include="Images\agent-busy.png" />
+    <Resource Include="Images\Agent.png" />
+    <Resource Include="Images\Agent.skill.png" />
+    <Resource Include="Images\Arrowdown_white.png" />
+    <Resource Include="Images\Arrowup_white.png" />
+    <Resource Include="Images\Call.Blink.gif" />
+    <Resource Include="Images\Call.png" />
+    <Resource Include="Images\Custom Close selected.png" />
+    <Resource Include="Images\Custom Close.png" />
+    <Resource Include="Images\Custom Minimize selected.png" />
+    <Resource Include="Images\Custom Minimize.png" />
+    <Resource Include="Images\Delete.png" />
+    <Resource Include="Images\Disable.btn.png" />
+    <Resource Include="Images\DontDis.png" />
+    <Resource Include="Images\Edit.png" />
+    <Resource Include="Images\Eject.Disable.png" />
+    <Resource Include="Images\Eject.png" />
+    <Resource Include="Images\Email.png" />
+    <Resource Include="Images\Error.png" />
+    <Resource Include="Images\Favourite.Disable.png" />
+    <Resource Include="Images\Favourite.Edit.png" />
+    <Resource Include="Images\Favourite.png" />
+    <Resource Include="Images\Favourite.Remove.png" />
+    <Resource Include="Images\Group.Disable.png" />
+    <Resource Include="Images\Group.png" />
+    <Resource Include="Images\Group.short.png" />
+    <Resource Include="Images\Not_Ready.png" />
+    <Resource Include="Images\Out_of_Service.png" />
+    <Resource Include="Images\PhoneBook.png" />
+    <Resource Include="Images\Pin.Close.png" />
+    <Resource Include="Images\Pin.Close.Selected.png" />
+    <Resource Include="Images\Pin.Open.png" />
+    <Resource Include="Images\Pin.Open.Selected.png" />
+    <Resource Include="Images\Pointel Softphone.png" />
+    <Resource Include="Images\Pointelsoftphone32x32.ico" />
+    <Resource Include="Images\Spare.png" />
+    <Resource Include="Images\Time.Disable.png" />
+    <Resource Include="Images\Time.png" />
+    <Resource Include="Images\UnGroup.Disable.png" />
+    <Resource Include="Images\UnGroup.png" />
+    <Resource Include="Images\Voice.png" />
+    <Resource Include="Images\Voice.Short.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Chat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Queue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\move.to.queue.png" />
+    <Resource Include="Images\move.to.workbin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Pointel.Configuration.Manager\Pointel.Configuration.Manager.csproj">
+      <Project>{870DEB13-F88C-4B03-B78C-C3EADB70BFD9}</Project>
+      <Name>Pointel.Configuration.Manager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pointel.Connection.Manager\Pointel.Connection.Manager.csproj">
+      <Project>{511E7FEA-9FCF-4DEE-A82F-073B82A376B3}</Project>
+      <Name>Pointel.Connection.Manager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pointel.Interactions.IPlugins\Pointel.Interactions.IPlugins.csproj">
+      <Project>{F9ABF1FD-4F58-4FE4-9808-8B3C276097A1}</Project>
+      <Name>Pointel.Interactions.IPlugins</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pointel.Interactions.Outbound\Pointel.Interactions.Outbound.csproj">
+      <Project>{D09E1E02-CB03-4A5B-98A0-200D3F98D15B}</Project>
+      <Name>Pointel.Interactions.Outbound</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Ready.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Busy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Logout-state.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Contact.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

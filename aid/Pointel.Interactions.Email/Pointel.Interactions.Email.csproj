@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{64EB0C2B-DC8B-43BD-970C-09B1D312D25C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pointel.Interactions.Email</RootNamespace>
+    <AssemblyName>Pointel.Interactions.Email</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>On</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Pointelsoftphone32x32.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Genesyslab.Platform.ApplicationBlocks.Commons.Broker, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\Redist\Genesyslab.Platform.ApplicationBlocks.Commons.Broker.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.ApplicationBlocks.Commons.Protocols">
+      <HintPath>..\Redist\Genesyslab.Platform.ApplicationBlocks.Commons.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.ApplicationBlocks.ConfigurationObjectModel, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\Redist\Genesyslab.Platform.ApplicationBlocks.ConfigurationObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Commons, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\Redist\Genesyslab.Platform.Commons.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Commons.Collections, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\Redist\Genesyslab.Platform.Commons.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Commons.Connection, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\Redist\Genesyslab.Platform.Commons.Connection.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Commons.Protocols, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\Redist\Genesyslab.Platform.Commons.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Configuration.Protocols, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\Redist\Genesyslab.Platform.Configuration.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Contacts.Protocols, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\Redist\Genesyslab.Platform.Contacts.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.OpenMedia.Protocols, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\Redist\Genesyslab.Platform.OpenMedia.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\Redist\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Pointel.Logger.Core, Version=1.0.3.6, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Redist\Pointel.Logger.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Controls.Input.Toolkit">
+      <HintPath>..\Redist\System.Windows.Controls.Input.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WpfAnimatedGif">
+      <HintPath>..\Redist\WpfAnimatedGif.dll</HintPath>
+    </Reference>
+    <Reference Include="WPFToolkit, Version=3.5.40128.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Redist\WPFToolkit.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationUtil\XMLHandler.cs" />
+    <Compile Include="Converters\DGRowForegroundConverter.cs" />
+    <Compile Include="Converters\DGRowIsEnableConverter.cs" />
+    <Compile Include="Converters\StringtoImageSourceConverter.cs" />
+    <Compile Include="CustomControls\TimerLabel.cs" />
+    <Compile Include="DataContext\EmailCaseData.cs" />
+    <Compile Include="DataContext\EmailDataContext.cs" />
+    <Compile Include="DataContext\EmailDetails.cs" />
+    <Compile Include="Forms\ContactDirectoryWindow.xaml.cs">
+      <DependentUpon>ContactDirectoryWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EmailMainWindow.xaml.cs">
+      <DependentUpon>EmailMainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EmailNotifier.xaml.cs">
+      <DependentUpon>EmailNotifier.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MessageBox.xaml.cs">
+      <DependentUpon>MessageBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\FromAddresses.cs" />
+    <Compile Include="Helper\ContactHelper.cs" />
+    <Compile Include="Helper\Contacts.cs" />
+    <Compile Include="Helper\ContactServerHelper.cs" />
+    <Compile Include="Helper\EmailAddressValidation.cs" />
+    <Compile Include="Helper\EmailServerDetails.cs" />
+    <Compile Include="Helper\IContacts.cs" />
+    <Compile Include="Helper\Importer.cs" />
+    <Compile Include="Helper\IRecentInteractions.cs" />
+    <Compile Include="Helper\RecentInteractions.cs" />
+    <Compile Include="Listener\EmailInteractionListener.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\DataUserControl.xaml.cs">
+      <DependentUpon>DataUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\DialPad.xaml.cs">
+      <DependentUpon>DialPad.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\InboundUserControl.xaml.cs">
+      <DependentUpon>InboundUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\OutboundUserControl.xaml.cs">
+      <DependentUpon>OutboundUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Utility\ControlUtility.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Pointel.Configuration.Manager\Pointel.Configuration.Manager.csproj">
+      <Project>{870DEB13-F88C-4B03-B78C-C3EADB70BFD9}</Project>
+      <Name>Pointel.Configuration.Manager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pointel.Interactions.Core\Pointel.Interactions.Core.csproj">
+      <Project>{E1BFBD94-D72D-494F-95A9-9D2B3A6F545C}</Project>
+      <Name>Pointel.Interactions.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pointel.Interactions.DispositionCodes\Pointel.Interactions.DispositionCodes.csproj">
+      <Project>{4B8751A4-9E72-4153-88B2-39BA0399E313}</Project>
+      <Name>Pointel.Interactions.DispositionCodes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pointel.Interactions.IPlugins\Pointel.Interactions.IPlugins.csproj">
+      <Project>{F9ABF1FD-4F58-4FE4-9808-8B3C276097A1}</Project>
+      <Name>Pointel.Interactions.IPlugins</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pointel.TaskbarNotifier\Pointel.TaskbarNotifier.csproj">
+      <Project>{C807F74B-9C21-4A9F-8A60-C7D7AF7BCBBA}</Project>
+      <Name>Pointel.TaskbarNotifier</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pointel.WindowResizer\Pointel.WindowResizer.csproj">
+      <Project>{484A8648-56A6-44A8-AD34-8B7E3E26A41A}</Project>
+      <Name>Pointel.WindowResizer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pointel.Windows.Views.Common.Editor\Pointel.Windows.Views.Common.Editor.csproj">
+      <Project>{8E807142-752E-4792-8440-1803981D5C4F}</Project>
+      <Name>Pointel.Windows.Views.Common.Editor</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Forms\ContactDirectoryWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Forms\EmailMainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Forms\EmailNotifier.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Forms\MessageBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\StylesResourceDictionary.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\DataUserControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\DialPad.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\InboundUserControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\OutboundUserControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\E-Mail\Email compose.png" />
+    <Resource Include="Images\E-Mail\Email Delete.png" />
+    <Resource Include="Images\E-Mail\Email Done.png" />
+    <Resource Include="Images\E-Mail\Email Forward.png" />
+    <Resource Include="Images\E-Mail\Email inbound.png" />
+    <Resource Include="Images\E-Mail\Email Open.png" />
+    <Resource Include="Images\E-Mail\Email Outbound.png" />
+    <Resource Include="Images\E-Mail\Email Reply all.png" />
+    <Resource Include="Images\E-Mail\Email Reply.png" />
+    <Resource Include="Images\E-Mail\Email save.png" />
+    <Resource Include="Images\E-Mail\Email Send.png" />
+    <Resource Include="Images\E-Mail\Email transfer.png" />
+    <Resource Include="Images\E-Mail\Email Workbin.png" />
+    <Resource Include="Images\E-Mail\Email save1.png" />
+    <Resource Include="Images\E-Mail\Chat.Consult.Call.Disable.png" />
+    <Resource Include="Images\E-Mail\Chat.Consult.Call.png" />
+    <Content Include="Images\E-Mail\EmailWhite.png" />
+    <Resource Include="Images\E-Mail\Mark Done.png" />
+    <Resource Include="Images\E-Mail\Transfer1.png" />
+    <Content Include="Pointelsoftphone32x32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\E-Mail\Add.png" />
+    <Resource Include="Images\E-Mail\Arrow.png" />
+    <Resource Include="Images\E-Mail\Attachment.png" />
+    <Resource Include="Images\E-Mail\Close Hover.png" />
+    <Resource Include="Images\E-Mail\Close.png" />
+    <Resource Include="Images\E-Mail\ConsultCall.png" />
+    <Resource Include="Images\E-Mail\Delete.png" />
+    <Resource Include="Images\E-Mail\Email.png" />
+    <Resource Include="Images\E-Mail\Forward.png" />
+    <Resource Include="Images\E-Mail\IxnInProgrogress.png" />
+    <Resource Include="Images\E-Mail\MarkDone.png" />
+    <Resource Include="Images\E-Mail\Maximize Hover.png" />
+    <Resource Include="Images\E-Mail\Maximize.png" />
+    <Resource Include="Images\E-Mail\Minimize Hover.png" />
+    <Resource Include="Images\E-Mail\Minimize.png" />
+    <Resource Include="Images\E-Mail\Normal Hover.png" />
+    <Resource Include="Images\E-Mail\Normal.png" />
+    <Resource Include="Images\E-Mail\Print.png" />
+    <Resource Include="Images\E-Mail\RecentIxnList.png" />
+    <Resource Include="Images\E-Mail\Reply.png" />
+    <Resource Include="Images\E-Mail\ReplyAll.png" />
+    <Resource Include="Images\E-Mail\SaveMail.png" />
+    <Resource Include="Images\E-Mail\Send.png" />
+    <Resource Include="Images\E-Mail\Transfer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

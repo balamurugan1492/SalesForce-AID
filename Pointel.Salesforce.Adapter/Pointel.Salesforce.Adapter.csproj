@@ -1,0 +1,450 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FB3E121F-98D1-4E40-9C56-CCBBB0B19AD6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pointel.Salesforce.Adapter</RootNamespace>
+    <AssemblyName>Pointel.Salesforce.Adapter</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Redist8.5.112.08\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Redist8.5.112.12\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+<<<<<<< .mine
+    <Reference Include="Genesyslab.Platform.ApplicationBlocks.Commons, Version=8.5.200.4, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Redist8.5.112.08\Genesyslab.Platform.ApplicationBlocks.Commons.dll</HintPath>
+    </Reference>
+=======
+    <Reference Include="Genesyslab.Platform.ApplicationBlocks.Commons, Version=8.5.200.4, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Redist8.5.112.12\Genesyslab.Platform.ApplicationBlocks.Commons.dll</HintPath>
+    </Reference>
+>>>>>>> .r1322
+    <Reference Include="Genesyslab.Platform.ApplicationBlocks.Commons.Broker, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Redist8.5.108.11\Genesyslab.Platform.ApplicationBlocks.Commons.Broker.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.ApplicationBlocks.Commons.Protocols, Version=8.5.101.8, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Redist8.5.108.11\Genesyslab.Platform.ApplicationBlocks.Commons.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.ApplicationBlocks.ConfigurationObjectModel, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Redist8.5.108.11\Genesyslab.Platform.ApplicationBlocks.ConfigurationObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Commons, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Redist8.5.108.11\Genesyslab.Platform.Commons.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Commons.Collections, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Redist8.5.108.11\Genesyslab.Platform.Commons.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Commons.Connection, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Redist8.5.108.11\Genesyslab.Platform.Commons.Connection.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Commons.Protocols, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Redist8.5.108.11\Genesyslab.Platform.Commons.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Configuration.Protocols, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Redist8.5.108.11\Genesyslab.Platform.Configuration.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Contacts.Protocols, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Redist8.5.108.11\Genesyslab.Platform.Contacts.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.OpenMedia.Protocols, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Redist8.5.108.11\Genesyslab.Platform.OpenMedia.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Voice.Protocols, Version=8.1.401.5, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Redist8.5.108.11\Genesyslab.Platform.Voice.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.WebMedia.Protocols, Version=8.5.101.8, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Redist8.5.108.11\Genesyslab.Platform.WebMedia.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="interop.shdocvw, Version=1.1.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\Redist\interop.shdocvw.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\Redist8.5.108.11\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Redist\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Chat\ChatManager.cs" />
+    <Compile Include="Chat\ChatMarkDone.cs" />
+    <Compile Include="Chat\ChatRejected.cs" />
+    <Compile Include="Chat\ChatSessionConnected.cs" />
+    <Compile Include="Chat\ChatSessionEnded.cs" />
+    <Compile Include="Chat\ChatInvite.cs" />
+    <Compile Include="Chat\ChatEventHandler.cs" />
+    <Compile Include="Configurations\ChatOptions.cs" />
+    <Compile Include="Configurations\CommonOptions.cs" />
+    <Compile Include="Configurations\EmailOptions.cs" />
+    <Compile Include="Configurations\GeneralOptions.cs" />
+    <Compile Include="Configurations\ReadProperties.cs" />
+    <Compile Include="Configurations\ReadConfiguration.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configurations\UserActivityOptions.cs" />
+    <Compile Include="Configurations\VoiceOptions.cs" />
+    <Compile Include="PluginHelper\ConnectorHelper.cs" />
+    <Compile Include="CurrentAgentStatus.cs" />
+    <Compile Include="Email\EmailConnected.cs" />
+    <Compile Include="Email\EmailDelete.cs" />
+    <Compile Include="Email\EmailRejected.cs" />
+    <Compile Include="Email\EmailSend.cs" />
+    <Compile Include="SFDCUtils\AdSearch.cs" />
+    <Compile Include="Utility\IXNCustomData.cs" />
+    <Compile Include="Email\EmailManager.cs" />
+    <Compile Include="Email\EmailMarkDone.cs" />
+    <Compile Include="Email\EmailMoveToWorkbin.cs" />
+    <Compile Include="Email\EmailPulled.cs" />
+    <Compile Include="Email\EmailReply.cs" />
+    <Compile Include="Email\EmailInvite.cs" />
+    <Compile Include="Email\EmailCreate.cs" />
+    <Compile Include="Email\EmailEventHandler.cs" />
+    <Compile Include="LogMessage\SFDCSessionStatus.cs" />
+    <Compile Include="LogMessage\Log.cs" />
+    <Compile Include="LogMessage\LogMode.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="SFDCModels\OutputValues.cs" />
+    <Compile Include="SFDCModels\SFDCObjectHelper.cs" />
+    <Compile Include="SFDCModels\SFDCUtility.cs" />
+    <Compile Include="SFDCModels\SFDCUtiltiyHelper.cs" />
+    <Compile Include="SFDCUtils\PopupData.cs" />
+    <Compile Include="SFDCUtils\SFDCObjectProperty.cs" />
+    <Compile Include="SFDCViews\SFDCPopupWindow.xaml.cs" />
+    <Compile Include="SFDCViews\WebBrowserBehaviors.cs" />
+    <Compile Include="Utility\CustomMediaType.cs" />
+    <Compile Include="Utility\Extensions.cs" />
+    <Compile Include="Utility\MediaType.cs" />
+    <Compile Include="Utility\MultiMatchBehaviour.cs" />
+    <Compile Include="Utility\SearchHandler.cs" />
+    <Compile Include="Utility\SearchHelper.cs" />
+    <Compile Include="Utility\SFDCCallType.cs" />
+    <Compile Include="Utility\Settings.cs" />
+    <Compile Include="SFDCController.cs" />
+    <Compile Include="SFDCModels\SFDCAccount.cs" />
+    <Compile Include="SFDCModels\SFDCCase.cs" />
+    <Compile Include="SFDCModels\SFDCContact.cs" />
+    <Compile Include="SFDCModels\SFDCCustomObject.cs" />
+    <Compile Include="SFDCModels\SFDCLead.cs" />
+    <Compile Include="SFDCModels\SFDCOpportunity.cs" />
+    <Compile Include="SFDCModels\SFDCUserActivity.cs" />
+    <Compile Include="SFDCUtils\AccountData.cs" />
+    <Compile Include="SFDCUtils\CaseData.cs" />
+    <Compile Include="SFDCUtils\ContactData.cs" />
+    <Compile Include="SFDCUtils\CustomObjectData.cs" />
+    <Compile Include="SFDCUtils\IAccount.cs" />
+    <Compile Include="IAgentDetails.cs" />
+    <Compile Include="SFDCUtils\ICase.cs" />
+    <Compile Include="SFDCUtils\IContact.cs" />
+    <Compile Include="SFDCUtils\ICustomObject.cs" />
+    <Compile Include="SFDCUtils\ILead.cs" />
+    <Compile Include="SFDCUtils\IOpportunity.cs" />
+    <Compile Include="SFDCUtils\ISFDCObjectProperty.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ISFDCListener.cs" />
+    <Compile Include="SFDCUtils\IUserActivity.cs" />
+    <Compile Include="SFDCUtils\LeadData.cs" />
+    <Compile Include="SFDCUtils\OpportunityData.cs" />
+    <Compile Include="SFDCUtils\SFDCData.cs" />
+    <Compile Include="SFDCUtils\UserActivityData.cs" />
+    <Compile Include="Utility\SFDCHttpServer.cs" />
+    <Compile Include="Utility\SFDCObjectUrlIDs.cs" />
+    <Compile Include="Utility\SFDCTaskData.cs" />
+    <Compile Include="Utility\StringExtensions.cs" />
+    <Compile Include="Utility\UpdateLogData.cs" />
+    <Compile Include="Voice\CallAttachedDataChanged.cs" />
+    <Compile Include="Voice\CallConnected.cs" />
+    <Compile Include="Voice\CallDialing.cs" />
+    <Compile Include="Voice\CallEventAbandoned.cs" />
+    <Compile Include="Voice\CallEventDestinationBusy.cs" />
+    <Compile Include="Voice\CallEventError.cs" />
+    <Compile Include="Voice\CallMarkDone.cs" />
+    <Compile Include="Voice\CallRejected.cs" />
+    <Compile Include="Voice\CallReleased.cs" />
+    <Compile Include="Voice\CallRinging.cs" />
+    <Compile Include="Voice\CallPartyChanged.cs" />
+    <Compile Include="Voice\VoiceManager.cs" />
+    <Compile Include="Voice\VoiceEventHandler.cs" />
+    <Compile Include="Voice\CallUserEvent.cs" />
+    <Compile Include="Web References\PForce\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Pointel.Salesforce.Plugin\Pointel.Salesforce.Plugin.csproj">
+      <Project>{f46e83e8-1ef0-4581-baee-1bd539205a6a}</Project>
+      <Name>Pointel.Salesforce.Plugin</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="SFDCViews\SFDCPopupWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="APEXClass\SessionId.txt" />
+    <Content Include="APEXClass\SessionId_test.txt" />
+    <Content Include="Scripts\index.html" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\salesforce.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="CFG Files\Chat\Annex.cfg" />
+    <None Include="CFG Files\Chat\salesforce-integration.cfg" />
+    <None Include="CFG Files\Voice\Annex.cfg" />
+    <None Include="CFG Files\salesforce-integration.cfg" />
+    <None Include="CFG Files\Voice\salesforce-integration.cfg" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="SelfSignedCertificate\cti_adapter.bat" />
+    <None Include="SelfSignedCertificate\Localhost.pfx" />
+    <None Include="SelfSignedCertificate\PointelAuth.cer" />
+    <None Include="Web References\PForce\DeleteResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PForce\DescribeAppMenuItem.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PForce\DescribeApprovalLayout.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PForce\DescribeAvailableQuickActionResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PForce\DescribeCompactLayout.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PForce\DescribeCompactLayoutsResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PForce\DescribeDataCategoryGroupResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PForce\DescribeDataCategoryGroupStructureResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PForce\DescribeFlexiPageResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PForce\DescribeGlobalResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PForce\DescribeGlobalTheme.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PForce\DescribeLayoutResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PForce\DescribeNounResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PForce\DescribePathAssistant.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PForce\DescribeQuickActionResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PForce\DescribeSearchLayoutResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PForce\DescribeSearchScopeOrderResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PForce\DescribeSObjectResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PForce\DescribeSoftphoneLayoutResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PForce\DescribeSoqlListView.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PForce\DescribeTab.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PForce\DescribeTabSetResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PForce\DescribeThemeItem.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PForce\EmptyRecycleBinResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PForce\ExecuteListViewResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PForce\GetDeletedResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PForce\GetServerTimestampResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PForce\GetUpdatedResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PForce\GetUserInfoResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PForce\InvalidateSessionsResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PForce\KnowledgeSettings.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PForce\LeadConvertResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PForce\LoginResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PForce\MergeResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PForce\partner.wsdl" />
+    <None Include="Web References\PForce\PerformQuickActionResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PForce\ProcessResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PForce\QueryResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PForce\QuickActionTemplateResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PForce\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\PForce\RenderEmailTemplateResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PForce\ResetPasswordResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PForce\SaveResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PForce\SearchResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PForce\SendEmailResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PForce\SetPasswordResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PForce\sObject.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PForce\UndeleteResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PForce\UpsertResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="E:\Ilayaraja\Projects\IWS-SalesForce\SFDC_SOAP_API\SOAP API\PROD File\partner.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\PForce\</RelPath>
+      <UpdateFromURL>E:\Ilayaraja\Projects\IWS-SalesForce\SFDC_SOAP_API\SOAP API\PROD File\partner.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Pointel_Salesforce_Adapter_PForce_SforceService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

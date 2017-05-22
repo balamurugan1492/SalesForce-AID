@@ -1,0 +1,86 @@
+﻿<UserControl x:Class="Pointel.Interactions.Email.UserControls.InboundUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" Unloaded="UserControl_Unloaded">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary  Source="/Pointel.Interactions.Email;component/Resources/StylesResourceDictionary.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Border Name="MainBorder" BorderThickness="0.89" Margin="2" Background="White">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="*" ></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid Margin="2" Grid.Row="0" Name="gdMain">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <TextBox UndoLimit="10"  Name="txtInboundSubject" Grid.Row="0" IsReadOnly="True" GotMouseCapture="txt_GotMouseCapture" LostFocus="txtInboundSubject_LostFocus" GotFocus="txtInboundSubject_GotFocus" FontWeight="Bold"  Padding="5,0,10,0" TextWrapping="Wrap" ContextMenu="{StaticResource DefaultCopyContextmenu}">
+                    <TextBox.Style>
+                        <Style TargetType="TextBox">
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding IsKeyboardFocused, RelativeSource={RelativeSource Self}}" Value="false">
+                                    <Setter Property="Template">
+                                        <Setter.Value>
+                                            <ControlTemplate TargetType="TextBox">
+                                                <TextBlock Text="{TemplateBinding Text}" TextTrimming="CharacterEllipsis" Width="{Binding ElementName= gdMain, Path=Width}" ContextMenu="{StaticResource DefaultCopyContextmenu}" />
+                                                <ControlTemplate.Triggers>
+                                                    <Trigger Property="IsFocused" Value="true">
+                                                        <Setter Property="BorderBrush" Value="#ADAAAD"/>
+                                                        <Setter Property="BorderThickness" Value="1" />
+                                                        <Setter Property="Background" Value="White"/>
+                                                    </Trigger>
+                                                    <Trigger Property="IsFocused" Value="false">
+                                                        <Setter Property="BorderBrush" Value="Transparent"/>
+                                                        <Setter Property="BorderThickness" Value="1" />
+                                                        <Setter Property="Background" Value="White"/>
+                                                    </Trigger>
+                                                </ControlTemplate.Triggers>
+                                            </ControlTemplate>                                     
+                                        </Setter.Value>
+                                    </Setter>
+                                </DataTrigger>                                               
+                            </Style.Triggers>
+                        </Style>
+                    </TextBox.Style>
+                </TextBox>
+                <DockPanel Name="dockFrom" Grid.Row="1">
+                    <Label VerticalAlignment="Center" Width="40">From :</Label>
+                    <TextBox UndoLimit="10" Name="txtInboundFrom" Background="Transparent" BorderBrush="Transparent" BorderThickness="0" IsReadOnly="True" Style="{x:Null}" Width="Auto" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalAlignment="Stretch"  GotMouseCapture="txt_GotMouseCapture" ContextMenu="{StaticResource DefaultCopyContextmenu}"></TextBox>
+                    <TextBox UndoLimit="10" Name="lblInboundDateTime" Background="Transparent" BorderBrush="Transparent" BorderThickness="0" IsReadOnly="True" Style="{x:Null}" HorizontalAlignment="Right" Width="Auto" Margin="5,0,5,0" ContextMenu="{StaticResource DefaultCopyContextmenu}"></TextBox>
+                </DockPanel>
+                <DockPanel Name="dockTo" Grid.Row="2">
+                    <Label VerticalAlignment="Center" Width="35">To :</Label>
+                    <TextBox UndoLimit="10" Name="txtInboundTo" Width="Auto" TextWrapping="Wrap" VerticalAlignment="Center" Background="Transparent" BorderBrush="Transparent" BorderThickness="0" IsReadOnly="True"
+                             Style="{x:Null}" GotMouseCapture="txt_GotMouseCapture" ContextMenu="{StaticResource DefaultCopyContextmenu}">
+                    </TextBox>
+                </DockPanel>
+                <DockPanel Name="dockCc" Grid.Row="3">
+                    <Label VerticalAlignment="Center" Width="35">Cc :</Label>
+                    <TextBox UndoLimit="10" Name="txtInboundCc" Width="Auto" TextWrapping="Wrap" VerticalAlignment="Center" Background="Transparent" BorderBrush="Transparent" BorderThickness="0" IsReadOnly="True" Style="{x:Null}" GotMouseCapture="txt_GotMouseCapture" ContextMenu="{StaticResource DefaultCopyContextmenu}"></TextBox>
+                </DockPanel>
+                <DockPanel Name="dockBcc" Grid.Row="4">
+                    <Label VerticalAlignment="Center" Width="35">Bcc :</Label>
+                    <TextBox UndoLimit="10" Name="txtInboundBcc" Width="Auto" TextWrapping="Wrap" VerticalAlignment="Center" Background="Transparent" BorderBrush="Transparent" BorderThickness="0" IsReadOnly="True" Style="{x:Null}" GotMouseCapture="txt_GotMouseCapture" ContextMenu="{StaticResource DefaultCopyContextmenu}"></TextBox>
+                </DockPanel>
+                <ScrollViewer Name="attacScroll" SizeChanged="attacScroll_SizeChanged" Grid.Row="5" Height="Auto" MaxHeight="60"  VerticalAlignment="Stretch" ScrollViewer.CanContentScroll="True" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Auto">
+                    <WrapPanel Name="wrapInboundAttachments"  ScrollViewer.VerticalScrollBarVisibility="Auto" />
+                </ScrollViewer>
+            </Grid>
+            <Grid Name="dockInboundContent" Grid.Row="1">
+            </Grid>
+        </Grid>
+
+    </Border>
+
+</UserControl>

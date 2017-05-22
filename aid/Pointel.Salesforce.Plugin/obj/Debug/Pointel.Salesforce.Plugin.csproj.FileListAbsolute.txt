@@ -1,0 +1,10 @@
+E:\Ilayaraja\Projects\IWS-SalesForce\SFDC Adapter\For AID\Pointel.Salesforce.Adapter\Pointel.Salesforce.Plugin\obj\Debug\Pointel.Salesforce.Plugin.csprojResolveAssemblyReference.cache
+E:\Ilayaraja\Projects\IWS-SalesForce\SFDC Adapter\For AID\Plugin\Redist8.5.108.11\Pointel.Salesforce.Plugin.dll
+E:\Ilayaraja\Projects\IWS-SalesForce\SFDC Adapter\For AID\Plugin\Redist8.5.108.11\Pointel.Salesforce.Plugin.pdb
+E:\Ilayaraja\Projects\IWS-SalesForce\SFDC Adapter\For AID\Plugin\Pointel.Salesforce.Plugin\obj\Debug\Pointel.Salesforce.Plugin.dll
+E:\Ilayaraja\Projects\IWS-SalesForce\SFDC Adapter\For AID\Plugin\Pointel.Salesforce.Plugin\obj\Debug\Pointel.Salesforce.Plugin.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Redist\Pointel.Salesforce.Plugin.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Redist\Pointel.Salesforce.Plugin.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Salesforce.Plugin\obj\Debug\Pointel.Salesforce.Plugin.dll
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Salesforce.Plugin\obj\Debug\Pointel.Salesforce.Plugin.pdb
+E:\D\vinoth\Projects\Agent Interaction Desktop\Source\Tag\aid\Elavon v5.0.3.22\Pointel.Salesforce.Plugin\obj\Debug\Pointel.Salesforce.Plugin.csprojResolveAssemblyReference.cache

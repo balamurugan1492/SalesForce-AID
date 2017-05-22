@@ -1,0 +1,212 @@
+﻿<Window x:Class="StatTickerFive.Views.LoginWindow"
+       	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        xmlns:e="clr-namespace:StatTickerFive.Helpers" Name="MainView"
+        xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+        Title="Login" Topmost="{Binding IsTopMost}" Icon="/StatTickerFive;component/Images/StatTickerFive-32x32-01.ico"
+        WindowStartupLocation="CenterScreen"  WindowStyle="None" SizeToContent="WidthAndHeight"  ResizeMode="NoResize" Background="{Binding BackgroundColor}" AllowsTransparency="True" Left="0" Top="0">
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="Activated">
+            <i:InvokeCommandAction Command="{Binding ActivatedCommand}"></i:InvokeCommandAction>
+        </i:EventTrigger>
+        <i:EventTrigger EventName="Deactivated">
+            <i:InvokeCommandAction Command="{Binding DeactivateCommand}"></i:InvokeCommandAction>
+        </i:EventTrigger>
+        <i:EventTrigger EventName="StateChanged">
+            <i:InvokeCommandAction Command="{Binding WinStateChanged}"></i:InvokeCommandAction>
+        </i:EventTrigger>
+        <i:EventTrigger EventName="MouseLeftButtonDown">
+            <i:InvokeCommandAction Command="{Binding DragCmd}"></i:InvokeCommandAction>
+        </i:EventTrigger>
+        <i:EventTrigger EventName="Closing">
+            <i:InvokeCommandAction Command="{Binding WinClosing}"></i:InvokeCommandAction>
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/StatTickerFive;component/Resources/StyleResource.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
+        <Border BorderThickness="0.89" Margin="0" Background="White" Name="MainBorder" BorderBrush="{Binding BorderBrush}" BitmapEffect="{Binding ShadowEffect}">
+            <Grid Margin="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="30"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid Margin="5" Grid.Row="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="40"></RowDefinition>
+
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0" Background="White">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                    <Image  Grid.Column="0"  HorizontalAlignment="Right" Margin="100,3,0,5" Width="Auto" Height="40" Source="{Binding IconSource}" />
+                        <StackPanel Margin="10,0,0,0" Grid.Column="1" HorizontalAlignment="Left" Orientation="Vertical" >
+                        <Label FontSize="18" Margin="-5,3,0,0" Foreground="{Binding TitleBackground}" FontWeight="Bold" Content="StatTickerFive" FontFamily="Calibri" ></Label>
+                            <Label Margin="28,-7,0,3" Content="Version 1.0.33" FontFamily="Calibri" FontSize="12" ></Label>
+                        </StackPanel>
+                    </Grid>
+                    <Border Grid.Row="1" BorderBrush="#656d90"  BorderThickness="0.5,0.5,0.5,0">
+
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid Grid.Row="0">
+
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="{Binding ErrorRowHeight}"></RowDefinition>
+                                    <RowDefinition Height="28"></RowDefinition>
+                                    <RowDefinition Height="{Binding PasswordHeight}"></RowDefinition>
+                                    <RowDefinition Height="{Binding RowHeight}"></RowDefinition>
+                                    <RowDefinition Height="0"></RowDefinition>
+                                    <RowDefinition Height="{Binding RowHeight}"></RowDefinition>
+                                    <RowDefinition Height="{Binding RowHeight}"></RowDefinition>
+                                    <RowDefinition Height="{Binding RowHeight}"></RowDefinition>
+                                    <RowDefinition Height="{Binding AppTypeHeight}"></RowDefinition>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" MinWidth="120"></ColumnDefinition>
+                                    <ColumnDefinition Width="*"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <StackPanel Orientation="Horizontal"  Grid.Row="0" Grid.ColumnSpan="2" Background="Yellow" HorizontalAlignment="Stretch">
+                                    <Image Margin="5" Width="20" Height="20" Source="/StatTickerFive;component/Images/Error.png" VerticalAlignment="Top"/>
+                                    <Label Margin="0,0,0,0" Width="300">
+                                        <Label.Content>
+                                            <AccessText TextWrapping="Wrap" Text="{Binding ErrorMessage}"></AccessText>
+                                        </Label.Content>
+                                    </Label>
+                                    <!-- Content="Invalid logon information specified." Visibility="Hidden" -->
+                                </StackPanel>
+
+
+                                <Label Content="Username" Grid.Column="0" Grid.Row="1" ></Label>
+                                <TextBox UndoLimit="10"  Grid.Row="1" Grid.Column="1" TabIndex="0" Text="{Binding UserName,UpdateSourceTrigger=PropertyChanged,Mode=OneWayToSource}" HorizontalAlignment="Stretch" Margin="2" Template="{StaticResource controltempTextbox}" >
+                                    <i:Interaction.Triggers>
+                                        <i:EventTrigger EventName="TextChanged">
+                                            <i:InvokeCommandAction Command="{Binding TextChanged}"></i:InvokeCommandAction>
+                                        </i:EventTrigger>
+                                    </i:Interaction.Triggers>
+                                </TextBox>
+                                <Label Content="Password" Grid.Column="0" Grid.Row="2"></Label>
+                                <PasswordBox TabIndex="1" e:PasswordHelper.Attach="True" e:PasswordHelper.Password="{Binding Password,UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"  Grid.Row="2" Grid.Column="2" HorizontalAlignment="Stretch" Margin="2"  Template="{StaticResource controltempPasswordbox}" >
+                                    <i:Interaction.Triggers>
+                                        <i:EventTrigger EventName="KeyDown">
+                                            <i:InvokeCommandAction Command="{Binding TextChanged}"></i:InvokeCommandAction>
+                                        </i:EventTrigger>
+                                    </i:Interaction.Triggers>
+                                </PasswordBox>
+                                <ComboBox Grid.Row="5" Margin="2" TabIndex="3" Grid.Column="1" Height="23" IsEditable="True" Text="{Binding ApplicationName}" IsEnabled="{Binding IsAppNameEnabled}">
+                                    <i:Interaction.Triggers>
+                                        <i:EventTrigger EventName="KeyDown">
+                                            <i:InvokeCommandAction Command="{Binding TextChanged}"></i:InvokeCommandAction>
+                                        </i:EventTrigger>
+                                    </i:Interaction.Triggers>
+                                </ComboBox>
+                                <Label Grid.Row="5" Content="Application Name" Grid.ColumnSpan="2" Margin="1,1,228,0"></Label>
+                                <Label Grid.Column="0" Grid.Row="6" Content="Hostname"></Label>
+                                <ComboBox Grid.Row="6" Margin="2" TabIndex="4" Grid.Column="1" Height="23" IsEditable="True" Text="{Binding Host}" IsEnabled="{Binding IsHostEnabled}">
+                                    <i:Interaction.Triggers>
+                                        <i:EventTrigger EventName="KeyDown">
+                                            <i:InvokeCommandAction Command="{Binding TextChanged}"></i:InvokeCommandAction>
+                                        </i:EventTrigger>
+                                    </i:Interaction.Triggers>
+                                </ComboBox>
+
+                                <Label Grid.Column="0" Grid.Row="7" Content="Port"></Label>
+                                <ComboBox Grid.Row="7" Margin="2" Grid.Column="1" TabIndex="5" Height="23" IsEditable="True" SelectedIndex="0" Text="{Binding Port}" IsEnabled="{Binding IsPortEnabled}">
+                                    <i:Interaction.Triggers>
+                                        <i:EventTrigger EventName="KeyDown">
+                                            <i:InvokeCommandAction Command="{Binding TextChanged}"></i:InvokeCommandAction>
+                                        </i:EventTrigger>
+                                    </i:Interaction.Triggers>
+                                </ComboBox>
+
+                                <Label Grid.Column="0" Grid.Row="8" Content="Application Type"></Label>
+                                <ComboBox Grid.Row="8" Margin="2" Grid.Column="1" TabIndex="5" Height="23" IsEditable="False" SelectedIndex="{Binding SelectedType,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" Text="{Binding SelectedAppType}" >
+                                    <i:Interaction.Triggers>
+                                        <i:EventTrigger EventName="KeyDown">
+                                            <i:InvokeCommandAction Command="{Binding TextChanged}"></i:InvokeCommandAction>
+                                        </i:EventTrigger>
+                                        <i:EventTrigger EventName="SelectionChanged">
+                                            <i:InvokeCommandAction Command="{Binding AppTypeChanged}"></i:InvokeCommandAction>
+                                        </i:EventTrigger>
+                                    </i:Interaction.Triggers>
+                                    <ComboBoxItem Content="StatServer" Selector.IsSelected="True" />
+                                    <ComboBoxItem Content="Database" />
+                                    <!--<ComboBoxItem Content="WebService" />-->
+                                    <ComboBoxItem Content="All" />
+                                </ComboBox>
+                                <Label Grid.Column="0" Grid.Row="3" Content="Place"></Label>
+                                <TextBox UndoLimit="10"  Grid.Row="3" Grid.Column="1" TabIndex="2" Text="{Binding Place,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" HorizontalAlignment="Stretch" Margin="2"  Template="{StaticResource controltempTextbox}" IsEnabled="{Binding isPlaceEnabled}">
+
+                                    <i:Interaction.Triggers>
+                                        <i:EventTrigger EventName="TextChanged">
+                                            <i:InvokeCommandAction Command="{Binding TextChanged}"></i:InvokeCommandAction>
+                                        </i:EventTrigger>
+                                    </i:Interaction.Triggers>
+                                </TextBox>
+                                <!--<ComboBox Grid.Row="3" Margin="2" Grid.Column="1" Height="23" IsEditable="True" SelectedIndex="0" Text="{Binding Place}" >
+                                    <i:Interaction.Triggers>
+                                        <i:EventTrigger EventName="KeyDown">
+                                            <i:InvokeCommandAction Command="{Binding TextChanged}"></i:InvokeCommandAction>
+                                        </i:EventTrigger>
+                                    </i:Interaction.Triggers>
+                                </ComboBox>-->
+                            </Grid>
+                        </Grid>
+                    </Border>
+                    <Border Grid.Row="2" BorderBrush="#656d90" BorderThickness="0.5">
+
+
+                        <Border BorderBrush="White" Margin="0.2" BorderThickness="1">
+                            <Grid  VerticalAlignment="Center">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"></RowDefinition>
+                                </Grid.RowDefinitions>
+                                <Grid Grid.Row="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                        <ColumnDefinition Width="*"></ColumnDefinition>
+                                        <ColumnDefinition Width="15"></ColumnDefinition>
+                                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+                                    <!--IsExpanded="{Binding IsExpanded}"-->
+                                    <Expander Template="{StaticResource StretchyExpanderTemp}"  Grid.Column="0" Height="20" Header="{Binding ExpanderHeader}" >
+                                        <!--Template="{StaticResource StretchyExpanderTemp}"-->
+                                        <i:Interaction.Triggers>
+                                            <i:EventTrigger EventName="Expanded">
+                                                <i:InvokeCommandAction Command="{Binding ExpanderExpanded}"></i:InvokeCommandAction>
+                                            </i:EventTrigger>
+                                            <i:EventTrigger EventName="Collapsed">
+                                                <i:InvokeCommandAction Command="{Binding ExpanderCollapsed}"></i:InvokeCommandAction>
+                                            </i:EventTrigger>
+                                        </i:Interaction.Triggers>
+                                    </Expander>
+                                    <Button Height="23" Width="80" HorizontalAlignment="Right" TabIndex="6" Content="Login" Grid.Column="1" Style="{StaticResource NormalButton}" Command="{Binding LoginClick}" IsDefault="True" ForceCursor="True"></Button>
+                                    <Button Height="23" Width="80" HorizontalAlignment="Right" TabIndex="7" Margin="0,0,5,0" Grid.Column="3" Content="Cancel" Style="{StaticResource NormalButton}" IsCancel="True" Command="{Binding CancelClick}"></Button>
+                                </Grid>
+                            </Grid>
+                        </Border>
+                    </Border>
+
+
+                </Grid>
+                <Border Height="31" Background="{Binding TitleBackground}" HorizontalAlignment="Stretch" VerticalAlignment="Top" Grid.Row="1" Margin="0">
+
+                    <TextBlock Text="© 2013-2016 Pointel Inc" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Calibri" FontSize="12" Foreground="{Binding TitleForeground}" Margin="5,0,0,0"/>
+                </Border>
+            </Grid>
+        </Border>
+</Window>

@@ -1,0 +1,203 @@
+﻿<UserControl x:Class="Pointel.Interactions.Chat.UserControls.ChatConsultationWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"      
+             xmlns:CustomControl="clr-namespace:Pointel.Interactions.Chat.CustomControls"
+             xmlns:my="http://schemas.microsoft.com/wpf/2008/toolkit" 
+             xmlns:gif="http://wpfanimatedgif.codeplex.com"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" Loaded="UserControl_Loaded" Height="Auto">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary
+                   Source="/Pointel.Interactions.Chat;component/Resources/StylesResourceDictionary.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            <VisualBrush x:Key="WavyBrush" Viewbox="0,0,3,3" ViewboxUnits="Absolute" Viewport="0,-5,7,15" ViewportUnits="Absolute" TileMode="Tile">
+                <VisualBrush.Visual>
+                    <Path Data="M-0.2,1.13C1,0,2,2,3.2,0.8" Stroke="#FFFF0000" StrokeThickness="0.2" SnapsToDevicePixels="True" />
+                </VisualBrush.Visual>
+            </VisualBrush>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Grid>
+        <Border BorderThickness="1" BorderBrush="#D6D7D6" Margin="2">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"></RowDefinition>
+                    <RowDefinition Height="{Binding ConsultChatRowHight}"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0" Background="#D8E5FB">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="30"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Orientation="Horizontal" Height="25" Width="Auto" VerticalAlignment="Center" Margin="0,2,0,0" Grid.Column="0">
+                        <Label Name="lblTabItemCustomer" Content="{Binding ChatConsultWindowTitleText}" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#0071C6" FontWeight="Bold"></Label>
+                        <Image Name="imgChatIcon" Height="20" Width="20" VerticalAlignment="Center"  Margin="2,0,0,2" Source="/Agent.Interaction.Desktop;component/Images/Chat/Chat.png"/>
+                        <CustomControl:TimerLabel x:Name="lblTabItemShowTimer" Text="[00:00:00]" HorizontalAlignment="Left"  VerticalAlignment="Center"  Width="61" Margin="5,3,3,3" Foreground="#0071C6" FontWeight="Bold" ></CustomControl:TimerLabel>
+                    </StackPanel>
+                    <Button Name="btnShowHideConsultEx" Width="18" Grid.Column="1" Height="18" Panel.ZIndex="1000" Margin="0,5,5,0" Style="{StaticResource numberButton1}" VerticalAlignment="Top" HorizontalAlignment="Right" VerticalContentAlignment="Stretch" Click="btnShowHideConsultEx_Click" >
+                        <Image Name="imgExpander" Source="{Binding ImgConsultChatExpander}" Height="15" Width="15"></Image>
+                    </Button>
+                </Grid>
+                <Grid Background="Transparent" Margin="2,4,2,2" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions >
+                        <RowDefinition  Name="ChatToolMenu" Height="Auto" ></RowDefinition>
+                        <RowDefinition Height="*" ></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0" Margin="2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="0" Name="btnChatRelease" MinWidth="45" MaxWidth="55" Height="55" Margin="5,0,0,0" Style="{StaticResource NormalImageButton}" VerticalAlignment="Top" VerticalContentAlignment="Stretch" Click="btnChatRelease_Click">
+                            <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                                <Image Source="{Binding ConsultReleaseImageSource}" Width="40" Height="40"></Image>
+                                <TextBlock HorizontalAlignment="Center" TextAlignment="Center"  Text="{Binding ConsultReleaseText}" FontFamily="Calibri" FontSize="11" TextWrapping="Wrap" Margin="2,0,2,0" IsEnabled="{Binding IsEnableRelease}">
+                                </TextBlock>
+                            </StackPanel>
+                            <Button.ToolTip>
+                                <Border Background="White" BorderBrush="#ADAAAD" BorderThickness="0.5" Margin="-5">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"></RowDefinition>
+                                            <RowDefinition Height="*"></RowDefinition>
+                                        </Grid.RowDefinitions>
+                                        <TextBlock Name="ReleaseHeading" Text="{Binding ConsultReleaseTTHeading}" Grid.Row="0" Padding="10,5,10,0" FontWeight="Bold" FontFamily="Calibri" ></TextBlock>
+                                        <TextBlock Name="ReleaseContent" Grid.Row="1" Padding="10,2,10,10" TextWrapping="WrapWithOverflow" FontFamily="Calibri" Width="Auto" MaxWidth="200" Text="{Binding ConsultReleaseTTContent}" />
+                                    </Grid>
+                                </Border>
+                            </Button.ToolTip>
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="1" VerticalAlignment="Stretch">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Name="grdRowPersonStatus" Height="Auto"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Border Name="brdPersonsStatus"  BorderThickness="1" BorderBrush="#D6D7D6" Margin="2" Grid.Row="0">
+                            <my:DataGrid VerticalAlignment="Stretch" HeadersVisibility="None" RowHeaderWidth="0" Margin="2" Background="White" HorizontalAlignment="Stretch"
+                     HorizontalContentAlignment="Left" HorizontalGridLinesBrush="Transparent" VerticalGridLinesBrush="Transparent" Name="DGChatPersonsStatus" AutoGenerateColumns="False" CanUserAddRows="False" BorderBrush="Transparent"
+                        CanUserDeleteRows="False" CanUserSortColumns="False" ItemsSource="{Binding ChatConsultPersonStatusInfo}">
+                                <my:DataGrid.Columns>
+                                    <my:DataGridTextColumn Visibility="Hidden" Binding="{Binding PlaceID}" />
+                                    <my:DataGridTemplateColumn Width="25" MinWidth="25" MaxWidth="25">
+                                        <my:DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <Button Name="btnChatPersonDetails" Width="15" Style="{StaticResource NormalImageButton}" Cursor="Hand"  BorderThickness="0" Click="btnChatPersonDetails_Click">
+                                                    <Image  Source="/Agent.Interaction.Desktop;component/Images/Arrow.png" Stretch="Fill" Width="10" Height="10" VerticalAlignment="Bottom"></Image>
+                                                </Button>
+                                            </DataTemplate>
+                                        </my:DataGridTemplateColumn.CellTemplate>
+                                    </my:DataGridTemplateColumn>
+                                    <my:DataGridTemplateColumn Width="130" MinWidth="120" MaxWidth="150">
+                                        <my:DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <Label Name="lblChatPersonName" Content="{Binding ChatPersonName}"  VerticalAlignment="Center"></Label>
+                                            </DataTemplate>
+                                        </my:DataGridTemplateColumn.CellTemplate>
+                                    </my:DataGridTemplateColumn>
+                                    <my:DataGridTemplateColumn Width="25" MinWidth="25" MaxWidth="25">
+                                        <my:DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <Image Name="imgChatStatusIcon"  Source="{Binding ChatPersonStatusIcon}" Width="18" Height="18"></Image>
+                                            </DataTemplate>
+                                        </my:DataGridTemplateColumn.CellTemplate>
+                                    </my:DataGridTemplateColumn>
+                                    <my:DataGridTemplateColumn Width="100" MinWidth="90" MaxWidth="120">
+                                        <my:DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <Label Name="lblChatStatus" VerticalAlignment="Center" Content="{Binding ChatPersonStatus}"></Label>
+                                            </DataTemplate>
+                                        </my:DataGridTemplateColumn.CellTemplate>
+                                    </my:DataGridTemplateColumn>
+                                </my:DataGrid.Columns>
+                            </my:DataGrid>
+                        </Border>
+                        <Grid Grid.Row="1" >
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"></RowDefinition>
+                                <RowDefinition Height="{Binding SendchatConsultWindowRowHeight}"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <DockPanel Name="rtbViewChatWindow" Grid.Row="0" VerticalAlignment="Stretch" MinHeight="120" Height="150" Background="Transparent" LastChildFill="True">
+                                <CustomControl:BindableRichTextBox x:Name="mainRTB" IsReadOnly="True" Margin="2" IsDocumentEnabled="True" IsManipulationEnabled="False" AllowDrop="True" VerticalScrollBarVisibility="Visible" ScrollViewer.VerticalScrollBarVisibility="Auto" BorderThickness="1" BorderBrush="#D6D7D6" Documents="{Binding RTBConsultDocument}" PreviewMouseRightButtonDown="mainRTB_PreviewMouseRightButtonDown" TextChanged="mainRTB_TextChanged">
+                                    <CustomControl:BindableRichTextBox.Resources>
+                                        <Style TargetType="{x:Type Hyperlink}">
+                                            <Setter Property="ToolTip" Value="{Binding Path=NavigateUri, RelativeSource={RelativeSource Self}}"/>
+                                        </Style>
+                                        <Style TargetType="{x:Type Paragraph}">
+                                            <Setter Property="Margin" Value="2"/>
+                                        </Style>
+                                        <Style TargetType="ScrollBar">
+                                            <Setter Property="SnapsToDevicePixels" Value="True" />
+                                            <Setter Property="OverridesDefaultStyle" Value="true" />
+                                            <Style.Triggers>
+                                                <Trigger Property="Orientation" Value="Vertical">
+                                                    <Setter Property="Width" Value="18" />
+                                                    <Setter Property="Height" Value="Auto" />
+                                                    <Setter Property="Template" Value="{StaticResource VerticalScrollBar}" />
+                                                </Trigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </CustomControl:BindableRichTextBox.Resources>
+                                    <CustomControl:BindableRichTextBox.ContextMenu>
+                                        <ContextMenu/>
+                                    </CustomControl:BindableRichTextBox.ContextMenu>
+                                </CustomControl:BindableRichTextBox>
+                            </DockPanel>
+                            <DockPanel Name="dckSendChatWindow" Height="Auto" Grid.Row="1" VerticalAlignment="Bottom">
+                                <Border  BorderThickness="1" BorderBrush="#D6D7D6" Margin="2">
+                                    <Grid Height="75" VerticalAlignment="Top">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="10*"></ColumnDefinition>
+                                            <ColumnDefinition Width="48"></ColumnDefinition>
+                                            <ColumnDefinition Width="11" />
+                                        </Grid.ColumnDefinitions>
+                                        <!--<TextBox UndoLimit="10" BorderThickness="0,0,0,1"  BorderBrush="Gray" TextWrapping="Wrap" AcceptsReturn="True" SpellCheck.IsEnabled="{Binding IsEnableSpellCheck}" Grid.Column="0" Width="Auto" VerticalAlignment="Stretch" HorizontalScrollBarVisibility="Auto" ContextMenu="{x:Null}"  VerticalScrollBarVisibility="Auto" Name="txtChatSend" Template="{StaticResource controltempTextbox}" Margin="2" PreviewKeyDown="txtChatSend_KeyDown" TextChanged="txtChatSend_TextChanged"  KeyUp="txtChatSend_KeyUp" PreviewMouseRightButtonDown="txtChatSend_PreviewMouseRightButtonDown">
+                                            <TextBox.Resources>
+                                                <Style TargetType="ScrollBar">
+                                                    <Setter Property="SnapsToDevicePixels" Value="True" />
+                                                    <Setter Property="OverridesDefaultStyle" Value="true" />
+                                                    <Style.Triggers>
+                                                        <Trigger Property="Orientation" Value="Vertical">
+                                                            <Setter Property="Width" Value="18" />
+                                                            <Setter Property="Height" Value="Auto" />
+                                                            <Setter Property="Template" Value="{StaticResource VerticalScrollBar}" />
+                                                        </Trigger>
+                                                    </Style.Triggers>
+                                                </Style>
+                                            </TextBox.Resources>
+                                        </TextBox>-->
+                                        <RichTextBox BorderThickness="0,0,0,1"  BorderBrush="Gray" AcceptsReturn="True" Grid.Column="0" Width="Auto"  VerticalAlignment="Stretch" HorizontalScrollBarVisibility="Auto" ContextMenu="{x:Null}"  VerticalScrollBarVisibility="Auto" Name="txtChatSend" Template="{StaticResource controltempTextbox}" Margin="2" PreviewKeyDown="txtChatSend_KeyDown" TextChanged="txtChatSend_TextChanged" IsEnabled="{Binding IsTextMessageEnabled}" KeyUp="txtChatSend_KeyUp" PreviewMouseRightButtonDown="txtChatSend_PreviewMouseRightButtonDown">
+                                            <RichTextBox.Resources>
+                                                <Style TargetType="ScrollBar">
+                                                    <Setter Property="SnapsToDevicePixels" Value="True" />
+                                                    <Setter Property="OverridesDefaultStyle" Value="true" />
+                                                    <Style.Triggers>
+                                                        <Trigger Property="Orientation" Value="Vertical">
+                                                            <Setter Property="Width" Value="18" />
+                                                            <Setter Property="Height" Value="Auto" />
+                                                            <Setter Property="Template" Value="{StaticResource VerticalScrollBar}" />
+                                                        </Trigger>
+                                                    </Style.Triggers>
+                                                </Style>
+                                            </RichTextBox.Resources>
+                                        </RichTextBox>
+                                        <StackPanel Name="stkSendPanel" Width="Auto" Grid.Column="1" Grid.ColumnSpan="2">
+                                            <Button Name="btnSendMessage" VerticalAlignment="Stretch" Height="70" Width="55" Margin="2,2,2,1" HorizontalAlignment="Right" Style="{StaticResource ChatSendButton}" Content="Send" FontWeight="Normal" Click="btnSendMessage_Click" IsEnabled="{Binding IsButtonConsultSendEnabled}">
+
+                                            </Button>
+
+                                        </StackPanel>
+                                    </Grid>
+                                </Border>
+                            </DockPanel>
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>

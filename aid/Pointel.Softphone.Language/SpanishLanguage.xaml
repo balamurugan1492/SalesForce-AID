@@ -1,0 +1,55 @@
+﻿<ResourceDictionary x:Class="Pointel.Softphone.Language.SpanishLanguage"
+                    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                    xmlns:s="clr-namespace:System;assembly=mscorlib"
+                    mc:Ignorable="d">
+    <!--Login-->
+    <s:String x:Key="keyTitle">Agente Interacción Escritorio</s:String>
+
+    <s:String x:Key="keyTitleVersion">Versión 5.0.3.20</s:String>
+
+    <s:String x:Key="keyUserName">Nombre de usuario:</s:String>
+    <s:String x:Key="keyPassword">Contraseña:</s:String>
+    <s:String x:Key="keyApplicationName">Nombre de la aplicación:</s:String>
+    <s:String x:Key="keyHostName">Nombre del host:</s:String>
+    <s:String x:Key="keyPort">Puerto:</s:String>
+    <s:String x:Key="KeyLogIn">Entrar</s:String>
+    <s:String x:Key="KeyCancel">Cancelar</s:String>
+    <s:String x:Key="KeyKeepPlace">Mantenga a cabo los últimos</s:String>
+    <s:String x:Key="KeyMore">Más</s:String>
+    <s:String x:Key="KeyLess">Menos</s:String>
+    <!--End-->
+    <!--Channel Selection-->
+    <s:String x:Key="KeyWelcome">Bienvenida</s:String>
+    <s:String x:Key="KeyWelcomeinfo">Sírvanse proporcionar información de inicio de sesión solicitado.</s:String>
+    <s:String x:Key="KeyPlace">Lugar:</s:String>
+    <s:String x:Key="KeyVoice">voice</s:String>
+    <s:String x:Key="KeyQueue">Cola:</s:String>
+    <s:String x:Key="KeyChangeLoginAccount">Cambio la cuenta de inicio de sesión</s:String>
+    <s:String x:Key="KeyOk">Aceptar</s:String>
+    <s:String x:Key="KeyAgentLogin">Conexión del Agente:</s:String>
+    <s:String x:Key="KeyAgentPassword">Agente contraseña</s:String>
+    <!--End-->
+    <!--SoftPhone Bar-->
+    <s:String x:Key="keyLogin">Entrar</s:String>
+    <s:String x:Key="keyLogout">Cierre de sesión</s:String>
+    <s:String x:Key="keyReady">Listo</s:String>
+    <s:String x:Key="keyNotReady">No está listo</s:String>
+    <s:String x:Key="KeyTalk">Hablar</s:String>
+    <s:String x:Key="KeyRelease">Liberar</s:String>
+    <s:String x:Key="KeyHold">Espera</s:String>
+    <s:String x:Key="KeyRetrieve">Recuperar</s:String>
+    <s:String x:Key="KeyTransfer">Transfer</s:String>
+    <s:String x:Key="keyCompleteTransfer">Comp la transfer</s:String>
+    <s:String x:Key="keyConfrence">confer</s:String>
+    <s:String x:Key="keyCompleteConfrence">Comp la confera</s:String>
+    <s:String x:Key="KeyReConnect">Vuelva a Conectar</s:String>
+    <s:String x:Key="KeyDial">Marcar</s:String>
+    <s:String x:Key="KeyCallData">Llame a los datos</s:String>
+    <s:String x:Key="KeyAlternateCall">alternar</s:String>
+    <s:String x:Key="KeyMergeCall">combinar</s:String>
+    <s:String x:Key="KeyDeleteConference">Delete Conf</s:String>
+    <!--End-->
+</ResourceDictionary>

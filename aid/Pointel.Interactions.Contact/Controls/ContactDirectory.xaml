@@ -1,0 +1,489 @@
+﻿<UserControl x:Class="Pointel.Interactions.Contact.Controls.ContactDirectory"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:my="http://schemas.microsoft.com/wpf/2008/toolkit"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:Pointel="clr-namespace:Pointel.Interactions.Contact.Controls"
+             xmlns:gif="http://wpfanimatedgif.codeplex.com" d:DesignHeight="300" d:DesignWidth="300"
+             mc:Ignorable="d" Loaded="UserControl_Loaded" Unloaded="UserControl_Unloaded" MinWidth="300" >
+    <UserControl.Resources >
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary
+                   Source="/Pointel.Interactions.Contact;component/Resource/StylesResourceDictionary.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources >
+    <Grid>
+        <Border Name="BrdOpacity" Background="#4a4a4a" Panel.ZIndex="1" Opacity="0.1" Width="{Binding ElementName=userControlWorkbin, Path=Width}" Height="{Binding ElementName=userControlWorkbin, Path=Height}"/>
+        <StackPanel Name="gridPreload" Panel.ZIndex="1" Margin="0,110,0,0">
+            <Image Name="ImgPreload" Width="100" Height="100" VerticalAlignment="Center" HorizontalAlignment="Center"
+                gif:ImageBehavior.AnimatedSource="/Agent.Interaction.Desktop;component/Images/Loading.gif"></Image>
+            <!--<TextBlock Name="txtLoadingProgress" VerticalAlignment="Center" Text="Loading..." Foreground="White" FontSize="14" HorizontalAlignment="Center" Margin="5"/>-->
+        </StackPanel>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Name="grdColn_Seperator" Width="3"/>
+                <ColumnDefinition Name="grdColn_Information"  Width="0"/>
+            </Grid.ColumnDefinitions>
+            <DockPanel Name="ContactDirectoryView">
+                <Grid Name="GridSize">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Name="grMessage" Height="0" />
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="0" Name="search"  />
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Name="DetailsGrid" Height="0" />
+                    </Grid.RowDefinitions>
+                    <Grid Width="Auto" Height="Auto"  Grid.Row="0" Background="LightYellow">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="30"></ColumnDefinition>
+                            <ColumnDefinition Width="*" Name="grdErrorColumn"></ColumnDefinition>
+                            <ColumnDefinition Width="30"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="/Agent.Interaction.Desktop;component/Images/Error.png" 
+                                 Grid.Column="0"  Margin="5" Width="20" Height="20"></Image>
+
+                        <TextBlock Name="txtMessage" Grid.Column="1" Loaded="txtMessage_Loaded" TextWrapping="Wrap"  VerticalAlignment="Center" Margin="5">
+                        Contact server is not active.
+                        </TextBlock>
+
+                        <Button Name="btnCloseError" HorizontalAlignment="Right" Grid.Column="2" Height="20" Width="20"  Style="{StaticResource NormalImageButton}" VerticalAlignment="Center" Click="btnCloseError_Click" Margin="4">
+                            <Image Source="/Agent.Interaction.Desktop;component/Images/Contact/blue-close.png"></Image>
+                        </Button>
+                    </Grid>
+
+                    <Border  Grid.Row="1" Width="Auto" Margin="2" BorderBrush="#D6D7D6" BorderThickness="1" Background="Transparent">
+                        <Grid Height="Auto" ShowGridLines="False"  >
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition  Width="0"/>
+                                <ColumnDefinition  Width="0"/>
+                                <ColumnDefinition   Width="*"/>
+                                <ColumnDefinition Width="25"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="1"></RowDefinition>
+                                <RowDefinition Height="9*" />
+                            </Grid.RowDefinitions>
+
+                            <!--</Border>-->
+                            <Border Name="brdSearchBar"  Grid.Column="2" Grid.Row="1" Height="25" BorderBrush="#adaaad" BorderThickness="0.5">
+                                <Grid Name="grdQuickSearch">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"></ColumnDefinition>
+                                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBox UndoLimit="10" Name="txtSearch" Grid.Column="0" Margin="0,0,2,3" BorderBrush="Transparent" Tag="search" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Style="{StaticResource MyWaterMarkStyle1}" KeyUp="txtSearch_KeyUp">
+                                        <TextBox.ToolTip>
+                                            <Border Background="White" BorderBrush="#ADAAAD" BorderThickness="0.5" Margin="-5">
+                                                <Grid>
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition Height="Auto"></RowDefinition>
+                                                        <RowDefinition Height="*"></RowDefinition>
+                                                    </Grid.RowDefinitions>
+                                                    <TextBlock Name="searchHeading" Text="search" Grid.Row="0" Padding="10,5,10,0" FontWeight="Bold" FontFamily="Calibri" ></TextBlock>
+                                                    <TextBlock Name="searchContent" Text="Type text and press search button to search for the text" Grid.Row="1" Padding="10,2,10,10" TextWrapping="WrapWithOverflow" FontFamily="Calibri" Width="Auto" MaxWidth="200">
+
+                                                    </TextBlock>
+                                                </Grid>
+                                            </Border>
+                                        </TextBox.ToolTip>
+                                    </TextBox>
+                                    <Button x:Name ="btnAdvanceSearchResponse"  Grid.Column="1" Margin="2" Style="{StaticResource NormalImageButton}" Cursor="Hand"  Background="White"   HorizontalAlignment="Left" Height="21" Width="21" Click="btnAdvanceSearchResponse_Click">
+                                        <Button.ToolTip>
+                                            <Border Background="White" BorderBrush="#ADAAAD" BorderThickness="0.5" Margin="-5">
+                                                <Grid>
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition Height="Auto"></RowDefinition>
+                                                        <RowDefinition Height="*"></RowDefinition>
+                                                    </Grid.RowDefinitions>
+                                                    <TextBlock Name="AdvanceSearchHeading" Text="Search" Grid.Row="0" Padding="10,5,10,0" FontWeight="Bold" FontFamily="Calibri" ></TextBlock>
+                                                    <TextBlock Name="AdvanceSearchContent" Text="Type text and press search button to search for the text" Grid.Row="1" Padding="10,2,10,10" TextWrapping="WrapWithOverflow" FontFamily="Calibri" Width="Auto" MaxWidth="200">
+
+                                                    </TextBlock>
+                                                </Grid>
+                                            </Border>
+
+                                        </Button.ToolTip>
+                                        <Image Name="imgAdvanceSearchContact" Source="/Agent.Interaction.Desktop;component/Images/Contact/SearchButton-01.png"  Height="20" Width="20" Grid.Column="1"/>
+                                    </Button>
+                                </Grid>
+                            </Border>
+
+                            <Button x:Name ="btnAdvanceSearch" Style="{StaticResource NormalImageButton}" Cursor="Hand" Grid.Column="3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Row="1" Height="23" Width="20" Click="btnAdvanceSearch_Click">
+                                <Image x:Name ="AdvanceSearchImage" Source="/Agent.Interaction.Desktop;component/Images/Contact/DoubleArrow.png" Stretch="UniformToFill" Height="22" Width="19"></Image>
+                                <Button.ToolTip>
+                                    <Border Background="White" BorderBrush="#ADAAAD" BorderThickness="0.5" Margin="-5">
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="Auto"></RowDefinition>
+                                                <RowDefinition Height="*"></RowDefinition>
+                                            </Grid.RowDefinitions>
+                                            <TextBlock Name="ShowAdvanceSearchHeading" Text="Advance search" Grid.Row="0" Padding="10,5,10,0" FontWeight="Bold" FontFamily="Calibri" ></TextBlock>
+                                            <TextBlock Name="ShowAdvanceSearchContent" Text="Show advance search options" Grid.Row="1" Padding="10,2,10,10" TextWrapping="WrapWithOverflow" FontFamily="Calibri" Width="Auto" MaxWidth="200">
+
+                                            </TextBlock>
+                                        </Grid>
+                                    </Border>
+
+                                </Button.ToolTip>
+                            </Button>
+                        </Grid>
+                    </Border>
+
+                    <GroupBox Name="grbAdvanceSearch" Margin="2" Grid.Row="2" Header="Advanced Search" Width="Auto" BorderBrush="#ADAAAD" BorderThickness="0.5" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+
+                    <Border Name="brdMain"  Grid.Row="3"  Margin="2"  BorderBrush="#D6D7D6" BorderThickness="1">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="33"/>
+                                <RowDefinition Name="ExpandGrid" MinHeight="175" Height="*" />
+                                <RowDefinition Height="0" Name="HideAddresses"/>
+                            </Grid.RowDefinitions>
+                            <Border   Grid.Row="0" Margin="2"  Width="Auto"  BorderBrush="#D6D7D6" BorderThickness="1" Background="Transparent">
+                                <Grid>
+                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                                        <Button x:Name ="btnAddContact" Style="{StaticResource NormalImageButton}" Click="btnAddContact_Click" Height="23" Width="23"   Margin="3,2,3,2">
+                                            <Image  Grid.Row="0" Grid.Column="3" Height="22" Width="22" Source="/Agent.Interaction.Desktop;component/Images/Contact/ContactAdd.png" ></Image >
+                                            <Button.ToolTip>
+                                                <Border Background="White" BorderBrush="#ADAAAD" BorderThickness="0.5" Margin="-5">
+                                                    <Grid>
+                                                        <Grid.RowDefinitions>
+                                                            <RowDefinition Height="Auto"></RowDefinition>
+                                                            <RowDefinition Height="*"></RowDefinition>
+                                                        </Grid.RowDefinitions>
+                                                        <TextBlock Text="Create Contact" Grid.Row="0" Padding="10,5,10,0" FontWeight="Bold" FontFamily="Calibri" ></TextBlock>
+                                                        <TextBlock Text="Create new contact in contact directory." Grid.Row="1" Padding="10,2,10,10" TextWrapping="WrapWithOverflow" FontFamily="Calibri" Width="Auto" MaxWidth="200">
+                                                        </TextBlock>
+                                                    </Grid>
+                                                </Border>
+                                            </Button.ToolTip>
+                                        </Button>
+                                        <Button x:Name ="btnDeleteContact" Style="{StaticResource NormalImageButton}" Click="btnDeleteContact_Click"   Margin="3,2,3,2">
+                                            <Image  Grid.Row="0" Grid.Column="3" Height="22" Width="22" Source="/Agent.Interaction.Desktop;component/Images/Contact/DeleteContact.png" ></Image >
+                                            <Button.ToolTip>
+                                                <Border Background="White" BorderBrush="#ADAAAD" BorderThickness="0.5" Margin="-5">
+                                                    <Grid>
+                                                        <Grid.RowDefinitions>
+                                                            <RowDefinition Height="Auto"></RowDefinition>
+                                                            <RowDefinition Height="*"></RowDefinition>
+                                                        </Grid.RowDefinitions>
+                                                        <TextBlock Text="Delete Contact" Grid.Row="0" Padding="10,5,10,0" FontWeight="Bold" FontFamily="Calibri" ></TextBlock>
+                                                        <TextBlock Name="txtDeleteContactToolTip" Text="Delete selected contact from contact directory." Grid.Row="1" Padding="10,2,10,10" TextWrapping="WrapWithOverflow" FontFamily="Calibri" Width="Auto" MaxWidth="200">
+                                                        </TextBlock>
+                                                    </Grid>
+                                                </Border>
+                                            </Button.ToolTip>
+                                        </Button>
+                                        <Button x:Name ="btnMergeContact" Style="{StaticResource NormalImageButton}" Click="btnMergeContact_Click"   Margin="3,2,3,2">
+                                            <Image  Grid.Row="0" Grid.Column="3" Height="22" Width="22" Source="/Agent.Interaction.Desktop;component/Images/Contact/MergeContact.png" ></Image >
+                                            <Button.ToolTip>
+                                                <Border Background="White" BorderBrush="#ADAAAD" BorderThickness="0.5" Margin="-5">
+                                                    <Grid>
+                                                        <Grid.RowDefinitions>
+                                                            <RowDefinition Height="Auto"></RowDefinition>
+                                                            <RowDefinition Height="*"></RowDefinition>
+                                                        </Grid.RowDefinitions>
+                                                        <TextBlock Text="Merge Contact" Grid.Row="0" Padding="10,5,10,0" FontWeight="Bold" FontFamily="Calibri" ></TextBlock>
+                                                        <TextBlock Text="Merge the selected contact with another contact." Grid.Row="1" Padding="10,2,10,10" TextWrapping="WrapWithOverflow" FontFamily="Calibri" Width="Auto" MaxWidth="200">
+                                                        </TextBlock>
+                                                    </Grid>
+                                                </Border>
+                                            </Button.ToolTip>
+                                            <!--<TextBlock Text="Merge Contact" Name="txtContactOperation" Margin="4,1"></TextBlock>-->
+                                        </Button>
+                                        <Button x:Name ="btnUnMergeContact" Style="{StaticResource NormalImageButton}" Click="btnUnMergeContact_Click"   Margin="3,2,3,2">
+                                            <Image  Grid.Row="0" Grid.Column="3" Height="22" Width="22" Source="/Agent.Interaction.Desktop;component/Images/Contact/UnMergeContact.png" ></Image >
+                                            <Button.ToolTip>
+                                                <Border Background="White" BorderBrush="#ADAAAD" BorderThickness="0.5" Margin="-5">
+                                                    <Grid>
+                                                        <Grid.RowDefinitions>
+                                                            <RowDefinition Height="Auto"></RowDefinition>
+                                                            <RowDefinition Height="*"></RowDefinition>
+                                                        </Grid.RowDefinitions>
+                                                        <TextBlock Text="Un-Merge Contact" Grid.Row="0" Padding="10,5,10,0" FontWeight="Bold" FontFamily="Calibri" ></TextBlock>
+                                                        <TextBlock Text="Un-Merge the selected contact." Grid.Row="1" Padding="10,2,10,10" TextWrapping="WrapWithOverflow" FontFamily="Calibri" Width="Auto" MaxWidth="200">
+                                                        </TextBlock>
+                                                    </Grid>
+                                                </Border>
+                                            </Button.ToolTip>
+                                            <!--<TextBlock Text="Un-Merge Contact" Margin="4,1"></TextBlock>-->
+                                        </Button>
+                                        <Button x:Name ="btnShowContactInfo" Style="{StaticResource NormalImageButton}" Height="23" Width="23" Margin="3,2,3,2" Click="btnShowContactInfo_Click">
+                                            <Image x:Name ="imgContactInfoShow"  Grid.Row="0" Grid.Column="3"  Source="/Agent.Interaction.Desktop;component/Images/Contact/ShowContactDetails.png" ></Image >
+                                            <Button.ToolTip>
+                                                <Border Background="White" BorderBrush="#ADAAAD" BorderThickness="0.5" Margin="-5">
+                                                    <Grid>
+                                                        <Grid.RowDefinitions>
+                                                            <RowDefinition Height="Auto"></RowDefinition>
+                                                            <RowDefinition Height="*"></RowDefinition>
+                                                        </Grid.RowDefinitions>
+                                                        <TextBlock Name="ShowContactInfoHeading" Text="Show Details" Grid.Row="0" Padding="10,5,10,0" FontWeight="Bold" FontFamily="Calibri" ></TextBlock>
+                                                        <TextBlock Name="ShowContactInfoContacent" Text="Show the details to selected contact." Grid.Row="1" Padding="10,2,10,10" TextWrapping="WrapWithOverflow" FontFamily="Calibri" Width="Auto" MaxWidth="200">
+
+                                                        </TextBlock>
+                                                    </Grid>
+                                                </Border>
+                                            </Button.ToolTip>
+                                        </Button>
+                                        <!--<Button x:Name ="btnContactExpand" Style="{StaticResource NormalImageButton}" Height="23" Width="23"  Margin="3,2,3,2" Click="btnContactExpand_Click">
+                                        <Image x:Name ="imgContact"  Grid.Row="0" Grid.Column="3" Source="/Agent.Interaction.Desktop;component/Images/Contact/Detailed.png" ></Image >
+                                        <Button.ToolTip>
+                                            <Border Background="White" BorderBrush="#ADAAAD" BorderThickness="0.5" Margin="-5">
+                                                <Grid>
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition Height="Auto"></RowDefinition>
+                                                        <RowDefinition Height="*"></RowDefinition>
+                                                    </Grid.RowDefinitions>
+                                                    <TextBlock Name="ExpandHeading" Text="Expand" Grid.Row="0" Padding="10,5,10,0" FontWeight="Bold" FontFamily="Calibri" ></TextBlock>
+                                                    <TextBlock Name="ExpandContent" Text="Show Details Panel" Grid.Row="1" Padding="10,2,10,10" TextWrapping="WrapWithOverflow" FontFamily="Calibri" Width="Auto" MaxWidth="200">
+
+                                                    </TextBlock>
+                                                </Grid>
+                                            </Border>
+                                        </Button.ToolTip>
+                                    </Button>-->
+                                    </StackPanel>
+                                </Grid>
+                            </Border>
+                            <Grid Name="grd_ContactInformationDatagrid"  Margin="2" Grid.Row="1">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <!--My grid-->
+                                <Grid Name="grdContactView"  Grid.Row="0">
+                                    <my:DataGrid Background="White" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"
+                                                    HorizontalContentAlignment="Left" HorizontalGridLinesBrush="#D6D7D6" VerticalGridLinesBrush="#D6D7D6"
+                                                    AutoGenerateColumns="False" CanUserAddRows="False" RowHeaderWidth="0" CanUserDeleteRows="False" 
+                                                    CanUserSortColumns="False" Name="dgContactDirectory" ItemsSource="{Binding Contacts}"
+                                             SelectedCellsChanged="dgContactDirectory_SelectedCellsChanged" Margin="2"
+                                             Width="{Binding ElementName=grdContactView, Path=ActualWidth}">
+                                        <my:DataGrid.ContextMenu>
+                                            <ContextMenu Style="{StaticResource ContextMenu}">
+
+                                            </ContextMenu>
+                                        </my:DataGrid.ContextMenu>
+                                        <my:DataGrid.Columns>
+                                            <my:DataGridTemplateColumn Width="Auto" Header="First Name" MinWidth="50">
+                                                <my:DataGridTemplateColumn.CellTemplate>
+                                                    <DataTemplate>
+                                                        <StackPanel Orientation="Horizontal">
+                                                            <TextBlock Text="{Binding ContactId}" Visibility="Collapsed"/>
+                                                            <TextBlock Text="{Binding First Name}" Margin="4,4,0,4"/>
+                                                        </StackPanel>
+                                                    </DataTemplate>
+                                                </my:DataGridTemplateColumn.CellTemplate>
+                                            </my:DataGridTemplateColumn>
+                                            <my:DataGridTemplateColumn Width="Auto" Header="Last Name" MinWidth="50">
+                                                <my:DataGridTemplateColumn.CellTemplate>
+                                                    <DataTemplate>
+                                                        <StackPanel Orientation="Horizontal">
+                                                            <TextBlock Text="{Binding Last Name}" Margin="4,4,0,4"/>
+                                                        </StackPanel>
+                                                    </DataTemplate>
+                                                </my:DataGridTemplateColumn.CellTemplate>
+                                            </my:DataGridTemplateColumn>
+                                            <my:DataGridTemplateColumn Width="Auto" Header="Phone Number" MinWidth="50">
+                                                <my:DataGridTemplateColumn.CellTemplate>
+                                                    <DataTemplate>
+                                                        <StackPanel Orientation="Horizontal">
+                                                            <!--<Button Name="btnCall" Style="{StaticResource NormalImageButton1}" Tag="{Binding Phone Number}" Width="21" Height="21" Margin="2" Visibility="{Binding CallVisibility}" Click="btnCall_Click">
+                                                            <Button.ToolTip>
+                                                                <WrapPanel>
+                                                                    <TextBlock Text="Call to "></TextBlock>
+                                                                    <TextBlock Text="{Binding Phone Number}" ></TextBlock>
+                                                                </WrapPanel>
+                                                            </Button.ToolTip>
+                                                            <Image Width="20" Height="20" Source="/Agent.Interaction.Desktop;component/Images/Contact/Voice.png"/>
+                                                        </Button>-->
+                                                            <Pointel:ButtonWithDropDown PrefixText="Call to " Values="{Binding Phone Number}" Visibility="{Binding CallVisibility}" Icon="/Agent.Interaction.Desktop;component/Images/Contact/Voice.png" 
+                                                                                    ValueClick="ButtonWithDropDownCall_Click" Margin="1"  Height="22" Width="32">
+                                                            </Pointel:ButtonWithDropDown>
+                                                            <TextBlock Text="{Binding PhoneNoToDisplay}" Margin="1,4,0,4"/>
+                                                        </StackPanel>
+                                                    </DataTemplate>
+                                                </my:DataGridTemplateColumn.CellTemplate>
+                                            </my:DataGridTemplateColumn>
+                                            <my:DataGridTemplateColumn Width="*" Header="E-mail Address" MinWidth="100">
+                                                <my:DataGridTemplateColumn.CellTemplate>
+                                                    <DataTemplate>
+                                                        <StackPanel Orientation="Horizontal">
+                                                            <!--<Button Margin="2" Style="{StaticResource NormalImageButton1}" Tag="{Binding E-mail Address}" Name="btnEmail" Visibility="{Binding EmailVisibility}" Click="btnEmail_Click">
+                                                            <Button.ToolTip>
+                                                                <WrapPanel>
+                                                                    <TextBlock Text="Mail to "></TextBlock>
+                                                                    <TextBlock Text="{Binding E-mail Address}" ></TextBlock>
+                                                                </WrapPanel>
+                                                            </Button.ToolTip>
+                                                            <Image Width="20" Height="20" Source="/Agent.Interaction.Desktop;component/Images/Contact/Send-mail in Compose-mail-01.png"/>
+                                                        </Button>-->
+                                                            <Pointel:ButtonWithDropDown PrefixText="E-mail to " Values="{Binding  E-mail Address}" Visibility="{Binding EmailVisibility}" 
+                                                      Icon="/Agent.Interaction.Desktop;component/Images/Contact/Email compose.png" Height="32" Width="32"  ValueClick="ButtonWithDropDownSendEmail_Click">
+                                                            </Pointel:ButtonWithDropDown>
+                                                            <TextBlock Text="{Binding EmailToDisplay}" Margin="1,4,0,4"/>
+                                                        </StackPanel>
+                                                    </DataTemplate>
+                                                </my:DataGridTemplateColumn.CellTemplate>
+                                            </my:DataGridTemplateColumn>
+                                        </my:DataGrid.Columns>
+                                        <my:DataGrid.Resources>
+                                            <ContextMenu x:Key="RowMenu"  Style="{StaticResource ContextMenu}" DataContext="{Binding PlacementTarget.DataContext, RelativeSource={RelativeSource Self}}" Opened="ContextMenu_Opened">
+                                                <MenuItem  Name="mnuAddTo" Header="Add to TO" Click="MenuTo_Click">
+                                                    <MenuItem.Icon>
+                                                        <Image  Name="mnuToImage"  Source="/Agent.Interaction.Desktop;component/Images/Email/Add.png" Width="15" Height="15">
+                                                        </Image>
+                                                    </MenuItem.Icon>
+                                                </MenuItem>
+                                                <MenuItem Name="mnuAddCC" Header="Add to CC." Click="MenuCC_Click">
+                                                    <MenuItem.Icon>
+                                                        <Image  Name="mnuCcImage"   Source="/Agent.Interaction.Desktop;component/Images/Email/Add.png" Width="15" Height="15">
+                                                        </Image>
+                                                    </MenuItem.Icon>
+                                                </MenuItem>
+                                                <MenuItem Name="mnuAddBCC" Header="Add to BCC" Click="MenuBCC_Click">
+                                                    <MenuItem.Icon>
+                                                        <Image  Name="mnuBccImage"  Source="/Agent.Interaction.Desktop;component/Images/Email/Done-01.png" Width="15" Height="15">
+                                                        </Image>
+                                                    </MenuItem.Icon>
+                                                </MenuItem>
+                                            </ContextMenu>
+                                        </my:DataGrid.Resources>
+                                        <my:DataGrid.RowStyle>
+                                            <Style TargetType="my:DataGridRow">
+                                                <!--<EventSetter Event="MouseLeftButtonDown" Handler="dgWorkbin_MouseDoubleClick" />
+                                                    <EventSetter Event="MouseDown" Handler="DgWorkbin_MouseClick" />-->
+                                                <Setter Property="ContextMenu" Value="{StaticResource RowMenu}" />
+                                                <Style.Triggers>
+                                                    <Trigger Property="IsSelected" Value="True">
+                                                        <Setter Property="Background" Value="{StaticResource HighlightedBrush}" />
+                                                    </Trigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </my:DataGrid.RowStyle>
+                                    </my:DataGrid>
+                                    <TextBlock Name="txtError" Text="No contacts to display" Visibility="Collapsed" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="30"/>
+                                </Grid>
+                                <Border Name="bdrPaging" Grid.Row="1" Height="30" BorderBrush="#D6D7D6" BorderThickness="1,0,1,1" Background="Transparent">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+                                        <StackPanel Grid.Column="0" Orientation="Horizontal" HorizontalAlignment="Left">
+                                            <Button Name="btnFirst" Style="{StaticResource NormalImageButton}" Width="20" Click="btnFirstIndex_Click">
+                                                <!--Content="&lt;&lt;"-->
+                                                <Image   Width="10" Height="10"  Source="/Agent.Interaction.Desktop;component/Images/Contact/FirstPage-01.png" />
+                                                <Button.ToolTip>
+                                                    <Border Background="White" BorderBrush="#ADAAAD" BorderThickness="0.5" Margin="-5">
+                                                        <TextBlock Name="FirstHeading" Text="First Page" Grid.Row="0" Padding="10,5,10,0" FontWeight="Bold" FontFamily="Calibri" ></TextBlock>
+                                                    </Border>
+                                                </Button.ToolTip>
+                                            </Button>
+                                            <Button Name="btnPrevious" Style="{StaticResource NormalImageButton}" Width="20"  Click="btnPreviousIndex_Click">
+                                                <!--Content="&lt;"-->
+                                                <Image x:Name ="btnPage" Width="10" Height="10"   Source="/Agent.Interaction.Desktop;component/Images/Contact/PreviousPage-01.png" />
+                                                <Button.ToolTip>
+                                                    <Border Background="White" BorderBrush="#ADAAAD" BorderThickness="0.5" Margin="-5">
+                                                        <TextBlock Name="PreviousHeading" Text="Previous Page" Grid.Row="0" Padding="10,5,10,0" FontWeight="Bold" FontFamily="Calibri" />
+                                                    </Border>
+                                                </Button.ToolTip>
+                                            </Button>
+                                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                                                <TextBlock Text=" Page "/>
+                                                <TextBlock Name="txtCurrentPage"/>
+                                                <TextBlock Text=" of "/>
+                                                <TextBlock Name="txtTotalPage"/>
+                                                <TextBlock Text= " Pages "/>
+                                            </StackPanel>
+                                            <Button Name="btnNext" Style="{StaticResource NormalImageButton}" Width="20" Click="btnNextPage_Click">
+                                                <!--Content="&gt;"-->
+                                                <Image Width="10" Height="10"  Source="/Agent.Interaction.Desktop;component/Images/Contact/NextPage-01.png " />
+                                                <Button.ToolTip>
+                                                    <Border Background="White" BorderBrush="#ADAAAD" BorderThickness="0.5" Margin="-5">
+                                                        <TextBlock Name="NextHeading" Text="Next Page" Grid.Row="0" Padding="10,5,10,0" FontWeight="Bold" FontFamily="Calibri" ></TextBlock>
+                                                    </Border>
+                                                </Button.ToolTip>
+                                            </Button>
+                                            <Button Name="btnLastIndex"  Visibility="Collapsed" Style="{StaticResource NormalImageButton}" Width="20" Click="btnLastIndex_Click">
+                                                <!--Content="&gt;&gt;"-->
+                                                <Image Width="10" Height="10" Source="/Agent.Interaction.Desktop;component/Images/Contact/LastPage-01.png" />
+                                                <Button.ToolTip>
+                                                    <Border Background="White" BorderBrush="#ADAAAD" BorderThickness="0.5" Margin="-5">
+                                                        <TextBlock Name="LastHeading" Text="Last Page" Grid.Row="0" Padding="10,5,10,0" FontWeight="Bold" FontFamily="Calibri" ></TextBlock>
+                                                    </Border>
+                                                </Button.ToolTip>
+                                            </Button>
+                                        </StackPanel>
+                                        <StackPanel Grid.Column="1" VerticalAlignment="Center" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,2,0">
+                                            <TextBlock Text="Items per page " VerticalAlignment="Center"/>
+                                            <ComboBox  Name="cmbItemsPerPage" SelectedIndex="0" Visibility="Visible" VerticalAlignment="Center" Text="" MinWidth="5" Style="{StaticResource ComboBox}" ItemsSource="{Binding AvailableDirPageSizes}"  Margin="0,0,25,0" SelectionChanged="cmbItemsPerPage_SelectionChanged"/>
+                                            <TextBlock Name="txtStart" VerticalAlignment="Center"/>
+                                            <TextBlock Text=" - " VerticalAlignment="Center"/>
+                                            <TextBlock Name="txtEnd" VerticalAlignment="Center"/>
+                                            <TextBlock Text=" of " VerticalAlignment="Center"/>
+                                            <TextBlock Name="txtTotalItems" VerticalAlignment="Center"/>
+                                            <TextBlock Text=" Contacts " VerticalAlignment="Center"/>
+                                        </StackPanel>
+                                    </Grid>
+                                </Border>
+                            </Grid>
+                            <Border Grid.Row="2" Margin="2" Width="Auto" BorderBrush="#D6D7D6" BorderThickness="1" Background="Transparent">
+                                <Grid>
+                                    <Grid  Name="gridEmailAddress" ShowGridLines="False" >
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="75" />
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="25"  />
+                                            <RowDefinition Height="25"  />
+                                            <RowDefinition Height="25"  />
+                                        </Grid.RowDefinitions>
+                                        <Button  Name="btnTo"  Grid.Row="0" Grid.Column=" 0"  Margin="2" Content="To" Click="btnTo_Click" Style="{StaticResource NormalButton}"></Button>
+                                        <TextBox UndoLimit="10" Name="txtTo" Grid.Row="0" Height=" 25" Grid.Column="1" Text=""></TextBox>
+
+                                        <Button Name="btnCc" Grid.Row="1" Grid.Column=" 0"  Margin="2" Content="Cc" Click="btnCc_Click" Style="{StaticResource NormalButton}"></Button>
+                                        <TextBox UndoLimit="10" Name="txtCc" Grid.Row="1" Height=" 25" Grid.Column="1" Text=""  ></TextBox>
+
+                                        <Button Name="btnBcc" Grid.Row="2" Grid.Column=" 0"  Margin="2" Content="Bcc" Click="btnBcc_Click" Style="{StaticResource NormalButton}"></Button>
+                                        <TextBox UndoLimit="10" Name="txtBcc" Grid.Row="2" Height="25" Grid.Column="1" Text=""></TextBox>
+                                    </Grid>
+
+                                    <Grid  Name="gridMergeContact" ShowGridLines="False" >
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="25"  />
+                                            <RowDefinition Height="25"  />
+                                        </Grid.RowDefinitions>
+                                        <TextBlock Text="Description: "></TextBlock>
+                                        <TextBox UndoLimit="10" Name="txtDescription" Grid.Row="0" Margin="2" Height=" 25" Grid.Column="1" Text=""></TextBox>
+
+                                        <TextBlock  Grid.Row="1" Text="Reason: "></TextBlock>
+                                        <TextBox UndoLimit="10" Name="txtReason" Height=" 25"  Margin="2" Grid.Row="1" Grid.Column="1" Text=""></TextBox>
+                                    </Grid>
+                                </Grid>
+                            </Border>
+                        </Grid>
+                    </Border>
+
+                    <DockPanel Name="dockBottom" Grid.Row="4" Margin="2" FlowDirection="RightToLeft">
+                        <StackPanel Orientation="Horizontal" Margin="5,0,0,0">
+                            <Button  Name="btnCancel" Grid.Row="0" Grid.Column=" 2" Margin="2" Height="23" Width="80" HorizontalAlignment="Right"   Content="Cancel"  Style="{StaticResource NormalButton}" Click="btnCancel_Click"/>
+                            <Button  Name="btnOK" Grid.Row="0" Grid.Column=" 1" Margin="2"  Height="23" Width="80" Content="Ok" Style="{StaticResource NormalButton}" Click="btnOK_Click"/>
+                        </StackPanel>
+                    </DockPanel>
+                </Grid>
+            </DockPanel>
+            <DockPanel Grid.Column="2" Visibility="Collapsed" Name="contactInfo"></DockPanel>
+        </Grid>
+
+    </Grid>
+</UserControl>

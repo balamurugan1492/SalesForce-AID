@@ -1,0 +1,76 @@
+﻿<UserControl x:Class="Pointel.Interactions.Contact.Controls.SearchCriterias"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d">
+    <UserControl.Resources>
+    <ResourceDictionary>
+        <ResourceDictionary.MergedDictionaries>
+            <ResourceDictionary
+                   Source="/Pointel.Interactions.Contact;component/Resource/StylesResourceDictionary.xaml" />
+            <ResourceDictionary>
+            </ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+            <Style TargetType="UserControl">
+                <Setter Property="FontFamily" Value="Calibri" />
+            </Style>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Grid Name="grdMain" Height="31" SizeChanged="grdMain_SizeChanged" >
+        <Grid Name="grdStatus" Visibility="Collapsed" Margin="4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition MinWidth="60"/>
+                <ColumnDefinition MinWidth="60"/>
+                <ColumnDefinition MinWidth="110"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <ComboBox Name="cmbstatus" Margin="5,0,5,0" SelectionChanged="ComboBox_SelectionChanged"/>
+            <ComboBox Name="cmbstatus_Condition"  Grid.Column="1" Grid.ColumnSpan="2"  Margin="5,0,5,0">
+                <ComboBox.Items>
+                    <ComboBoxItem Content="All" IsSelected="True"/>
+                    <ComboBoxItem Content="Done" />
+                    <ComboBoxItem Content="In Progress" />
+                </ComboBox.Items>
+            </ComboBox>
+            <Button Name="btnstatus_Clear" Grid.Column="3" Width="Auto" Content="X" FontWeight="Bold" FontSize="16" Foreground="#DA0909" Margin="5,0,5,0" Style="{StaticResource NormalImageButton}" Click="btnClear_Click"/>
+        </Grid>
+        <Grid Name="grdDate" Visibility="Collapsed" Margin="4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition MinWidth="60"/>
+                <ColumnDefinition MinWidth="60"/>
+                <ColumnDefinition MinWidth="110"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <ComboBox Name="cmbdate" Margin="5,0,5,0"  SelectionChanged="ComboBox_SelectionChanged"/>
+            <ComboBox Name="cmbdate_Condition" Grid.Column="1" Margin="5,0,5,0">
+                <ComboBox.Items>
+                    <ComboBoxItem Content="On" IsSelected="True"/>
+                    <ComboBoxItem Content="On or After" />
+                    <ComboBoxItem Content="Before"/>
+                </ComboBox.Items>
+            </ComboBox>
+            <Grid Grid.Column="2" Margin="5,0,5,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <TextBox UndoLimit="10" Name="txtdate_Value" Margin="5,0,0,0" />
+                <DatePicker Name="dtpdate_DatePicker" Grid.Column="1" Height="24" Width="28" BorderThickness="0" BorderBrush="Transparent" Margin="0,0,5,0" SelectedDateChanged="cmbdate_DatePicker_SelectedDateChanged"/>
+            </Grid>
+            <Button Name="btndate_Clear" Grid.Column="3" Width="Auto" Content="X" FontWeight="Bold" FontSize="16" Foreground="#DA0909" Margin="5,0,5,0" Style="{StaticResource NormalImageButton}" Click="btnClear_Click"/>
+        </Grid>
+        <Grid Name="grdCommon" Visibility="Collapsed" Margin="4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition MinWidth="60"/>
+                <ColumnDefinition MinWidth="60"/>
+                <ColumnDefinition MinWidth="110"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <ComboBox Name="cmbcommon" Margin="5,0,5,0"  SelectionChanged="ComboBox_SelectionChanged"/>
+            <TextBlock Grid.Column="1" Margin="5,0,5,0" Text="Contains" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBox UndoLimit="10"  Name="txtcommon_Value" Grid.Column="2" Margin="5,0,5,0" Template="{StaticResource controltempTextbox}"/>
+            <Button  Name="btncommon_Clear" Grid.Column="3" Width="Auto" Content="X" FontWeight="Bold" FontSize="16" Foreground="#DA0909" Margin="5,0,5,0" Style="{StaticResource NormalImageButton}" Click="btnClear_Click"/>
+        </Grid>
+    </Grid>
+</UserControl>

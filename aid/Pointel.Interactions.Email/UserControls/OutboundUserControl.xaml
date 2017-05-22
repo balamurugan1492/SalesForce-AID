@@ -1,0 +1,157 @@
+﻿<UserControl x:Class="Pointel.Interactions.Email.UserControls.OutboundUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:gif="http://wpfanimatedgif.codeplex.com"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" Unloaded="UserControl_Unloaded">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary
+                   Source="/Pointel.Interactions.Email;component/Resources/StylesResourceDictionary.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Border Name="MainBorder" BorderThickness="0.89" Margin="2" Background="White">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="*" ></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <StackPanel Orientation="Vertical">
+
+                <Grid  Margin="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Label VerticalAlignment="Center" Width="50">From :</Label>
+                    <StackPanel HorizontalAlignment="Stretch" Grid.Column="1">
+                        <ComboBox Name="cmbFromAddress" Margin="5,0,5,0" Height="25" IsEditable="False" HorizontalAlignment="Stretch"  SelectionChanged="cmbFromAddress_SelectionChanged" Visibility="Collapsed">
+                        </ComboBox>
+                        <TextBlock Name="txtOutboundFrom" Width="Auto" VerticalAlignment="Center" Margin="5,0,5,0"></TextBlock>
+                        <StackPanel Name="stkFromAddressError" HorizontalAlignment="Right" Orientation="Horizontal" Visibility="Visible">
+                            <Label Content="Addresses are populating" FontStyle="Italic" Foreground="#df4e00"></Label>
+                            <Image Name="ImgPreload" Panel.ZIndex="0"  Width="12" Height="12" VerticalAlignment="Center" HorizontalAlignment="Center"
+                gif:ImageBehavior.AnimatedSource="/Agent.Interaction.Desktop;component/Images/Loading1.gif"></Image>
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+
+                <Grid Name="gridTo" Margin="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Name="colAddCcBcc" Width="Auto"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="0" Name="btnOutboundTo"  Height="25" Width="50" Padding="10,2,10,2"  HorizontalAlignment="Left" Style="{StaticResource NormalButton}" Content="To.." FontWeight="Normal" Click="btnOutboundTo_Click" >
+
+                    </Button>
+                    <TextBox UndoLimit="10" Grid.Column="1" Name="txtOutboundTo" Width="Auto"  Height="22" TextWrapping="NoWrap" VerticalAlignment="Center" Margin="5,0,5,0" ContextMenu="{StaticResource DefaultCopyContextmenu}"></TextBox>
+                    <StackPanel Grid.Column="2" Orientation="Horizontal">
+                        <Button Name="btnAddCcandBcc" VerticalAlignment="Stretch" Height="25" Width="Auto" Padding="2"  HorizontalAlignment="Right" Content="Add Cc" FontWeight="Normal" Click="btnAddCcandBcc_Click" Style="{StaticResource NormalButton}">
+
+                        </Button>
+                        <Button  Name="btnMenuCCBcc" Width="15"  Style="{StaticResource NormalImageButton}" Cursor="Hand"  BorderThickness="0" Click="btnMenuCCBcc_Click">
+                            <Image  Source="/Pointel.Interactions.Email;component/Images/E-Mail/Arrow.png" Stretch="Fill" Width="10" Height="10" VerticalAlignment="Bottom" ></Image>
+                        </Button>
+                    </StackPanel>
+                </Grid>
+
+                <Grid Name="gridCc" Margin="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="20"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="0" Name="btnOutboundCc" VerticalAlignment="Stretch" Height="25" Width="50" Padding="10,2,10,2"  HorizontalAlignment="Left" Style="{StaticResource NormalButton}" Content="Cc.." FontWeight="Normal" Click="btnOutboundCc_Click" >
+
+                    </Button>
+
+                    <TextBox UndoLimit="10" Grid.Column="1" Name="txtOutboundCc" Width="Auto" Height="22" TextWrapping="NoWrap" VerticalAlignment="Center" Margin="5,0,2,0" ContextMenu="{StaticResource DefaultCopyContextmenu}"></TextBox>
+                    <Button Grid.Column="2"  Name="btnCcDelete" Style="{StaticResource NormalImageButton}" VerticalAlignment="Center" VerticalContentAlignment="Center" Click="btnCcDelete_Click" Height="15" Width="15">
+                        <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                            <Image Source="/Pointel.Interactions.Email;component/Images/E-Mail/Delete.png" Height="14" Width="14"></Image>
+                        </StackPanel>
+                        <Button.ToolTip>
+                            <Border Background="White" BorderBrush="#ADAAAD" BorderThickness="0.5" Margin="-5">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"></RowDefinition>
+                                        <RowDefinition Height="*"></RowDefinition>
+                                    </Grid.RowDefinitions>
+                                    <TextBlock  Text="Remove Cc" Grid.Row="0" Padding="10,5,10,0" FontWeight="Bold" FontFamily="Calibri" ></TextBlock>
+                                </Grid>
+                            </Border>
+                        </Button.ToolTip>
+                    </Button>
+                </Grid>
+
+                <Grid Name="gridBcc" Margin="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="20"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="0" Name="btnOutboundBcc" HorizontalAlignment="Left" VerticalAlignment="Stretch" Height="25" Width="50" Padding="10,2,10,2"   Style="{StaticResource NormalButton}" Content="Bcc.." FontWeight="Normal" Click="btnOutboundBcc_Click" >
+
+                    </Button>
+                    <TextBox UndoLimit="10" Grid.Column="1" Name="txtOutboundBcc"  Height="22" Width="Auto" TextWrapping="NoWrap" VerticalAlignment="Center" Margin="5,0,5,0" ContextMenu="{StaticResource DefaultCopyContextmenu}"></TextBox>
+                    <Button Grid.Column="2"  Name="btnBccDelete" Style="{StaticResource NormalImageButton}" VerticalAlignment="Center" VerticalContentAlignment="Center" Click="btnBccDelete_Click" Height="15" Width="15">
+                        <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                            <Image Source="/Pointel.Interactions.Email;component/Images/E-Mail/Delete.png" Height="14" Width="14"></Image>
+                        </StackPanel>
+                        <Button.ToolTip>
+                            <Border Background="White" BorderBrush="#ADAAAD" BorderThickness="0.5" Margin="-5">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"></RowDefinition>
+                                        <RowDefinition Height="*"></RowDefinition>
+                                    </Grid.RowDefinitions>
+                                    <TextBlock  Text="Remove Bcc" Grid.Row="0" Padding="10,5,10,0" FontWeight="Bold" FontFamily="Calibri" ></TextBlock>
+                                </Grid>
+                            </Border>
+                        </Button.ToolTip>
+                    </Button>
+
+                </Grid>
+
+                <Grid Name="gridSubject" Margin="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+
+                    </Grid.ColumnDefinitions>
+                    <Label VerticalAlignment="Center" Width="51">Subject :</Label>
+                    <TextBox UndoLimit="10" Grid.Column="1" Name="txtOutboundSubject"  Height="22" Width="Auto" TextWrapping="NoWrap" VerticalAlignment="Center" Margin="5,0,5,0" ContextMenu="{StaticResource DefaultCopyContextmenu}"></TextBox>
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Name="colAttachError" Width="25"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Background="#FFFFCC">
+                        <Image Source="/Agent.Interaction.Desktop;component/Images/Contact/Error.png" 
+                                 Grid.Column="0"  Margin="5" Width="15" Height="15" VerticalAlignment="Top"></Image>
+                    </StackPanel>
+                    <ScrollViewer  Grid.Column="1" Name="attscroll" SizeChanged="attscroll_SizeChanged"   MaxHeight="60" ScrollViewer.CanContentScroll="True" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Auto">
+                        <WrapPanel  Name="dockOutboundAttachments" ScrollViewer.VerticalScrollBarVisibility="Auto" />
+                    </ScrollViewer>
+                </Grid>
+            </StackPanel>
+            <DockPanel Name="dockOutboundContent" Grid.Row="1"></DockPanel>
+            <Expander Name="expOrginalEmail" Grid.Row="2" Template="{StaticResource StretchyExpanderTempforOrginalEmail}"
+                  OverridesDefaultStyle="True"
+                  Header="Orginal Email"
+                  HorizontalAlignment="Stretch"
+                  VerticalAlignment="Top" Visibility="Collapsed" 
+                  >
+                <DockPanel Name="dpOrginalEmail" MinHeight="100"></DockPanel>
+            </Expander>
+        </Grid>
+
+    </Border>
+
+</UserControl>
+
